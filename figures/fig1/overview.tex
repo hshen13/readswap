@@ -1,181 +1,123 @@
-% Figure 1 (overview) of the READSWAP paper. Left: a decoder reads the problem, its solution and the
-% end-of-sequence token; the LM head turns that state into the marker's probability. Right: the readouts.
-% Real example: MATH500 "Add 313.9 to 12.6." with the solution 313.9 + 12.6 = 326.5.
-% Build: pdflatex overview.tex (needs eaclfig.sty from this folder).
-% Widths measured at 9 pt Helvetica: about 0.13 cm per character.
+% Figure 1 of the READSWAP paper: three ways to score a sampled solution (left) and the three choices READSWAP varies (right).
+% Example from MATH500: "Add 313.9 to 12.6." with the solution 313.9 + 12.6 = 326.5.
 \documentclass[border=0pt]{standalone}
 \usepackage{eaclfig}
-\usetikzlibrary{decorations.pathreplacing}
-\definecolor{embF}{HTML}{F9DDE4}\definecolor{embD}{HTML}{D58BA0}
-\definecolor{attF}{HTML}{FCDDBE}\definecolor{attD}{HTML}{DE9450}
-\definecolor{nrmF}{HTML}{FBF1C6}\definecolor{nrmD}{HTML}{CDB04F}
-\definecolor{ffnF}{HTML}{D3E5F8}\definecolor{ffnD}{HTML}{6E9FD3}
-\definecolor{lmhF}{HTML}{E6DBF6}\definecolor{lmhD}{HTML}{9A7DCB}
-\definecolor{smxF}{HTML}{DAF0DA}\definecolor{smxD}{HTML}{6CAE6C}
-\definecolor{cntF}{HTML}{F3F6FA}\definecolor{cntD}{HTML}{A7B4C4}
-\definecolor{probF}{HTML}{E9ECEF}\definecolor{probD}{HTML}{8F98A2}
-\definecolor{solF}{HTML}{DDF1DB}\definecolor{solD}{HTML}{79AF76}
+\definecolor{attF}{HTML}{FCE3CC}\definecolor{attD}{HTML}{DE9450}
+\definecolor{ffnF}{HTML}{DCE9F8}\definecolor{ffnD}{HTML}{6E9FD3}
+\definecolor{lmhF}{HTML}{E9E0F7}\definecolor{lmhD}{HTML}{9A7DCB}
+\definecolor{headF}{HTML}{DDF1DB}\definecolor{headD}{HTML}{79AF76}
 \definecolor{eosF}{HTML}{CFE0F6}\definecolor{eosD}{HTML}{3C78B5}
 \definecolor{mrkF}{HTML}{FCD9B6}\definecolor{mrkD}{HTML}{D97A2B}
-\definecolor{chg}{HTML}{E07B2A}
-\definecolor{lsline}{HTML}{3F444A}
+\definecolor{solF}{HTML}{E4F2E2}\definecolor{solD}{HTML}{79AF76}
+\definecolor{trn}{HTML}{A9B3BE}
 \newcommand{\R}[1]{{\bfseries R\textsubscript{#1}}}
 \begin{document}
 \begin{tikzpicture}[x=1cm,y=1cm,
-  mod/.style={rounded corners=2pt, line width=0.55pt, inner sep=0pt},
-  cell/.style={rounded corners=1.5pt, line width=0.5pt, inner sep=0pt},
-  ar/.style={-{Stealth[length=2.8pt,width=2.6pt]}, line width=0.5pt, draw=lsline},
-  chgbox/.style={draw=chg, dashed, dash pattern=on 1.8pt off 1.2pt, line width=0.8pt, rounded corners=2pt},
+  box/.style={rounded corners=2pt, line width=0.5pt, inner sep=0pt},
+  ar/.style={-{Stealth[length=3.4pt,width=3pt]}, line width=0.6pt, draw=muted},
+  pin/.style={-{Stealth[length=3.4pt,width=3pt]}, line width=0.8pt, draw=accent},
+  tok/.style={rounded corners=1.5pt, line width=0.5pt, inner xsep=2.5pt, inner ysep=2pt, font=\fontsize{8.5}{10}\selectfont},
+  small/.style={font=\fontsize{8}{9.6}\selectfont},
 ]
-\path[use as bounding box] (0,0) rectangle (16.0,6.50);
+\path[use as bounding box] (0,0) rectangle (16.0,6.30);
 
-% ========================= left: the model =========================
-\node[anchor=north west, inner sep=0] at (0.15,6.48) {\fontsize{10.5}{12}\selectfont\bfseries A reasoning model scores its own solution};
+% ====================== left: three ways to score a solution ======================
+\fill[coolbg, rounded corners=5pt] (0,0) rectangle (9.62,6.30);
+\node[anchor=north west, inner sep=0] at (0.20,6.12) {\ptitle{cooltitle}{Three ways to score a sampled solution}};
+% the audited method stands out
+\draw[box, fill=white, fill opacity=0.55, draw=accent, line width=0.7pt, dashed, dash pattern=on 2pt off 1.4pt]
+  (6.50,0.74) rectangle (9.48,5.78);
 
-% input tokens
-\foreach \i/\t/\k in {0/Add/p, 1/313.9/p, 2/to/p, 3/12.6/p, 4/313.9/s, 5/+/s, 6/12.6/s, 7/=/s, 8/326.5/s} {
-  \pgfmathsetmacro{\cx}{0.79+0.88*\i}
-  \if\k p\def\f{probF}\def\d{probD}\else\def\f{solF}\def\d{solD}\fi
-  \draw[cell, fill=\f, draw=\d] (\cx-0.39,0.48) rectangle (\cx+0.39,0.88);
-  \node[inner sep=0] at (\cx,0.68) {\t};
+% shared input
+\draw[box, fill=white, draw=cardline] (0.18,0.16) rectangle (9.44,0.66);
+\node[inner sep=0] at (4.81,0.41) {\lab{problem}\ \ Add 313.9 to 12.6.\qquad\lab{solution}\ \ 313.9 + 12.6 = 326.5};
+
+\newcommand{\model}[2]{% #1 = centre x, #2 = name
+  \draw[box, fill=white, draw=cardline] (#1-1.22,1.12) rectangle (#1+1.22,2.58);
+  \draw[box, fill=attF, draw=attD] (#1-1.02,1.28) rectangle (#1+1.02,1.54);
+  \node[inner sep=0, small] at (#1,1.41) {self-attention};
+  \draw[box, fill=ffnF, draw=ffnD] (#1-1.02,1.64) rectangle (#1+1.02,1.90);
+  \node[inner sep=0, small] at (#1,1.77) {feed-forward};
+  \node[inner sep=0, font=\bfseries] at (#1,2.25) {#2};
 }
-\draw[cell, fill=eosF, draw=eosD, line width=0.8pt] (8.32,0.48) rectangle (9.10,0.88);
-\node[inner sep=0] at (8.71,0.68) {\bfseries EOS};
-\draw[chgbox] (8.28,0.43) rectangle (9.14,0.93);
-\draw[chgbox] (7.40,0.43) rectangle (8.26,0.93);
-\draw[decorate, decoration={brace, amplitude=2.5pt, mirror}, draw=probD, line width=0.5pt] (0.40,0.40) -- (3.82,0.40);
-\draw[decorate, decoration={brace, amplitude=2.5pt, mirror}, draw=solD, line width=0.5pt] (3.92,0.40) -- (8.22,0.40);
-\node[inner sep=0] at (2.11,0.13) {problem tokens};
-\node[inner sep=0] at (6.07,0.13) {solution tokens};
-
-% token embedding
-\foreach \i in {0,...,9} { \pgfmathsetmacro{\cx}{0.79+0.88*\i} \draw[ar] (\cx,0.88) -- (\cx,1.02); }
-\draw[mod, fill=embF, draw=embD] (0.30,1.03) rectangle (9.20,1.29);
-\node[inner sep=0] at (4.75,1.16) {Token embedding};
-\foreach \i in {0,...,9} { \pgfmathsetmacro{\cx}{0.79+0.88*\i} \draw[ar] (\cx,1.29) -- (\cx,1.43); }
-
-% decoder layers
-\draw[rounded corners=4pt, fill=cntF, draw=cntD, line width=0.6pt] (0.30,1.44) rectangle (9.20,3.28);
-\node[anchor=west, align=left, inner sep=0] at (0.42,2.36) {\bfseries $\times$\,L\\[1pt]decoder\\layers};
-\draw[mod, fill=nrmF, draw=nrmD] (1.75,1.53) rectangle (9.05,1.76); \node[inner sep=0] at (5.40,1.645) {RMS Norm};
-\draw[mod, fill=attF, draw=attD] (1.75,1.86) rectangle (9.05,2.19); \node[inner sep=0] at (5.40,2.025) {Masked self-attention};
-\foreach \r in {0,...,4} \foreach \c in {0,...,4} {
-  \pgfmathtruncatemacro{\on}{\c<=\r ? 1 : 0}
-  \ifnum\on=1 \def\cf{attD!55}\else \def\cf{white}\fi
-  \draw[fill=\cf, draw=attD, line width=0.25pt] (8.35+0.075*\c,2.135-0.075*\r) rectangle ++(0.075,-0.075);
+\newcommand{\header}[3]{% #1 = centre x, #2 = name, #3 = cost
+  \node[inner sep=0, font=\fontsize{9.5}{11}\selectfont\bfseries, text=cooltitle] at (#1,5.46) {#2};
+  \node[inner sep=0] at (#1,5.10) {#3};
 }
-\draw[mod, fill=nrmF, draw=nrmD] (1.75,2.43) rectangle (9.05,2.66); \node[inner sep=0] at (5.40,2.545) {RMS Norm};
-\draw[mod, fill=ffnF, draw=ffnD] (1.75,2.76) rectangle (9.05,3.05); \node[inner sep=0] at (5.40,2.905) {Feed-forward};
-\foreach \y in {2.31,3.165} {
-  \draw[fill=white, draw=lsline, line width=0.5pt] (5.40,\y) circle (0.075);
-  \draw[lsline, line width=0.5pt] (5.40-0.045,\y) -- (5.40+0.045,\y) (5.40,\y-0.045) -- (5.40,\y+0.045);
-}
-\draw[ar] (5.40,2.19) -- (5.40,2.235); \draw[ar] (5.40,2.385) -- (5.40,2.43); \draw[ar] (5.40,3.05) -- (5.40,3.09);
-\draw[ar] (1.58,1.47) |- (5.325,2.31);
-\draw[ar] (1.58,2.38) |- (5.325,3.165);
-
-% hidden states
-\foreach \i in {0,...,9} {
-  \pgfmathsetmacro{\cx}{0.79+0.88*\i}
-  \ifnum\i=9 \def\f{eosF}\def\d{eosD}\def\w{0.8pt}\else \def\f{white}\def\d{cntD}\def\w{0.5pt}\fi
-  \draw[ar] (\cx,3.28) -- (\cx,3.42);
-  \draw[rounded corners=2pt, fill=\f, draw=\d, line width=\w] (\cx-0.11,3.43) rectangle (\cx+0.11,3.93);
-  \foreach \k in {0,1,2} \draw[draw=\d, fill=white, line width=0.4pt] (\cx,3.52+0.155*\k) circle (0.055);
+\newcommand{\score}[2]{% #1 = centre x, #2 = text
+  \draw[box, fill=white, draw=cooltitle, line width=0.7pt] (#1-0.82,4.36) rectangle (#1+0.82,4.70);
+  \node[inner sep=0, font=\bfseries, text=cooltitle] at (#1,4.53) {#2};
 }
 
-% LM head chain above the end-of-sequence state
-\draw[ar, draw=eosD, line width=0.7pt] (8.71,3.93) -- (8.71,4.06);
-\draw[mod, fill=lmhF, draw=lmhD] (6.30,4.06) rectangle (9.20,4.32); \node[inner sep=0] at (7.75,4.19) {LM head};
-\draw[ar] (7.75,4.32) -- (7.75,4.42);
-\draw[mod, fill=smxF, draw=smxD] (6.30,4.42) rectangle (9.20,4.66); \node[inner sep=0] at (7.75,4.54) {Softmax};
-\draw[ar] (7.75,4.66) -- (7.75,4.76);
-\foreach \a/\b in {6.30/6.70, 6.74/7.14, 8.36/8.76, 8.80/9.20} {
-  \draw[cell, fill=probF, draw=probD] (\a,4.76) rectangle (\b,5.00); \node[inner sep=0] at ({(\a+\b)/2},4.88) {$\cdots$};
+% (1) separate verifier
+\draw[ar] (1.65,0.66) -- (1.65,1.12);
+\model{1.65}{verifier model}
+\draw[ar] (1.65,2.58) -- (1.65,3.28);
+\draw[box, fill=headF, draw=headD] (0.95,3.28) rectangle (2.35,3.58); \node[inner sep=0] at (1.65,3.43) {score head};
+\draw[ar] (1.65,3.58) -- (1.65,4.36);
+\score{1.65}{score}
+\header{1.65}{Separate verifier}{\lab{+ a second model}}
+
+% (2) generative verifier
+\draw[ar] (4.81,0.66) -- (4.81,1.12);
+\model{4.81}{policy}
+\draw[ar] (4.81,2.58) -- (4.81,2.98);
+\draw[box, fill=white, draw=cardline] (3.56,2.98) rectangle (6.06,3.98);
+\node[inner sep=0, align=left, small] at (4.81,3.48) {\itshape Check: 313.9 + 12.6\\[-1pt]\itshape = 326.5. Correct.};
+\draw[ar] (4.81,3.98) -- (4.81,4.36);
+\score{4.81}{score}
+\header{4.81}{Generative verifier}{\lab{+ a written check}}
+
+% (3) LaSeR
+\draw[ar] (7.99,0.66) -- (7.99,1.12);
+\node[tok, fill=eosF, draw=eosD, font=\fontsize{8}{9.6}\selectfont\bfseries, anchor=west] at (8.10,0.90) {+ EOS};
+\model{7.99}{policy}
+\draw[ar] (7.99,2.58) -- (7.99,2.80);
+\draw[box, fill=lmhF, draw=lmhD] (7.29,2.80) rectangle (8.69,3.08); \node[inner sep=0] at (7.99,2.94) {LM head};
+\draw[ar] (7.99,3.08) -- (7.99,3.30);
+\draw[box, fill=white, draw=cardline] (6.74,3.30) rectangle (9.24,4.06);
+\node[inner sep=0, align=center] at (7.99,3.68) {\hl{mrkF}{marker} probability\\[-1pt]minus a constant};
+\draw[ar] (7.99,4.06) -- (7.99,4.36);
+\score{7.99}{self-score}
+\header{7.99}{LaSeR}{\textcolor{txgreen}{\bfseries + one token}}
+
+% hand-off to the right panel
+\draw[-{Stealth[length=4pt,width=3.6pt]}, line width=0.9pt, draw=accent] (9.50,3.30) -- (9.92,3.30);
+
+% ====================== right: what READSWAP varies ======================
+\fill[warmbg, rounded corners=5pt] (9.76,0) rectangle (16.0,6.30);
+\node[anchor=north west, inner sep=0] at (9.96,6.12) {\ptitle{warmtitle}{READSWAP varies each choice}};
+
+% --- which token
+\draw[box, fill=white, draw=cardline] (9.94,3.92) rectangle (15.84,5.66);
+\node[anchor=north west, inner sep=0, font=\bfseries] at (10.07,5.55) {Which token};
+\coordinate (o) at (10.95,4.12);
+\foreach \a in {100,118,136,154} \draw[-{Stealth[length=2.6pt,width=2.4pt]}, line width=0.6pt, draw=trn] (o) -- ++(\a:0.78);
+\foreach \a in {27,29,33} \draw[-{Stealth[length=2.6pt,width=2.4pt]}, line width=0.6pt, draw=eosD] (o) -- ++(\a:1.20);
+\draw[-{Stealth[length=2.8pt,width=2.6pt]}, line width=0.9pt, draw=mrkD] (o) -- ++(31:1.24);
+\node[anchor=east, inner sep=0, small, text=muted] at (10.62,4.98) {trained};
+\node[anchor=west, inner sep=0, small, text=eosD] at (12.06,4.82) {unused};
+\node[anchor=west, inner sep=0] at (13.05,5.00) {\R{0}\ \ the marker};
+\node[anchor=west, inner sep=0] at (13.05,4.42) {\R{1}\ \ other unused};
+\node[anchor=west, inner sep=0] at (13.53,4.12) {tokens};
+
+% --- which position
+\draw[box, fill=white, draw=cardline] (9.94,2.04) rectangle (15.84,3.76);
+\node[anchor=north west, inner sep=0, font=\bfseries] at (10.07,3.65) {Which position};
+\node[tok, fill=solF, draw=solD, anchor=west] (s1) at (10.07,2.36) {12.6 =};
+\node[tok, fill=solF, draw=solD, right=2pt of s1] (s2) {326.5};
+\node[tok, fill=solF, draw=solD, right=2pt of s2] (s3) {done.};
+\node[tok, fill=eosF, draw=eosD, right=2pt of s3, font=\fontsize{8.5}{10}\selectfont\bfseries] (s4) {EOS};
+\foreach \n/\l in {s2/3, s3/2, s4/0} {
+  \draw[pin] ($(\n.north east)+(0.04,0.48)$) -- ($(\n.north east)+(0.04,0.05)$);
+  \node[anchor=south, inner sep=1pt] at ($(\n.north east)+(0.04,0.48)$) {\R{\l}};
 }
-\draw[cell, fill=mrkF, draw=mrkD, line width=0.7pt] (7.18,4.76) rectangle (8.32,5.00); \node[inner sep=0] at (7.75,4.88) {marker};
-\draw[chgbox] (7.13,4.71) rectangle (8.37,5.05);
-\draw[ar] (7.75,5.05) -- (7.75,5.12);
-\draw[mod, fill=white, draw=probD] (6.30,5.12) rectangle (9.20,5.70);
-\node[align=center, inner sep=0] at (7.75,5.41) {marker probability\\minus a constant};
-\draw[chgbox] (6.25,5.07) rectangle (9.25,5.75);
-\draw[ar] (8.35,5.75) -- (8.35,5.82);
-\draw[mod, fill=lmhF, draw=lmhD, line width=0.8pt] (7.55,5.82) rectangle (9.15,6.14); \node[inner sep=0] at (8.35,5.98) {\bfseries Self-score};
 
-% uses of the score
-\draw[ar] (7.55,5.98) -- (6.17,5.98);
-\draw[mod, fill=white, draw=probD] (3.05,5.40) rectangle (6.15,6.06);
-\node[align=center, inner sep=0] at (4.60,5.73) {used to judge a solution\\and to weight votes};
-
-% training signal
-\draw[ar, dashed, dash pattern=on 2pt off 1.5pt, draw=lsline] (6.25,5.24) -- (2.99,5.24) -- (2.99,3.29);
-\node[anchor=west, align=left, inner sep=0] at (3.12,4.66) {trained to match\\[-1pt]the verifier reward};
-
-% legend
-\foreach \y/\f/\d/\t in {5.62/probF/probD/problem token, 5.32/solF/solD/solution token, 5.02/eosF/eosD/end of sequence,
-                         4.72/mrkF/mrkD/marker token}
-  { \draw[cell, fill=\f, draw=\d] (0.25,\y-0.1) rectangle (0.55,\y+0.1); \node[anchor=west, inner sep=0] at (0.65,\y) {\t}; }
-\draw[chgbox] (0.25,4.32) rectangle (0.55,4.52);
-\node[anchor=west, align=left, inner sep=0] at (0.65,4.30) {changed by\\[-1pt]a readout};
-
-% ========================= right: five readouts =========================
-\node[anchor=north west, inner sep=0] at (9.80,6.48) {\fontsize{10.5}{12}\selectfont\bfseries Five ways to read the score};
-
-% zoom into the LM head
-\draw[draw=cntD, dashed, dash pattern=on 2pt off 1.5pt, line width=0.45pt] (9.20,4.32) -- (9.78,6.06) (9.20,4.06) -- (9.78,3.92);
-\draw[rounded corners=3pt, fill=cntF, draw=cntD, line width=0.6pt] (9.78,3.92) rectangle (15.95,6.06);
-\foreach \y/\s in {5.80/{35,15,55,20,45,10,60,25,40,15,50,30,20}, 5.60/{15,50,25,60,5,40,20,55,10,35,25,45,60},
-                   5.40/{55,30,10,40,20,60,35,15,50,25,45,5,35}, 5.20/{20,60,40,5,50,25,15,45,30,55,10,40,25},
-                   5.00/{45,15,30,55,10,35,50,20,60,5,40,25,55}} {
-  \foreach \v [count=\c from 0] in \s
-    \fill[black!\v] (11.95+0.2*\c,\y-0.085) rectangle ++(0.19,0.17);
-}
-\foreach \y in {4.66,4.46,4.26,4.06} {
-  \foreach \v [count=\c from 0] in {45,20,65,30,55,15,40,60,25,50,35,70,20}
-    \fill[eosD!\v] (11.95+0.2*\c,\y-0.085) rectangle ++(0.19,0.17);
-}
-\draw[decorate, decoration={brace, amplitude=2.5pt, mirror}, draw=probD, line width=0.5pt] (11.87,5.89) -- (11.87,4.91);
-\node[anchor=east, inner sep=0] at (11.75,5.40) {trained tokens};
-\draw[decorate, decoration={brace, amplitude=2.5pt, mirror}, draw=eosD, line width=0.5pt] (11.87,4.75) -- (11.87,3.97);
-\node[anchor=east, align=right, inner sep=0] at (11.75,4.36) {\color{eosD}unused tokens\\[-1pt]\color{eosD}and the marker};
-\draw[decorate, decoration={brace, amplitude=2.5pt}, draw=eosD, line width=0.5pt] (14.62,4.75) -- (14.62,3.97);
-\node[anchor=west, align=left, inner sep=0] at (14.74,4.36) {\color{eosD}one\\[-1pt]\color{eosD}direction};
-
-% table of readouts
-\draw[rounded corners=3pt, fill=white, draw=cntD, line width=0.6pt] (9.78,0.05) rectangle (15.95,3.80);
-\foreach \j in {1,...,5} \draw[draw=cntD!60, line width=0.4pt] (9.85,3.80-0.625*\j) -- (15.88,3.80-0.625*\j);
-% one strip: #1 = y centre, #2 = variant (0 released, 1 marker, 2 no EOS, 3 answer, 4/5 constant)
-\newcommand{\strip}[2]{%
-  \foreach \c in {0,1,2} \draw[cell, fill=probF, draw=probD] (10.25+0.18*\c,#1-0.12) rectangle ++(0.14,0.24);
-  \ifnum#2=3
-    \foreach \c in {0,1} \draw[cell, fill=solF, draw=solD] (10.79+0.18*\c,#1-0.12) rectangle ++(0.14,0.24);
-    \draw[cell, fill=solF, draw=solD] (11.15,#1-0.12) rectangle (11.95,#1+0.12); \node[inner sep=0] at (11.55,#1) {326.5};
-    \draw[chgbox] (11.11,#1-0.16) rectangle (11.99,#1+0.16);
-    \draw[cell, fill=mrkF, draw=mrkD] (12.03,#1-0.12) rectangle (12.93,#1+0.12); \node[inner sep=0] at (12.48,#1) {marker};
-    \draw[lsline, line width=0.5pt] (12.93,#1) -- (13.09,#1);
-  \else
-    \foreach \c in {0,...,3} \draw[cell, fill=solF, draw=solD] (10.79+0.18*\c,#1-0.12) rectangle ++(0.14,0.24);
-    \ifnum#2=2
-      \draw[chgbox] (11.52,#1-0.14) rectangle (12.12,#1+0.14);
-    \else
-      \draw[cell, fill=eosF, draw=eosD] (11.52,#1-0.12) rectangle (12.12,#1+0.12); \node[inner sep=0] at (11.82,#1) {EOS};
-    \fi
-    \ifnum#2=1
-      \draw[cell, fill=eosD!25, draw=eosD] (12.17,#1-0.12) rectangle (13.07,#1+0.12); \node[inner sep=0] at (12.62,#1) {unused};
-      \draw[chgbox] (12.13,#1-0.16) rectangle (13.11,#1+0.16);
-    \else
-      \draw[cell, fill=mrkF, draw=mrkD] (12.17,#1-0.12) rectangle (13.07,#1+0.12); \node[inner sep=0] at (12.62,#1) {marker};
-    \fi
-  \fi
-  \draw[ar] (13.09,#1) -- (13.25,#1);
-  \draw[cell, fill=lmhF, draw=lmhD] (13.27,#1-0.12) rectangle (14.02,#1+0.12); \node[inner sep=0] at (13.645,#1) {score};
-  \ifnum#2>3 \draw[chgbox] (13.23,#1-0.16) rectangle (14.06,#1+0.16); \fi
-}
-\foreach \j/\lab/\desc in {0/0/released\\[-1pt]readout, 1/1/other unused\\[-1pt]token, 2/2/no EOS,
-                          3/3/read at the\\[-1pt]boxed answer, 4/4/no constant, 5/5/base-model\\[-1pt]constant} {
-  \pgfmathsetmacro{\yc}{3.80-0.625*\j-0.3125}
-  \node[anchor=west, inner sep=0] at (9.88,\yc) {\R{\lab}};
-  \strip{\yc}{\j}
-  \node[anchor=west, align=left, inner sep=0] at (14.14,\yc) {\desc};
-}
+% --- which constant
+\draw[box, fill=white, draw=cardline] (9.94,0.16) rectangle (15.84,1.88);
+\node[anchor=north west, inner sep=0, font=\bfseries] at (10.07,1.77) {Which constant};
+\node[anchor=west, inner sep=0] at (10.07,1.16) {\R{0}\ \ one per model};
+\node[anchor=west, inner sep=0] at (12.90,1.16) {\R{4}\ \ none};
+\node[anchor=west, inner sep=0] at (10.07,0.56) {\R{5}\ \ the base model's, per solution};
 \end{tikzpicture}
 \end{document}

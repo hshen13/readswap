@@ -244,7 +244,7 @@ Numbers refer to the compiled submission. "Pre-specified" marks results under th
 
 | Paper element | Generator | Inputs |
 |---|---|---|
-| Figure 1 (overview of the self-score and the five alternative readouts) | `figures/fig1/overview.tex` | none |
+| Figure 1 (three ways to score a solution; the three choices READSWAP varies) | `figures/fig1/overview.tex` | none |
 | Table 1 (AUROC, ECE and weighted-voting accuracy of R0-R5; pre-specified) | `code/laser_paper_tables.py` -> `readouts.tex` | `*_confirm.json` |
 | Table 2 (contrasts L1-L5 with intervals and verdicts; pre-specified) | `code/laser_paper_tables.py` -> `contrasts.tex` | `*_confirm.json` |
 | Figure 2 (token sweep by cosine with the marker's output row; marker read after tokens in the EOS position) | `code/make_token_figure_v3.py` -> `token_control.pdf` | `token_sweep_*.json`, `mech_summary.json` |
