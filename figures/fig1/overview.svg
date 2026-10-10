@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="66.6667mm" viewBox="0 0 1800 750">
-<title>READSWAP — Almost any unused token gives the same self-score.</title>
+<title>READSWAP: almost any unused token gives the same self-score</title>
 <defs><marker id="arr" markerWidth="8" markerHeight="7" refX="7.2" refY="3.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,3.5 L0,7 Z" fill="#929DA7"/></marker></defs>
 <g xml:space="preserve" font-family="Nimbus Roman, Times New Roman, Times, serif">
 <rect x="0" y="0" width="1800" height="750" rx="7" fill="white" stroke="none" stroke-width="1.5"/>
@@ -8,13 +8,13 @@
 <rect x="18" y="98" width="215" height="634" rx="22" fill="white" stroke="#B8C2CB" stroke-width="1.8" stroke-dasharray="8 5"/>
 <rect x="252" y="18" width="588" height="714" rx="22" fill="white" stroke="#B4C0CB" stroke-width="1.8" stroke-dasharray="8 5"/>
 <rect x="860" y="18" width="922" height="714" rx="22" fill="white" stroke="#9EAFBF" stroke-width="1.8" stroke-dasharray="8 5"/>
-<text x="36" y="139" font-size="27" font-weight="700" fill="#73808B" text-anchor="start" font-style="normal">(a) One token,</text>
-<text x="36" y="173" font-size="27" font-weight="700" fill="#73808B" text-anchor="start" font-style="normal">no verifier</text>
-<text x="273" y="57" font-size="29" font-weight="700" fill="#647585" text-anchor="start" font-style="normal">(b) The score is read</text>
-<text x="273" y="91" font-size="29" font-weight="700" fill="#647585" text-anchor="start" font-style="normal">from the EOS state</text>
+<text x="36" y="139" font-size="27" font-weight="700" fill="#24415F" text-anchor="start" font-style="normal">(a) One token,</text>
+<text x="36" y="173" font-size="27" font-weight="700" fill="#24415F" text-anchor="start" font-style="normal">no verifier</text>
+<text x="273" y="57" font-size="29" font-weight="700" fill="#24415F" text-anchor="start" font-style="normal">(b) The score is read</text>
+<text x="273" y="91" font-size="29" font-weight="700" fill="#24415F" text-anchor="start" font-style="normal">from the EOS state</text>
 <text x="881" y="60" font-size="32" font-weight="700" fill="#24415F" text-anchor="start" font-style="normal">(c) Unused tokens share one direction</text>
 <rect x="39" y="213" width="172" height="120" rx="9" fill="#FAFBFC" stroke="#C5CDD4" stroke-width="1.2"/>
-<text x="125" y="244" font-size="26" font-weight="400" fill="#76838E" text-anchor="middle" font-style="normal">second model</text>
+<text x="125" y="244" font-size="26" font-weight="400" fill="#1F2A35" text-anchor="middle" font-style="normal">second model</text>
 <g transform="translate(-57 14)"><path xmlns="http://www.w3.org/2000/svg" d="M152,264 L182,256" stroke="#BDC7D0" stroke-width="1.2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
 </g>
 <g transform="translate(-57 14)"><path xmlns="http://www.w3.org/2000/svg" d="M152,264 L182,280" stroke="#BDC7D0" stroke-width="1.2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
@@ -54,15 +54,15 @@
 <g transform="translate(-57 14)"><circle xmlns="http://www.w3.org/2000/svg" cx="212" cy="296" r="4" fill="#A4B3C0"/>
 </g>
 <rect x="39" y="379" width="172" height="120" rx="9" fill="#FAFBFC" stroke="#C5CDD4" stroke-width="1.2"/>
-<text x="125" y="410" font-size="26" font-weight="400" fill="#76838E" text-anchor="middle" font-style="normal">written check</text>
+<text x="125" y="410" font-size="26" font-weight="400" fill="#1F2A35" text-anchor="middle" font-style="normal">written check</text>
 <rect x="98" y="430" width="55" height="47" rx="4" fill="white" stroke="#B9C2CC" stroke-width="1"/>
 <path d="M107,444 L144,444" stroke="#B4BFC8" stroke-width="1.1" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
 <path d="M107,454 L138,454" stroke="#B4BFC8" stroke-width="1.1" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
 <path d="M107,464 L132,464" stroke="#B4BFC8" stroke-width="1.1" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
 <rect x="39" y="545" width="172" height="120" rx="9" fill="#FAFBFC" stroke="#C5CDD4" stroke-width="1.2"/>
-<text x="125" y="576" font-size="26" font-weight="400" fill="#76838E" text-anchor="middle" font-style="normal">one token</text>
+<text x="125" y="576" font-size="26" font-weight="400" fill="#1F2A35" text-anchor="middle" font-style="normal">one token</text>
 <rect x="65" y="610" width="27" height="27" rx="4" fill="#EAF0F3" stroke="#A8B6C2" stroke-width="1.1"/>
-<text x="147" y="633" font-size="27" font-weight="700" fill="#738391" text-anchor="middle" font-style="normal">LaSeR</text>
+<text x="147" y="633" font-size="27" font-weight="700" fill="#1F2A35" text-anchor="middle" font-style="normal">LaSeR</text>
 <path d="M213,606 H244 V506 H283" stroke="#B0BDC7" stroke-width="1.4" fill="none" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arr)"/>
 <g transform="matrix(1 0 0 1 -137 31)"><rect xmlns="http://www.w3.org/2000/svg" x="440" y="139" width="16" height="7" rx="0" fill="#E8ECF0" stroke="#C3CBD1" stroke-width="0.65"/>
 </g>
@@ -234,11 +234,11 @@
 </g>
 <g transform="matrix(1 0 0 0.9 -137 51.7)"><rect xmlns="http://www.w3.org/2000/svg" x="409" y="207" width="540" height="254" rx="12" fill="#FBFCFC" stroke="#BCC7CA" stroke-width="1.5"/>
 </g>
-<text xmlns="http://www.w3.org/2000/svg" x="789.0" y="265.90000000000003" font-size="27.0" font-weight="400" fill="#73808B" text-anchor="middle" font-style="normal">× L</text>
+<text xmlns="http://www.w3.org/2000/svg" x="789.0" y="265.90000000000003" font-size="27.0" font-weight="400" fill="#1F2A35" text-anchor="middle" font-style="normal">× L</text>
 
 <g transform="matrix(1 0 0 0.9 -137 51.7)"><rect xmlns="http://www.w3.org/2000/svg" x="435" y="258" width="443" height="53" rx="8" fill="#FBFAFD" stroke="#BFC2CF" stroke-width="1.6"/>
 </g>
-<text xmlns="http://www.w3.org/2000/svg" x="519.5" y="315.4" font-size="29.0" font-weight="400" fill="#73808B" text-anchor="middle" font-style="normal">feed-forward</text>
+<text xmlns="http://www.w3.org/2000/svg" x="519.5" y="315.4" font-size="29.0" font-weight="400" fill="#1F2A35" text-anchor="middle" font-style="normal">feed-forward</text>
 
 <g transform="matrix(1 0 0 0.9 -137 51.7)"><rect xmlns="http://www.w3.org/2000/svg" x="435" y="366" width="443" height="72" rx="8" fill="#F8FCFB" stroke="#B7CBCA" stroke-width="1.6"/>
 </g>
@@ -370,7 +370,7 @@
 </g>
 <g transform="matrix(1 0 0 0.9 -137 51.7)"><rect xmlns="http://www.w3.org/2000/svg" x="498" y="424" width="7" height="7" rx="0" fill="#C8DADD" stroke="#C8D4DF" stroke-width="0.5"/>
 </g>
-<text xmlns="http://www.w3.org/2000/svg" x="399.0" y="418.9" font-size="28.0" font-weight="400" fill="#73808B" text-anchor="start" font-style="normal">masked self-attention</text>
+<text xmlns="http://www.w3.org/2000/svg" x="399.0" y="418.9" font-size="28.0" font-weight="400" fill="#1F2A35" text-anchor="start" font-style="normal">masked self-attention</text>
 
 <g transform="matrix(1 0 0 0.9 -137 51.7)"><path xmlns="http://www.w3.org/2000/svg" d="M656,488 L656,439" stroke="#919CA6" stroke-width="1.8" fill="none" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arr)"/>
 </g>
@@ -388,11 +388,11 @@
 </g>
 <g transform="matrix(1 0 0 0.9 -137 51.7)"><circle xmlns="http://www.w3.org/2000/svg" cx="656" cy="338" r="16" fill="white" stroke="#BCC7CA" stroke-width="1.6"/>
 </g>
-<text xmlns="http://www.w3.org/2000/svg" x="519.0" y="364.9" font-size="30.0" font-weight="400" fill="#73808B" text-anchor="middle" font-style="normal">+</text>
+<text xmlns="http://www.w3.org/2000/svg" x="519.0" y="364.9" font-size="30.0" font-weight="400" fill="#1F2A35" text-anchor="middle" font-style="normal">+</text>
 
 <g transform="matrix(1 0 0 0.9 -137 51.7)"><circle xmlns="http://www.w3.org/2000/svg" cx="656" cy="227" r="16" fill="white" stroke="#BCC7CA" stroke-width="1.6"/>
 </g>
-<text xmlns="http://www.w3.org/2000/svg" x="519.0" y="265.0" font-size="30.0" font-weight="400" fill="#73808B" text-anchor="middle" font-style="normal">+</text>
+<text xmlns="http://www.w3.org/2000/svg" x="519.0" y="265.0" font-size="30.0" font-weight="400" fill="#1F2A35" text-anchor="middle" font-style="normal">+</text>
 
 <g transform="matrix(1 0 0 1 -137 0)"><rect xmlns="http://www.w3.org/2000/svg" x="422" y="489" width="468" height="34" rx="5" fill="white" stroke="#AEBCC9" stroke-width="1.5"/>
 </g>
@@ -414,7 +414,7 @@
 </g>
 <g transform="matrix(1 0 0 1 -137 0)"><rect xmlns="http://www.w3.org/2000/svg" x="839" y="490" width="50" height="5" rx="0" fill="#E7EEF4" stroke="none" stroke-width="1.5"/>
 </g>
-<text xmlns="http://www.w3.org/2000/svg" x="519.0" y="515.0" font-size="27.0" font-weight="400" fill="#73808B" text-anchor="middle" font-style="normal">token embedding</text>
+<text xmlns="http://www.w3.org/2000/svg" x="519.0" y="515.0" font-size="27.0" font-weight="400" fill="#1F2A35" text-anchor="middle" font-style="normal">token embedding</text>
 
 <g transform="matrix(1 0 0 1 -137 0)"><path xmlns="http://www.w3.org/2000/svg" d="M448,546 L448.0,530.0" stroke="#C3CBD1" stroke-width="1.2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
 </g>
@@ -470,18 +470,18 @@
 </g>
 <g transform="matrix(1 0 0 1 -137 0)"><rect xmlns="http://www.w3.org/2000/svg" x="833.0" y="548" width="62" height="38" rx="4" fill="#F2F6F9" stroke="#AEBCC9" stroke-width="1.4"/>
 </g>
-<text xmlns="http://www.w3.org/2000/svg" x="727.0" y="575.0" font-size="26" font-weight="400" fill="#73808B" text-anchor="middle" font-style="normal">EOS</text>
+<text xmlns="http://www.w3.org/2000/svg" x="727.0" y="575.0" font-size="26" font-weight="400" fill="#1F2A35" text-anchor="middle" font-style="normal">EOS</text>
 
 <g transform="matrix(1 0 0 1 -137 0)"><path xmlns="http://www.w3.org/2000/svg" d="M431,588 V593 Q431,598 437,598 H491.0 Q500.0,598 500.0,605 Q500.0,598 509.0,598 H563 Q569,598 569,593 V588" stroke="#919CA6" stroke-width="1.4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
 </g>
-<text xmlns="http://www.w3.org/2000/svg" x="363.0" y="628.0" font-size="26" font-weight="400" fill="#73808B" text-anchor="middle" font-style="normal">problem</text>
+<text xmlns="http://www.w3.org/2000/svg" x="363.0" y="628.0" font-size="26" font-weight="400" fill="#1F2A35" text-anchor="middle" font-style="normal">problem</text>
 
 <g transform="matrix(1 0 0 1 -137 0)"><path xmlns="http://www.w3.org/2000/svg" d="M587,588 V593 Q587,598 593,598 H673.0 Q682.0,598 682.0,605 Q682.0,598 691.0,598 H771 Q777,598 777,593 V588" stroke="#818F89" stroke-width="1.4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
 </g>
-<text xmlns="http://www.w3.org/2000/svg" x="545.0" y="628.0" font-size="26" font-weight="400" fill="#73808B" text-anchor="middle" font-style="normal">solution</text>
+<text xmlns="http://www.w3.org/2000/svg" x="545.0" y="628.0" font-size="26" font-weight="400" fill="#1F2A35" text-anchor="middle" font-style="normal">solution</text>
 
 <rect x="272" y="646" width="545" height="85" rx="8" fill="#FFFBF6" stroke="#D5A06E" stroke-width="1.15"/>
-<text x="288" y="678" font-size="29" font-weight="700" fill="#B27B49" text-anchor="start" font-style="normal">position</text>
+<text x="288" y="678" font-size="29" font-weight="700" fill="#A34E12" text-anchor="start" font-style="normal">position</text>
 <path d="M640,586 V634 H425 V691 H304" stroke="#C49870" stroke-width="1.15" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
 <path d="M692,586 V642 H503 V691" stroke="#C49870" stroke-width="1.15" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
 <path d="M769,586 V652 H650 V691" stroke="#C49870" stroke-width="1.15" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
@@ -491,14 +491,14 @@
 <path d="M692,586 L694.28,592.0 L689.72,592.0 Z" fill="#C49870"/>
 <path d="M769,605 L769.0,592.0" stroke="#C49870" stroke-width="1.3" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
 <path d="M769,586 L771.28,592.0 L766.72,592.0 Z" fill="#C49870"/>
-<text x="288" y="718" font-size="28" font-weight="700" fill="#9B785A">R<tspan dy="5" font-size="26">3</tspan></text>
-<text x="331" y="718" font-size="26" font-weight="400" fill="#687580" text-anchor="start" font-style="normal">after answer</text>
-<text x="490" y="718" font-size="28" font-weight="700" fill="#9B785A">R<tspan dy="5" font-size="26">2</tspan></text>
-<text x="533" y="718" font-size="26" font-weight="400" fill="#687580" text-anchor="start" font-style="normal">no EOS</text>
-<text x="637" y="718" font-size="28" font-weight="700" fill="#9B785A">R<tspan dy="5" font-size="26">0</tspan></text>
-<text x="680" y="718" font-size="26" font-weight="400" fill="#687580" text-anchor="start" font-style="normal">after EOS</text>
+<text x="288" y="718" font-size="28" font-weight="700" fill="#7A3E0E">R<tspan dy="5" font-size="26">3</tspan></text>
+<text x="331" y="718" font-size="26" font-weight="400" fill="#1F2A35" text-anchor="start" font-style="normal">after answer</text>
+<text x="490" y="718" font-size="28" font-weight="700" fill="#7A3E0E">R<tspan dy="5" font-size="26">2</tspan></text>
+<text x="533" y="718" font-size="26" font-weight="400" fill="#1F2A35" text-anchor="start" font-style="normal">no EOS</text>
+<text x="637" y="718" font-size="28" font-weight="700" fill="#7A3E0E">R<tspan dy="5" font-size="26">0</tspan></text>
+<text x="680" y="718" font-size="26" font-weight="400" fill="#1F2A35" text-anchor="start" font-style="normal">after EOS</text>
 <path d="M1219,695 H846 V482 H800 V469" stroke="#9AA6AF" stroke-width="1.3" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="4 5" marker-end="url(#arr)"/>
-<text x="893" y="656" font-size="26" font-weight="400" fill="#8B969F" text-anchor="start" font-style="italic">trained on verifier reward</text>
+<text x="893" y="656" font-size="26" font-weight="400" fill="#1F2A35" text-anchor="start" font-style="italic">trained on verifier reward</text>
 <rect x="908" y="678" width="225" height="32" rx="4" fill="#526577" stroke="#526577" stroke-width="1"/>
 <text x="1020.5" y="702" font-size="26" font-weight="700" fill="white" text-anchor="middle" font-style="normal">TRAINING ONLY</text>
 <path d="M736,191 H862 V369 H897" stroke="#D77B2B" stroke-width="3.6" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
@@ -507,7 +507,7 @@
 <path d="M862,216 H1139 V451 H1238 V472" stroke="#AFBAC4" stroke-width="1.3" fill="none" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arr)"/>
 <circle cx="862" cy="216" r="2.4" fill="#AFBAC4"/>
 <rect x="881" y="240" width="246" height="193" rx="8" fill="#FBFCFD" stroke="#B6C0CB" stroke-width="1.6"/>
-<text x="1004" y="272" font-size="29" font-weight="700" fill="#687D90" text-anchor="middle" font-style="normal">LM head</text>
+<text x="1004" y="272" font-size="29" font-weight="700" fill="#1F2A35" text-anchor="middle" font-style="normal">LM head</text>
 <rect x="900" y="285" width="20" height="8" rx="0" fill="#E6EAEE" stroke="#C2CBD3" stroke-width="0.55"/>
 <rect x="920" y="285" width="20" height="8" rx="0" fill="#E6EAEE" stroke="#C2CBD3" stroke-width="0.55"/>
 <rect x="940" y="285" width="20" height="8" rx="0" fill="#E6EAEE" stroke="#C2CBD3" stroke-width="0.55"/>
@@ -592,17 +592,17 @@
 <rect x="960" y="389" width="20" height="8" rx="0" fill="#D4E4F1" stroke="#8FB2CF" stroke-width="0.55"/>
 <rect x="980" y="389" width="20" height="8" rx="0" fill="#D4E4F1" stroke="#8FB2CF" stroke-width="0.55"/>
 <rect x="1000" y="389" width="20" height="8" rx="0" fill="#D4E4F1" stroke="#8FB2CF" stroke-width="0.55"/>
-<text x="1033" y="317" font-size="26" font-weight="400" fill="#8C97A1" text-anchor="start" font-style="normal">trained</text>
-<text x="1033" y="357" font-size="26" font-weight="400" fill="#6C98BB" text-anchor="start" font-style="normal">unused</text>
+<text x="1033" y="317" font-size="26" font-weight="400" fill="#1F2A35" text-anchor="start" font-style="normal">trained</text>
+<text x="1033" y="357" font-size="26" font-weight="400" fill="#245F96" text-anchor="start" font-style="normal">unused</text>
 <text x="1033" y="417" font-size="26" font-weight="700" fill="#D77B2B" text-anchor="start" font-style="normal">marker</text>
 <path d="M1129,285 H1133 V397 H1129" stroke="#AEBAC4" stroke-width="1.2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
 <path d="M1133,339 V459 H1200 V472" stroke="#AEBAC4" stroke-width="1.3" fill="none" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arr)"/>
 <rect x="881" y="95" width="246" height="106" rx="8" fill="#FFFBF6" stroke="#D5A06E" stroke-width="1.15"/>
-<text x="897" y="127" font-size="29" font-weight="700" fill="#B27B49" text-anchor="start" font-style="normal">token</text>
-<text x="896" y="157" font-size="28" font-weight="700" fill="#9B785A">R<tspan dy="5" font-size="26">0</tspan></text>
-<text x="939" y="157" font-size="26" font-weight="400" fill="#687580" text-anchor="start" font-style="normal">marker</text>
-<text x="896" y="190" font-size="28" font-weight="700" fill="#9B785A">R<tspan dy="5" font-size="26">1</tspan></text>
-<text x="939" y="190" font-size="26" font-weight="400" fill="#687580" text-anchor="start" font-style="normal">other unused</text>
+<text x="897" y="127" font-size="29" font-weight="700" fill="#A34E12" text-anchor="start" font-style="normal">token</text>
+<text x="896" y="157" font-size="28" font-weight="700" fill="#7A3E0E">R<tspan dy="5" font-size="26">0</tspan></text>
+<text x="939" y="157" font-size="26" font-weight="400" fill="#1F2A35" text-anchor="start" font-style="normal">marker</text>
+<text x="896" y="190" font-size="28" font-weight="700" fill="#7A3E0E">R<tspan dy="5" font-size="26">1</tspan></text>
+<text x="939" y="190" font-size="26" font-weight="400" fill="#1F2A35" text-anchor="start" font-style="normal">other unused</text>
 <path d="M1128,149 H1130 V211 M1130,221 V369 H1022" stroke="#C49A75" stroke-width="1.1" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
 <circle cx="1020" cy="369" r="2.8" fill="#C49A75"/>
 <rect x="1158" y="95" width="601" height="329" rx="15" fill="#FCFDFF" stroke="#90ACC4" stroke-width="1.7" stroke-dasharray="7 5"/>
@@ -648,30 +648,30 @@
 <rect x="893" y="475" width="188" height="43" rx="7" fill="#FFF9F2" stroke="#D77B2B" stroke-width="2"/>
 <text x="987" y="506" font-size="29" font-weight="700" fill="#D77B2B" text-anchor="middle" font-style="normal">logit</text>
 <rect x="1151" y="475" width="210" height="43" rx="7" fill="#FAFCFD" stroke="#BDC8D0" stroke-width="1.15"/>
-<text x="1256" y="506" font-size="27" font-weight="400" fill="#87949E" text-anchor="middle" font-style="normal">normalizer</text>
+<text x="1256" y="506" font-size="27" font-weight="400" fill="#1F2A35" text-anchor="middle" font-style="normal">normalizer</text>
 <path d="M1083,496 H1107 V552 H1218" stroke="#D77B2B" stroke-width="3.6" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
 <path d="M1197,552 L1209.0,552.0" stroke="#D77B2B" stroke-width="3.6" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
 <path d="M1219,552 L1209.0,555.8 L1209.0,548.2 Z" fill="#D77B2B"/>
 <path d="M1256,520 V526 H1208 V550" stroke="#A7B4BE" stroke-width="1.3" fill="none" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arr)"/>
 <circle cx="1208" cy="552" r="2.6" fill="#D77B2B"/>
 <rect x="1221" y="530" width="257" height="44" rx="7" fill="#FFFCF8" stroke="#D5A16F" stroke-width="1.7"/>
-<text x="1349.5" y="560" font-size="28" font-weight="700" fill="#667481" text-anchor="middle" font-style="normal">log-probability</text>
+<text x="1349.5" y="560" font-size="28" font-weight="700" fill="#1F2A35" text-anchor="middle" font-style="normal">log-probability</text>
 <path d="M1349,576 L1349.0,583.0" stroke="#D77B2B" stroke-width="3.2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
 <path d="M1349,592 L1345.58,583.0 L1352.42,583.0 Z" fill="#D77B2B"/>
 <rect x="1221" y="595" width="257" height="42" rx="7" fill="#FBFCFD" stroke="#B7C3CD" stroke-width="1.2"/>
-<text x="1349.5" y="624" font-size="28" font-weight="400" fill="#788691" text-anchor="middle" font-style="normal">minus constant</text>
+<text x="1349.5" y="624" font-size="28" font-weight="400" fill="#1F2A35" text-anchor="middle" font-style="normal">minus constant</text>
 <path d="M1349,639 L1349.0,662.0" stroke="#D77B2B" stroke-width="3.2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
 <path d="M1349,672 L1345.2,662.0 L1352.8,662.0 Z" fill="#D77B2B"/>
 <rect x="1221" y="675" width="257" height="43" rx="8" fill="#FFF3E4" stroke="#D77B2B" stroke-width="2.7"/>
 <text x="1349.5" y="706" font-size="32" font-weight="700" fill="#D77B2B" text-anchor="middle" font-style="normal">self-score</text>
 <rect x="1504" y="572" width="255" height="146" rx="8" fill="#FFFBF6" stroke="#D5A06E" stroke-width="1.15"/>
-<text x="1520" y="604" font-size="29" font-weight="700" fill="#B27B49" text-anchor="start" font-style="normal">constant</text>
-<text x="1520" y="635" font-size="28" font-weight="700" fill="#9B785A">R<tspan dy="5" font-size="26">0</tspan></text>
-<text x="1563" y="635" font-size="26" font-weight="400" fill="#687580" text-anchor="start" font-style="normal">per model</text>
-<text x="1520" y="668" font-size="28" font-weight="700" fill="#9B785A">R<tspan dy="5" font-size="26">4</tspan></text>
-<text x="1563" y="668" font-size="26" font-weight="400" fill="#687580" text-anchor="start" font-style="normal">none</text>
-<text x="1520" y="701" font-size="28" font-weight="700" fill="#9B785A">R<tspan dy="5" font-size="26">5</tspan></text>
-<text x="1563" y="701" font-size="26" font-weight="400" fill="#687580" text-anchor="start" font-style="normal">base model</text>
+<text x="1520" y="604" font-size="29" font-weight="700" fill="#A34E12" text-anchor="start" font-style="normal">constant</text>
+<text x="1520" y="635" font-size="28" font-weight="700" fill="#7A3E0E">R<tspan dy="5" font-size="26">0</tspan></text>
+<text x="1563" y="635" font-size="26" font-weight="400" fill="#1F2A35" text-anchor="start" font-style="normal">per model</text>
+<text x="1520" y="668" font-size="28" font-weight="700" fill="#7A3E0E">R<tspan dy="5" font-size="26">4</tspan></text>
+<text x="1563" y="668" font-size="26" font-weight="400" fill="#1F2A35" text-anchor="start" font-style="normal">none</text>
+<text x="1520" y="701" font-size="28" font-weight="700" fill="#7A3E0E">R<tspan dy="5" font-size="26">5</tspan></text>
+<text x="1563" y="701" font-size="26" font-weight="400" fill="#1F2A35" text-anchor="start" font-style="normal">base model</text>
 <path d="M1503,645 H1491 V616 H1480" stroke="#C49A75" stroke-width="1.1" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
 <circle cx="1478" cy="616" r="2.8" fill="#C49A75"/>
 </g></svg>
