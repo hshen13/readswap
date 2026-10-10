@@ -27,7 +27,7 @@ tests/                unit tests of the analysis code (CPU only)
 prereg/               frozen pre-registration (PREREG_v1.json), Amendment A1 and their SHA-256 files
 data/                 benchmark files, pilot problems, checkpoint registries (see data/README.md)
 results/analysis/     analysis outputs used by the paper (summary JSONs, per-solution mechanism control)
-figures/fig1/         TikZ source of Figure 1 (overview.tex) and its style file
+figures/fig1/         Figure 1 as an editable SVG (overview.svg) and the PDF used in the paper
 figures/demo/         TikZ source of Figure 4 (demo.tex) and its style file
 outputs/              tables and figures written by the generators (created on demand)
 ```
@@ -55,8 +55,8 @@ The Qwen3-4B replication generates, trains and reads out with a newer stack (Pyt
 pip install -r requirements-qwen3.txt     # in a separate environment
 ```
 
-The data figures use matplotlib's pgf backend and need `pdflatex` with the `newtx` fonts; the TikZ figures need
-`pdflatex` with TikZ and `fontawesome5`.
+The data figures use matplotlib's pgf backend and need `pdflatex` with the `newtx` fonts; the TikZ figure (Figure 4)
+needs `pdflatex` with TikZ and `fontawesome5`.
 
 Models, from Hugging Face (ids and revisions as in `data/MODELS.json`). The checkpoints go to `data/models/`, the
 base models stay in the Hugging Face cache (`HF_HOME`), where the code looks for them:
@@ -230,7 +230,6 @@ uses `PYTHON_Q3` for generation, training and readout and `PYTHON` for grading a
 
 ```bash
 bash code/finalize_laser_assets.sh
-cd figures/fig1 && pdflatex overview.tex && cd ../..
 cd figures/demo && pdflatex demo.tex && cd ../..
 ```
 
@@ -244,7 +243,7 @@ Numbers refer to the compiled submission. "Pre-specified" marks results under th
 
 | Paper element | Generator | Inputs |
 |---|---|---|
-| Figure 1 (three ways to score a solution; the three choices READSWAP varies) | `figures/fig1/overview.tex` | none |
+| Figure 1 (LaSeR's self-score in the model; unused tokens share one output direction; the three readout choices) | `figures/fig1/overview.svg` (vector drawing; `overview.pdf` is the paper version) | none |
 | Table 1 (AUROC, ECE and weighted-voting accuracy of R0-R5; pre-specified) | `code/laser_paper_tables.py` -> `readouts.tex` | `*_confirm.json` |
 | Table 2 (contrasts L1-L5 with intervals and verdicts; pre-specified) | `code/laser_paper_tables.py` -> `contrasts.tex` | `*_confirm.json` |
 | Figure 2 (token sweep by cosine with the marker's output row; marker read after tokens in the EOS position) | `code/make_token_figure_v3.py` -> `token_control.pdf` | `token_sweep_*.json`, `mech_summary.json` |
