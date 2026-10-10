@@ -1,0 +1,177 @@
+{
+  "models": {
+    "ORZ-7B-LaSeR": {
+      "base_model_local_path": null,
+      "base_model_repo_id": "Open-Reasoner-Zero/Open-Reasoner-Zero-7B",
+      "base_model_revision": "0e38a598946c6fa65ec48f99b2b6a8a5107c7ee1",
+      "decoding": {
+        "engine": "vllm",
+        "max_new_tokens": 8192,
+        "n": 8,
+        "seed": "per preregistration",
+        "source": "LaSeR@48996f7:scripts/run_eval_math.sh:6-17; 42-53",
+        "temperature": 1.0,
+        "top_p": 1.0
+      },
+      "gated": false,
+      "local_path": "data/models/ORZ-7B-LaSeR",
+      "marker_token": "<|vision_start|>",
+      "marker_token_id": 151652,
+      "model_id": "Keven16/ORZ-7B-LaSeR",
+      "prompt_template": {
+        "description": "tokenizer.apply_chat_template([user problem], add_generation_prompt=True, tokenize=False), then tokenize with add_special_tokens=False",
+        "kind": "tokenizer_chat_template",
+        "problem_suffix": "",
+        "source": "LaSeR@48996f7:src/eval_math.py:50-55; 129-135"
+      },
+      "r1_swap_tokens": [
+        {
+          "id": 151648,
+          "token": "<|box_start|>"
+        },
+        {
+          "id": 151649,
+          "token": "<|box_end|>"
+        },
+        {
+          "id": 151650,
+          "token": "<|quad_start|>"
+        }
+      ],
+      "ratio_coef": 0.1,
+      "readout_decoding": {
+        "ignore_eos": true,
+        "logprobs": 0,
+        "max_tokens": 1,
+        "n": 1,
+        "prompt_logprobs": 0,
+        "source": "LaSeR@48996f7:src/calculate_self_rewarding_scores.py:160-167",
+        "temperature": 0.0,
+        "top_p": 1.0
+      },
+      "reference_constant": -23.0,
+      "revision": "d0439aa43bd6922b6c26289a387b43ed34700559",
+      "sources": {
+        "base_model": "LaSeR@48996f7:verl/examples/grpo_trainer/run_qwen2_5_7b.sh:17",
+        "evaluation_behavior": "LaSeR@48996f7:README.md:61-69; LaSeR@48996f7:src/calculate_self_rewarding_scores.py:140-153",
+        "marker_and_reference": "LaSeR@48996f7:verl/examples/grpo_trainer/run_qwen2_5_7b.sh:17,25,30-31"
+      }
+    },
+    "OctoThinker-3B-Short-LaSeR": {
+      "base_model_local_path": null,
+      "base_model_repo_id": "OctoThinker/OctoThinker-3B-Short-Base",
+      "base_model_revision": "01b58beede3c9de3cef10cd11dadbd89fcf96e48",
+      "decoding": {
+        "engine": "vllm",
+        "max_new_tokens": 8192,
+        "n": 8,
+        "seed": "per preregistration",
+        "source": "LaSeR@48996f7:scripts/run_eval_math.sh:6-17; 42-53",
+        "temperature": 1.0,
+        "top_p": 1.0
+      },
+      "gated": false,
+      "local_path": "data/models/OctoThinker-3B-Short-LaSeR",
+      "marker_token": "<|reserved_special_token_0|>",
+      "marker_token_id": 128002,
+      "model_id": "Keven16/OctoThinker-3B-Short-LaSeR",
+      "prompt_template": {
+        "description": "tokenizer.apply_chat_template([user problem], add_generation_prompt=True, tokenize=False), then tokenize with add_special_tokens=False",
+        "kind": "tokenizer_chat_template",
+        "problem_suffix": "",
+        "source": "LaSeR@48996f7:src/eval_math.py:50-55; 129-135"
+      },
+      "r1_swap_tokens": [
+        {
+          "id": 128003,
+          "token": "<|reserved_special_token_1|>"
+        },
+        {
+          "id": 128004,
+          "token": "<|finetune_right_pad_id|>"
+        },
+        {
+          "id": 128005,
+          "token": "<|reserved_special_token_2|>"
+        }
+      ],
+      "ratio_coef": 0.1,
+      "readout_decoding": {
+        "ignore_eos": true,
+        "logprobs": 0,
+        "max_tokens": 1,
+        "n": 1,
+        "prompt_logprobs": 0,
+        "source": "LaSeR@48996f7:src/calculate_self_rewarding_scores.py:160-167",
+        "temperature": 0.0,
+        "top_p": 1.0
+      },
+      "reference_constant": -25.0,
+      "revision": "d964b7c68d5f55eecf586f4eaeffb5786690ad89",
+      "sources": {
+        "base_model": "LaSeR@48996f7:verl/examples/grpo_trainer/run_octothinker_3b.sh:18,82",
+        "evaluation_behavior": "LaSeR@48996f7:README.md:61-69; LaSeR@48996f7:src/calculate_self_rewarding_scores.py:140-153",
+        "marker_and_reference": "LaSeR@48996f7:verl/examples/grpo_trainer/run_octothinker_3b.sh:18,26,31-32"
+      }
+    },
+    "Qwen2.5-7B-LaSeR": {
+      "base_model_local_path": null,
+      "base_model_repo_id": "Qwen/Qwen2.5-7B",
+      "base_model_revision": "d149729398750b98c0af14eb82c78cfe92750796",
+      "decoding": {
+        "engine": "vllm",
+        "max_new_tokens": 8192,
+        "n": 8,
+        "seed": "per preregistration",
+        "source": "LaSeR@48996f7:scripts/run_eval_math.sh:6-17; 42-53",
+        "temperature": 1.0,
+        "top_p": 1.0
+      },
+      "gated": false,
+      "local_path": "data/models/Qwen2.5-7B-LaSeR",
+      "marker_token": "<|vision_start|>",
+      "marker_token_id": 151652,
+      "model_id": "Keven16/Qwen2.5-7B-LaSeR",
+      "prompt_template": {
+        "description": "Qwen/Qwen2.5-7B evaluation appends the boxed-answer instruction before the tokenizer chat template",
+        "kind": "tokenizer_chat_template",
+        "problem_suffix": "\nPlease reason step by step, and put your final answer within \\boxed{}.",
+        "source": "LaSeR@48996f7:src/eval_math.py:50-55; 129-135"
+      },
+      "r1_swap_tokens": [
+        {
+          "id": 151648,
+          "token": "<|box_start|>"
+        },
+        {
+          "id": 151649,
+          "token": "<|box_end|>"
+        },
+        {
+          "id": 151650,
+          "token": "<|quad_start|>"
+        }
+      ],
+      "ratio_coef": 0.1,
+      "readout_decoding": {
+        "ignore_eos": true,
+        "logprobs": 0,
+        "max_tokens": 1,
+        "n": 1,
+        "prompt_logprobs": 0,
+        "source": "LaSeR@48996f7:src/calculate_self_rewarding_scores.py:160-167",
+        "temperature": 0.0,
+        "top_p": 1.0
+      },
+      "reference_constant": -23.0,
+      "revision": "e77250921afdf935ebc00d3f8c40f9864f063004",
+      "sources": {
+        "base_model": "LaSeR@48996f7:verl/examples/grpo_trainer/run_qwen2_5_7b.sh:81",
+        "evaluation_behavior": "LaSeR@48996f7:README.md:61-69; LaSeR@48996f7:src/calculate_self_rewarding_scores.py:140-153",
+        "marker_and_reference": "LaSeR@48996f7:verl/examples/grpo_trainer/run_qwen2_5_7b.sh:81,89,96-97"
+      }
+    }
+  },
+  "protocol": "prereg/PREREG_v1.json",
+  "schema_version": 1
+}

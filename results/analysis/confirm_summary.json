@@ -1,0 +1,381 @@
+{
+  "analyses": [
+    "results/analysis/OctoThinker-3B-Short-LaSeR_confirm.json",
+    "results/analysis/Qwen2.5-7B-LaSeR_confirm.json",
+    "results/analysis/ORZ-7B-LaSeR_confirm.json"
+  ],
+  "checkpoints": [
+    "Keven16/OctoThinker-3B-Short-LaSeR",
+    "Keven16/Qwen2.5-7B-LaSeR",
+    "Keven16/ORZ-7B-LaSeR"
+  ],
+  "flag_counts": {
+    "Keven16/ORZ-7B-LaSeR": {
+      "excluded_problems": 0,
+      "truncated_responses": 1618
+    },
+    "Keven16/OctoThinker-3B-Short-LaSeR": {
+      "excluded_problems": 0,
+      "truncated_responses": 5162
+    },
+    "Keven16/Qwen2.5-7B-LaSeR": {
+      "excluded_problems": 0,
+      "truncated_responses": 1906
+    }
+  },
+  "general_claim_rule": "general only if Holm-adjusted bootstrap contrast holds for at least 2 of 3 checkpoints",
+  "general_claims": {
+    "L1_auroc_R0_minus_R1": {
+      "equivalence_bounds_by_checkpoint": [
+        0.02,
+        0.02,
+        0.02
+      ],
+      "holds_by_checkpoint": [
+        false,
+        false,
+        false
+      ],
+      "holds_general": false,
+      "verdicts_by_checkpoint": [
+        "negligible",
+        "negligible",
+        "negligible"
+      ]
+    },
+    "L2_auroc_R0_minus_R2": {
+      "equivalence_bounds_by_checkpoint": [
+        0.02,
+        0.02,
+        0.02
+      ],
+      "holds_by_checkpoint": [
+        true,
+        true,
+        true
+      ],
+      "holds_general": true,
+      "verdicts_by_checkpoint": [
+        "holds",
+        "holds",
+        "holds"
+      ]
+    },
+    "L3_partial_corr_R0": {
+      "equivalence_bounds_by_checkpoint": [
+        0.05,
+        0.05,
+        0.05
+      ],
+      "holds_by_checkpoint": [
+        true,
+        true,
+        true
+      ],
+      "holds_general": true,
+      "verdicts_by_checkpoint": [
+        "holds",
+        "holds",
+        "holds"
+      ]
+    },
+    "L4_weighted_majority_R0_minus_R4": {
+      "equivalence_bounds_by_checkpoint": [
+        0.02,
+        0.02,
+        0.02
+      ],
+      "holds_by_checkpoint": [
+        true,
+        true,
+        true
+      ],
+      "holds_general": true,
+      "verdicts_by_checkpoint": [
+        "holds",
+        "holds",
+        "holds"
+      ]
+    },
+    "L5_auroc_gap_short_long_R0_minus_R3": {
+      "equivalence_bounds_by_checkpoint": [
+        0.02,
+        0.02,
+        0.02
+      ],
+      "holds_by_checkpoint": [
+        false,
+        true,
+        false
+      ],
+      "holds_general": false,
+      "verdicts_by_checkpoint": [
+        "inconclusive",
+        "holds",
+        "inconclusive"
+      ]
+    }
+  },
+  "per_seed_contrasts": {
+    "Keven16/ORZ-7B-LaSeR": {
+      "0": {
+        "L1_auroc_R0_minus_R1": -5.974937332342556e-06,
+        "L2_auroc_R0_minus_R2": 0.31389161847840097,
+        "L3_partial_corr_R0": -0.6737721911588308,
+        "L4_weighted_majority_R0_minus_R4": 0.16549019607843138,
+        "L5_auroc_gap_short_long_R0_minus_R3": -0.030298517061596947
+      },
+      "1": {
+        "L1_auroc_R0_minus_R1": 4.905688637713013e-05,
+        "L2_auroc_R0_minus_R2": 0.32153841009066797,
+        "L3_partial_corr_R0": -0.6788469976590251,
+        "L4_weighted_majority_R0_minus_R4": 0.16627450980392156,
+        "L5_auroc_gap_short_long_R0_minus_R3": -0.008401244542425718
+      },
+      "2": {
+        "L1_auroc_R0_minus_R1": 2.8389591828048566e-05,
+        "L2_auroc_R0_minus_R2": 0.32309551023603966,
+        "L3_partial_corr_R0": -0.6776094740231334,
+        "L4_weighted_majority_R0_minus_R4": 0.1592156862745098,
+        "L5_auroc_gap_short_long_R0_minus_R3": -0.01750946655263802
+      }
+    },
+    "Keven16/OctoThinker-3B-Short-LaSeR": {
+      "0": {
+        "L1_auroc_R0_minus_R1": -0.00011019937059097984,
+        "L2_auroc_R0_minus_R2": 0.34760966258163684,
+        "L3_partial_corr_R0": -0.627308752066172,
+        "L4_weighted_majority_R0_minus_R4": 0.22135007849293564,
+        "L5_auroc_gap_short_long_R0_minus_R3": -0.001176226554992832
+      },
+      "1": {
+        "L1_auroc_R0_minus_R1": 2.7206395487699986e-05,
+        "L2_auroc_R0_minus_R2": 0.3592245174230242,
+        "L3_partial_corr_R0": -0.6267240195130422,
+        "L4_weighted_majority_R0_minus_R4": 0.21271585557299844,
+        "L5_auroc_gap_short_long_R0_minus_R3": 0.011496639209342574
+      },
+      "2": {
+        "L1_auroc_R0_minus_R1": -0.00013922910309493997,
+        "L2_auroc_R0_minus_R2": 0.3580156549438522,
+        "L3_partial_corr_R0": -0.6172589340871762,
+        "L4_weighted_majority_R0_minus_R4": 0.2188235294117647,
+        "L5_auroc_gap_short_long_R0_minus_R3": -0.016178621142519778
+      }
+    },
+    "Keven16/Qwen2.5-7B-LaSeR": {
+      "0": {
+        "L1_auroc_R0_minus_R1": 1.3953260553090097e-05,
+        "L2_auroc_R0_minus_R2": 0.4627039144660451,
+        "L3_partial_corr_R0": -0.5087174540509067,
+        "L4_weighted_majority_R0_minus_R4": 0.1609105180533752,
+        "L5_auroc_gap_short_long_R0_minus_R3": -0.09193542205691335
+      },
+      "1": {
+        "L1_auroc_R0_minus_R1": 1.750772178621407e-05,
+        "L2_auroc_R0_minus_R2": 0.45441646272495434,
+        "L3_partial_corr_R0": -0.508093182417834,
+        "L4_weighted_majority_R0_minus_R4": 0.18524332810047095,
+        "L5_auroc_gap_short_long_R0_minus_R3": -0.05244779418510531
+      },
+      "2": {
+        "L1_auroc_R0_minus_R1": -1.3016141170996143e-05,
+        "L2_auroc_R0_minus_R2": 0.4531881767383765,
+        "L3_partial_corr_R0": -0.5000572509717265,
+        "L4_weighted_majority_R0_minus_R4": 0.17046347211311863,
+        "L5_auroc_gap_short_long_R0_minus_R3": -0.09237454892754945
+      }
+    }
+  },
+  "r3_missingness": {
+    "Keven16/ORZ-7B-LaSeR": {
+      "OlympiadBench": {
+        "correct": {
+          "missing": 0,
+          "rate": 0.0,
+          "total": 7747
+        },
+        "incorrect": {
+          "missing": 682,
+          "rate": 0.08068141488229032,
+          "total": 8453
+        }
+      },
+      "aime24": {
+        "correct": {
+          "missing": 0,
+          "rate": 0.0,
+          "total": 128
+        },
+        "incorrect": {
+          "missing": 98,
+          "rate": 0.16554054054054054,
+          "total": 592
+        }
+      },
+      "aime25": {
+        "correct": {
+          "missing": 0,
+          "rate": 0.0,
+          "total": 125
+        },
+        "incorrect": {
+          "missing": 54,
+          "rate": 0.0907563025210084,
+          "total": 595
+        }
+      },
+      "amc23": {
+        "correct": {
+          "missing": 0,
+          "rate": 0.0,
+          "total": 597
+        },
+        "incorrect": {
+          "missing": 50,
+          "rate": 0.13774104683195593,
+          "total": 363
+        }
+      },
+      "math500": {
+        "correct": {
+          "missing": 0,
+          "rate": 0.0,
+          "total": 9831
+        },
+        "incorrect": {
+          "missing": 169,
+          "rate": 0.07791609036422315,
+          "total": 2169
+        }
+      }
+    },
+    "Keven16/OctoThinker-3B-Short-LaSeR": {
+      "OlympiadBench": {
+        "correct": {
+          "missing": 0,
+          "rate": 0.0,
+          "total": 3075
+        },
+        "incorrect": {
+          "missing": 1066,
+          "rate": 0.08121904761904762,
+          "total": 13125
+        }
+      },
+      "aime24": {
+        "correct": {
+          "missing": 0,
+          "rate": 0.0,
+          "total": 11
+        },
+        "incorrect": {
+          "missing": 48,
+          "rate": 0.06770098730606489,
+          "total": 709
+        }
+      },
+      "aime25": {
+        "correct": {
+          "missing": 0,
+          "rate": 0.0,
+          "total": 5
+        },
+        "incorrect": {
+          "missing": 12,
+          "rate": 0.016783216783216783,
+          "total": 715
+        }
+      },
+      "amc23": {
+        "correct": {
+          "missing": 0,
+          "rate": 0.0,
+          "total": 279
+        },
+        "incorrect": {
+          "missing": 37,
+          "rate": 0.05433186490455213,
+          "total": 681
+        }
+      },
+      "math500": {
+        "correct": {
+          "missing": 0,
+          "rate": 0.0,
+          "total": 6428
+        },
+        "incorrect": {
+          "missing": 231,
+          "rate": 0.0414572864321608,
+          "total": 5572
+        }
+      }
+    },
+    "Keven16/Qwen2.5-7B-LaSeR": {
+      "OlympiadBench": {
+        "correct": {
+          "missing": 0,
+          "rate": 0.0,
+          "total": 7163
+        },
+        "incorrect": {
+          "missing": 965,
+          "rate": 0.10678322452141198,
+          "total": 9037
+        }
+      },
+      "aime24": {
+        "correct": {
+          "missing": 0,
+          "rate": 0.0,
+          "total": 116
+        },
+        "incorrect": {
+          "missing": 129,
+          "rate": 0.21357615894039736,
+          "total": 604
+        }
+      },
+      "aime25": {
+        "correct": {
+          "missing": 0,
+          "rate": 0.0,
+          "total": 110
+        },
+        "incorrect": {
+          "missing": 57,
+          "rate": 0.09344262295081968,
+          "total": 610
+        }
+      },
+      "amc23": {
+        "correct": {
+          "missing": 0,
+          "rate": 0.0,
+          "total": 546
+        },
+        "incorrect": {
+          "missing": 34,
+          "rate": 0.0821256038647343,
+          "total": 414
+        }
+      },
+      "math500": {
+        "correct": {
+          "missing": 0,
+          "rate": 0.0,
+          "total": 9588
+        },
+        "incorrect": {
+          "missing": 239,
+          "rate": 0.09908789386401327,
+          "total": 2412
+        }
+      }
+    }
+  },
+  "schema_version": 2,
+  "stage": "E2c",
+  "unit": "problem cluster; all 8 responses for seeds 0, 1, 2"
+}

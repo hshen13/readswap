@@ -1,0 +1,3197 @@
+{
+ "model": "OctoThinker-3B-Short-LaSeR",
+ "n": 4000,
+ "eos_auroc": 0.87636048319579,
+ "tokens": [
+  {
+   "id": 128001,
+   "token": "<|end_of_text|>",
+   "kind": "eos",
+   "auroc": 0.87636048319579,
+   "median_logprob": -17.510961532592773
+  },
+  {
+   "id": 1027,
+   "token": "Ġbeen",
+   "kind": "random",
+   "auroc": 0.7379919675082087,
+   "median_logprob": -20.80978775024414
+  },
+  {
+   "id": 1126,
+   "token": "der",
+   "kind": "random",
+   "auroc": 0.7471451084919077,
+   "median_logprob": -18.074193954467773
+  },
+  {
+   "id": 1162,
+   "token": "Ġcase",
+   "kind": "random",
+   "auroc": 0.7794161618719967,
+   "median_logprob": -19.496777534484863
+  },
+  {
+   "id": 1648,
+   "token": "Ġway",
+   "kind": "random",
+   "auroc": 0.8032104840500967,
+   "median_logprob": -21.02007293701172
+  },
+  {
+   "id": 1904,
+   "token": "true",
+   "kind": "random",
+   "auroc": 0.7718579358546432,
+   "median_logprob": -20.497756958007812
+  },
+  {
+   "id": 1942,
+   "token": "ĉs",
+   "kind": "random",
+   "auroc": 0.7849334746456889,
+   "median_logprob": -18.902050971984863
+  },
+  {
+   "id": 2630,
+   "token": "field",
+   "kind": "random",
+   "auroc": 0.671583954715722,
+   "median_logprob": -17.514801025390625
+  },
+  {
+   "id": 3729,
+   "token": "Ġcontact",
+   "kind": "random",
+   "auroc": 0.5610987487926639,
+   "median_logprob": -19.895766258239746
+  },
+  {
+   "id": 5643,
+   "token": "Ġprofile",
+   "kind": "random",
+   "auroc": 0.7300390016071014,
+   "median_logprob": -18.19667911529541
+  },
+  {
+   "id": 7122,
+   "token": "ĉstatic",
+   "kind": "random",
+   "auroc": 0.7676549988491989,
+   "median_logprob": -17.641101837158203
+  },
+  {
+   "id": 7264,
+   "token": "NSString",
+   "kind": "random",
+   "auroc": 0.5809171533701389,
+   "median_logprob": -17.393491744995117
+  },
+  {
+   "id": 7966,
+   "token": "}.",
+   "kind": "random",
+   "auroc": 0.49328640677656066,
+   "median_logprob": -24.144959449768066
+  },
+  {
+   "id": 8121,
+   "token": "ĠGlobal",
+   "kind": "random",
+   "auroc": 0.3607290601924301,
+   "median_logprob": -17.617709159851074
+  },
+  {
+   "id": 8851,
+   "token": "/ĊĊ",
+   "kind": "random",
+   "auroc": 0.8352321552948413,
+   "median_logprob": -20.17542266845703
+  },
+  {
+   "id": 9325,
+   "token": "(map",
+   "kind": "random",
+   "auroc": 0.6594891096015012,
+   "median_logprob": -19.13580894470215
+  },
+  {
+   "id": 9711,
+   "token": "Ġputs",
+   "kind": "random",
+   "auroc": 0.6758005857527798,
+   "median_logprob": -21.348356246948242
+  },
+  {
+   "id": 9860,
+   "token": "-term",
+   "kind": "random",
+   "auroc": 0.6909847541456482,
+   "median_logprob": -19.353596687316895
+  },
+  {
+   "id": 9886,
+   "token": "Ġcreation",
+   "kind": "random",
+   "auroc": 0.7979827560733658,
+   "median_logprob": -19.368908882141113
+  },
+  {
+   "id": 11080,
+   "token": "ĠAtl",
+   "kind": "random",
+   "auroc": 0.6251845553434865,
+   "median_logprob": -17.011940002441406
+  },
+  {
+   "id": 11793,
+   "token": "omething",
+   "kind": "random",
+   "auroc": 0.7599911152117826,
+   "median_logprob": -20.577064514160156
+  },
+  {
+   "id": 12160,
+   "token": "elly",
+   "kind": "random",
+   "auroc": 0.7644489622185436,
+   "median_logprob": -18.63681983947754
+  },
+  {
+   "id": 13297,
+   "token": "boost",
+   "kind": "random",
+   "auroc": 0.7009210932309774,
+   "median_logprob": -18.048349380493164
+  },
+  {
+   "id": 13534,
+   "token": "Ġdtype",
+   "kind": "random",
+   "auroc": 0.6870972824005814,
+   "median_logprob": -17.90339469909668
+  },
+  {
+   "id": 13999,
+   "token": "Ð½Ð¾",
+   "kind": "random",
+   "auroc": 0.6972489569921976,
+   "median_logprob": -16.718875885009766
+  },
+  {
+   "id": 14373,
+   "token": "Ġnearby",
+   "kind": "random",
+   "auroc": 0.775589496652626,
+   "median_logprob": -20.07344913482666
+  },
+  {
+   "id": 15251,
+   "token": "\\/\\/",
+   "kind": "random",
+   "auroc": 0.7407282611645304,
+   "median_logprob": -16.70474910736084
+  },
+  {
+   "id": 15404,
+   "token": "ilty",
+   "kind": "random",
+   "auroc": 0.6100424741119985,
+   "median_logprob": -18.1485595703125
+  },
+  {
+   "id": 15589,
+   "token": "amer",
+   "kind": "random",
+   "auroc": 0.6601653937498932,
+   "median_logprob": -18.228160858154297
+  },
+  {
+   "id": 15931,
+   "token": "istro",
+   "kind": "random",
+   "auroc": 0.6825548841711065,
+   "median_logprob": -17.240175247192383
+  },
+  {
+   "id": 16089,
+   "token": "Ġglad",
+   "kind": "random",
+   "auroc": 0.7151098688488672,
+   "median_logprob": -19.406163215637207
+  },
+  {
+   "id": 17345,
+   "token": "Ġheavily",
+   "kind": "random",
+   "auroc": 0.7726427671894016,
+   "median_logprob": -20.944223403930664
+  },
+  {
+   "id": 18986,
+   "token": "iamond",
+   "kind": "random",
+   "auroc": 0.5355824963641718,
+   "median_logprob": -18.639857292175293
+  },
+  {
+   "id": 19689,
+   "token": "Ġnose",
+   "kind": "random",
+   "auroc": 0.6461533842098017,
+   "median_logprob": -17.767929077148438
+  },
+  {
+   "id": 20412,
+   "token": "ĠHind",
+   "kind": "random",
+   "auroc": 0.6580362859173091,
+   "median_logprob": -17.556363105773926
+  },
+  {
+   "id": 20828,
+   "token": ".services",
+   "kind": "random",
+   "auroc": 0.5245949833108701,
+   "median_logprob": -16.444241523742676
+  },
+  {
+   "id": 20870,
+   "token": "arehouse",
+   "kind": "random",
+   "auroc": 0.44558934086731217,
+   "median_logprob": -18.34131908416748
+  },
+  {
+   "id": 21375,
+   "token": "Ġcx",
+   "kind": "random",
+   "auroc": 0.6126170776886284,
+   "median_logprob": -18.250094413757324
+  },
+  {
+   "id": 21661,
+   "token": ".properties",
+   "kind": "random",
+   "auroc": 0.6128164577635863,
+   "median_logprob": -18.550588607788086
+  },
+  {
+   "id": 23165,
+   "token": ".Join",
+   "kind": "random",
+   "auroc": 0.7176941461909485,
+   "median_logprob": -19.229360580444336
+  },
+  {
+   "id": 23307,
+   "token": "Jo",
+   "kind": "random",
+   "auroc": 0.7434008587288521,
+   "median_logprob": -18.56349277496338
+  },
+  {
+   "id": 23745,
+   "token": "(html",
+   "kind": "random",
+   "auroc": 0.4819329238692248,
+   "median_logprob": -16.749439239501953
+  },
+  {
+   "id": 24304,
+   "token": "ĠFro",
+   "kind": "random",
+   "auroc": 0.49503735832330775,
+   "median_logprob": -18.677186012268066
+  },
+  {
+   "id": 25454,
+   "token": "938",
+   "kind": "random",
+   "auroc": 0.7614962023560771,
+   "median_logprob": -20.782316207885742
+  },
+  {
+   "id": 25745,
+   "token": "orable",
+   "kind": "random",
+   "auroc": 0.7529125572008495,
+   "median_logprob": -20.05655860900879
+  },
+  {
+   "id": 26740,
+   "token": "Trim",
+   "kind": "random",
+   "auroc": 0.7151283369465475,
+   "median_logprob": -18.9268741607666
+  },
+  {
+   "id": 26932,
+   "token": ".zero",
+   "kind": "random",
+   "auroc": 0.7759657684386995,
+   "median_logprob": -18.95883274078369
+  },
+  {
+   "id": 27768,
+   "token": "ĠHW",
+   "kind": "random",
+   "auroc": 0.5193256707060291,
+   "median_logprob": -18.53056240081787
+  },
+  {
+   "id": 28533,
+   "token": "Ġfights",
+   "kind": "random",
+   "auroc": 0.7423097333658975,
+   "median_logprob": -19.869876861572266
+  },
+  {
+   "id": 29670,
+   "token": "*/čĊčĊ",
+   "kind": "random",
+   "auroc": 0.8411849131471749,
+   "median_logprob": -19.19930934906006
+  },
+  {
+   "id": 30263,
+   "token": "idges",
+   "kind": "random",
+   "auroc": 0.7543913869817752,
+   "median_logprob": -18.97721767425537
+  },
+  {
+   "id": 30500,
+   "token": "ĠForces",
+   "kind": "random",
+   "auroc": 0.6644489873452072,
+   "median_logprob": -19.18693256378174
+  },
+  {
+   "id": 31122,
+   "token": "ĠEff",
+   "kind": "random",
+   "auroc": 0.6612744846772581,
+   "median_logprob": -19.03810691833496
+  },
+  {
+   "id": 34872,
+   "token": "Ġsue",
+   "kind": "random",
+   "auroc": 0.6982766375297877,
+   "median_logprob": -18.0311222076416
+  },
+  {
+   "id": 35266,
+   "token": "ĠEmily",
+   "kind": "random",
+   "auroc": 0.5785688153984234,
+   "median_logprob": -20.385876655578613
+  },
+  {
+   "id": 35381,
+   "token": "Ġmandate",
+   "kind": "random",
+   "auroc": 0.7770993578629873,
+   "median_logprob": -19.059690475463867
+  },
+  {
+   "id": 35805,
+   "token": "uide",
+   "kind": "random",
+   "auroc": 0.5972174481561552,
+   "median_logprob": -17.501893043518066
+  },
+  {
+   "id": 36777,
+   "token": "(admin",
+   "kind": "random",
+   "auroc": 0.6707535184866915,
+   "median_logprob": -19.29307746887207
+  },
+  {
+   "id": 37745,
+   "token": "ĠCounsel",
+   "kind": "random",
+   "auroc": 0.5938871601744393,
+   "median_logprob": -21.029839515686035
+  },
+  {
+   "id": 37843,
+   "token": "Ġproximity",
+   "kind": "random",
+   "auroc": 0.8261136891067874,
+   "median_logprob": -19.682292938232422
+  },
+  {
+   "id": 38144,
+   "token": "ãģ¦",
+   "kind": "random",
+   "auroc": 0.6736293907588153,
+   "median_logprob": -15.602180004119873
+  },
+  {
+   "id": 39517,
+   "token": "ĠReceived",
+   "kind": "random",
+   "auroc": 0.6732376660746825,
+   "median_logprob": -20.520769119262695
+  },
+  {
+   "id": 41267,
+   "token": "_BOX",
+   "kind": "random",
+   "auroc": 0.6577993414804028,
+   "median_logprob": -18.40386962890625
+  },
+  {
+   "id": 41538,
+   "token": "-tree",
+   "kind": "random",
+   "auroc": 0.7188675613769009,
+   "median_logprob": -18.524807929992676
+  },
+  {
+   "id": 42050,
+   "token": "zs",
+   "kind": "random",
+   "auroc": 0.7198766481834931,
+   "median_logprob": -17.8593807220459
+  },
+  {
+   "id": 42647,
+   "token": "Latin",
+   "kind": "random",
+   "auroc": 0.6267322321824317,
+   "median_logprob": -18.430742263793945
+  },
+  {
+   "id": 42948,
+   "token": "_ss",
+   "kind": "random",
+   "auroc": 0.735136699100164,
+   "median_logprob": -18.16564178466797
+  },
+  {
+   "id": 43644,
+   "token": "_Table",
+   "kind": "random",
+   "auroc": 0.7440267639169051,
+   "median_logprob": -18.895959854125977
+  },
+  {
+   "id": 45221,
+   "token": "=âĢĿ",
+   "kind": "random",
+   "auroc": 0.750584194926625,
+   "median_logprob": -19.177916526794434
+  },
+  {
+   "id": 46722,
+   "token": "Ġcottage",
+   "kind": "random",
+   "auroc": 0.5768565589134829,
+   "median_logprob": -18.334131240844727
+  },
+  {
+   "id": 48422,
+   "token": "cen",
+   "kind": "random",
+   "auroc": 0.7390812083714002,
+   "median_logprob": -17.424893379211426
+  },
+  {
+   "id": 49030,
+   "token": "ĉĠĉ",
+   "kind": "random",
+   "auroc": 0.41062533732545764,
+   "median_logprob": -17.51641273498535
+  },
+  {
+   "id": 49384,
+   "token": "Ġneuron",
+   "kind": "random",
+   "auroc": 0.6568727957634435,
+   "median_logprob": -17.45432949066162
+  },
+  {
+   "id": 49955,
+   "token": "scriptId",
+   "kind": "random",
+   "auroc": 0.6461650681083342,
+   "median_logprob": -16.61959743499756
+  },
+  {
+   "id": 50399,
+   "token": "Ġverses",
+   "kind": "random",
+   "auroc": 0.7557796351407444,
+   "median_logprob": -19.75338363647461
+  },
+  {
+   "id": 51382,
+   "token": "Ġincumbent",
+   "kind": "random",
+   "auroc": 0.7240127482639988,
+   "median_logprob": -18.923269271850586
+  },
+  {
+   "id": 51947,
+   "token": "ĠDungeon",
+   "kind": "random",
+   "auroc": 0.3822868580514373,
+   "median_logprob": -18.558626174926758
+  },
+  {
+   "id": 52940,
+   "token": "IRC",
+   "kind": "random",
+   "auroc": 0.6770414660302586,
+   "median_logprob": -18.817692756652832
+  },
+  {
+   "id": 54213,
+   "token": "ikers",
+   "kind": "random",
+   "auroc": 0.6748825831014142,
+   "median_logprob": -19.267958641052246
+  },
+  {
+   "id": 54235,
+   "token": "Ġartillery",
+   "kind": "random",
+   "auroc": 0.6860515106652636,
+   "median_logprob": -19.46682071685791
+  },
+  {
+   "id": 55578,
+   "token": "ĠInputDecoration",
+   "kind": "random",
+   "auroc": 0.754878844253884,
+   "median_logprob": -20.15313720703125
+  },
+  {
+   "id": 56238,
+   "token": "lpVtbl",
+   "kind": "random",
+   "auroc": 0.6452125162946412,
+   "median_logprob": -16.48492431640625
+  },
+  {
+   "id": 56437,
+   "token": "ĉwx",
+   "kind": "random",
+   "auroc": 0.5263102549954319,
+   "median_logprob": -17.97367286682129
+  },
+  {
+   "id": 59129,
+   "token": "ĠBrass",
+   "kind": "random",
+   "auroc": 0.7028859983175187,
+   "median_logprob": -18.14270782470703
+  },
+  {
+   "id": 59276,
+   "token": "ĠLars",
+   "kind": "random",
+   "auroc": 0.6222231267821086,
+   "median_logprob": -18.77279567718506
+  },
+  {
+   "id": 60437,
+   "token": "ĉPreparedStatement",
+   "kind": "random",
+   "auroc": 0.6432310276101829,
+   "median_logprob": -15.198121547698975
+  },
+  {
+   "id": 61406,
+   "token": "ĠQualified",
+   "kind": "random",
+   "auroc": 0.47285503724274064,
+   "median_logprob": -18.967652320861816
+  },
+  {
+   "id": 61431,
+   "token": ".localized",
+   "kind": "random",
+   "auroc": 0.6417803396923892,
+   "median_logprob": -17.088884353637695
+  },
+  {
+   "id": 63628,
+   "token": "Ġhelpless",
+   "kind": "random",
+   "auroc": 0.7936894887126003,
+   "median_logprob": -18.977214813232422
+  },
+  {
+   "id": 63685,
+   "token": ".getList",
+   "kind": "random",
+   "auroc": 0.7339312474182353,
+   "median_logprob": -17.6502103805542
+  },
+  {
+   "id": 63994,
+   "token": ".guid",
+   "kind": "random",
+   "auroc": 0.7581695577405703,
+   "median_logprob": -18.948118209838867
+  },
+  {
+   "id": 64556,
+   "token": "flake",
+   "kind": "random",
+   "auroc": 0.6324671418621269,
+   "median_logprob": -19.088414192199707
+  },
+  {
+   "id": 64735,
+   "token": "QUIT",
+   "kind": "random",
+   "auroc": 0.7318883240414932,
+   "median_logprob": -18.245949745178223
+  },
+  {
+   "id": 65331,
+   "token": "Teen",
+   "kind": "random",
+   "auroc": 0.5566249463545734,
+   "median_logprob": -18.31389808654785
+  },
+  {
+   "id": 66263,
+   "token": "_fps",
+   "kind": "random",
+   "auroc": 0.6211900440118638,
+   "median_logprob": -17.962512969970703
+  },
+  {
+   "id": 67469,
+   "token": "Ġhinted",
+   "kind": "random",
+   "auroc": 0.7809952470403303,
+   "median_logprob": -22.231120109558105
+  },
+  {
+   "id": 68308,
+   "token": "ĠJudicial",
+   "kind": "random",
+   "auroc": 0.6955272780084405,
+   "median_logprob": -19.3459529876709
+  },
+  {
+   "id": 68461,
+   "token": "Ġflattened",
+   "kind": "random",
+   "auroc": 0.6767982399274743,
+   "median_logprob": -20.59506130218506
+  },
+  {
+   "id": 70136,
+   "token": "Visualization",
+   "kind": "random",
+   "auroc": 0.7902701267087388,
+   "median_logprob": -21.668163299560547
+  },
+  {
+   "id": 70392,
+   "token": "BLEM",
+   "kind": "random",
+   "auroc": 0.7087932769088977,
+   "median_logprob": -18.03737163543701
+  },
+  {
+   "id": 71133,
+   "token": "NameValuePair",
+   "kind": "random",
+   "auroc": 0.6994709078464539,
+   "median_logprob": -17.985408782958984
+  },
+  {
+   "id": 71414,
+   "token": "Ġcheerful",
+   "kind": "random",
+   "auroc": 0.7122358810765066,
+   "median_logprob": -17.83351230621338
+  },
+  {
+   "id": 71592,
+   "token": "Compose",
+   "kind": "random",
+   "auroc": 0.5705231321089612,
+   "median_logprob": -20.214165687561035
+  },
+  {
+   "id": 72320,
+   "token": "(norm",
+   "kind": "random",
+   "auroc": 0.6365975884433429,
+   "median_logprob": -20.92816925048828
+  },
+  {
+   "id": 72678,
+   "token": "-fired",
+   "kind": "random",
+   "auroc": 0.635901579864095,
+   "median_logprob": -18.124807357788086
+  },
+  {
+   "id": 72830,
+   "token": "Ġrollout",
+   "kind": "random",
+   "auroc": 0.7107863238585711,
+   "median_logprob": -17.98563861846924
+  },
+  {
+   "id": 73416,
+   "token": "raig",
+   "kind": "random",
+   "auroc": 0.6622058044602843,
+   "median_logprob": -17.014883995056152
+  },
+  {
+   "id": 73996,
+   "token": "ĠReceipt",
+   "kind": "random",
+   "auroc": 0.5963611314637085,
+   "median_logprob": -18.80354404449463
+  },
+  {
+   "id": 74111,
+   "token": "asley",
+   "kind": "random",
+   "auroc": 0.6545091305269866,
+   "median_logprob": -18.96748638153076
+  },
+  {
+   "id": 75207,
+   "token": "Ġchast",
+   "kind": "random",
+   "auroc": 0.7813471459627985,
+   "median_logprob": -17.67713165283203
+  },
+  {
+   "id": 75433,
+   "token": "ĠSemantic",
+   "kind": "random",
+   "auroc": 0.5034593133988436,
+   "median_logprob": -17.65604591369629
+  },
+  {
+   "id": 75912,
+   "token": "Ġanon",
+   "kind": "random",
+   "auroc": 0.354619009426519,
+   "median_logprob": -18.352880477905273
+  },
+  {
+   "id": 76498,
+   "token": "Ġquantify",
+   "kind": "random",
+   "auroc": 0.7823517099699586,
+   "median_logprob": -19.462810516357422
+  },
+  {
+   "id": 77035,
+   "token": "hoe",
+   "kind": "random",
+   "auroc": 0.5679217686356925,
+   "median_logprob": -16.609313011169434
+  },
+  {
+   "id": 77374,
+   "token": ">Your",
+   "kind": "random",
+   "auroc": 0.36970480693174285,
+   "median_logprob": -22.10844326019287
+  },
+  {
+   "id": 77409,
+   "token": "olynomial",
+   "kind": "random",
+   "auroc": 0.6151333874059132,
+   "median_logprob": -19.339378356933594
+  },
+  {
+   "id": 78276,
+   "token": "ĠWidgets",
+   "kind": "random",
+   "auroc": 0.6648049065338371,
+   "median_logprob": -20.298316955566406
+  },
+  {
+   "id": 78902,
+   "token": ":`~",
+   "kind": "random",
+   "auroc": 0.4844973511471327,
+   "median_logprob": -17.117255210876465
+  },
+  {
+   "id": 79101,
+   "token": "Ġdepended",
+   "kind": "random",
+   "auroc": 0.7963426131127012,
+   "median_logprob": -21.713387489318848
+  },
+  {
+   "id": 79271,
+   "token": "SHARE",
+   "kind": "random",
+   "auroc": 0.6685440053308729,
+   "median_logprob": -17.31368923187256
+  },
+  {
+   "id": 80737,
+   "token": "Ġcarve",
+   "kind": "random",
+   "auroc": 0.7798029868567449,
+   "median_logprob": -18.152902603149414
+  },
+  {
+   "id": 80949,
+   "token": "ĠSega",
+   "kind": "random",
+   "auroc": 0.472682919597692,
+   "median_logprob": -17.99635601043701
+  },
+  {
+   "id": 81189,
+   "token": "atron",
+   "kind": "random",
+   "auroc": 0.5682151224321806,
+   "median_logprob": -18.246155738830566
+  },
+  {
+   "id": 81753,
+   "token": "([&",
+   "kind": "random",
+   "auroc": 0.48214109827641133,
+   "median_logprob": -17.158370971679688
+  },
+  {
+   "id": 82421,
+   "token": "ResultsController",
+   "kind": "random",
+   "auroc": 0.6430940872940494,
+   "median_logprob": -18.28189468383789
+  },
+  {
+   "id": 82568,
+   "token": "Ġpaving",
+   "kind": "random",
+   "auroc": 0.6144079806303577,
+   "median_logprob": -18.976078987121582
+  },
+  {
+   "id": 83122,
+   "token": "enuous",
+   "kind": "random",
+   "auroc": 0.7369559951716603,
+   "median_logprob": -18.84327983856201
+  },
+  {
+   "id": 85003,
+   "token": "acija",
+   "kind": "random",
+   "auroc": 0.6052351152158029,
+   "median_logprob": -16.862948417663574
+  },
+  {
+   "id": 85271,
+   "token": "_TEX",
+   "kind": "random",
+   "auroc": 0.5873480716290822,
+   "median_logprob": -16.904847145080566
+  },
+  {
+   "id": 85733,
+   "token": "ĠSimpsons",
+   "kind": "random",
+   "auroc": 0.7894414493461539,
+   "median_logprob": -19.51485538482666
+  },
+  {
+   "id": 85835,
+   "token": "errs",
+   "kind": "random",
+   "auroc": 0.7508888557216931,
+   "median_logprob": -18.689876556396484
+  },
+  {
+   "id": 85957,
+   "token": "Ġdiversified",
+   "kind": "random",
+   "auroc": 0.706496574230697,
+   "median_logprob": -19.03562355041504
+  },
+  {
+   "id": 86152,
+   "token": "agas",
+   "kind": "random",
+   "auroc": 0.7638775818903091,
+   "median_logprob": -18.035231590270996
+  },
+  {
+   "id": 86473,
+   "token": "_TRY",
+   "kind": "random",
+   "auroc": 0.6400721034736104,
+   "median_logprob": -19.097299575805664
+  },
+  {
+   "id": 87179,
+   "token": "Ġlcm",
+   "kind": "random",
+   "auroc": 0.7016750187696177,
+   "median_logprob": -19.185521125793457
+  },
+  {
+   "id": 87576,
+   "token": "callee",
+   "kind": "random",
+   "auroc": 0.6908597489946823,
+   "median_logprob": -17.430923461914062
+  },
+  {
+   "id": 87761,
+   "token": "()</",
+   "kind": "random",
+   "auroc": 0.7000921646017575,
+   "median_logprob": -16.180861473083496
+  },
+  {
+   "id": 88342,
+   "token": "Ġflirting",
+   "kind": "random",
+   "auroc": 0.756810833411226,
+   "median_logprob": -19.738518714904785
+  },
+  {
+   "id": 89154,
+   "token": "ãĥĿ",
+   "kind": "random",
+   "auroc": 0.6248768793487973,
+   "median_logprob": -14.133827209472656
+  },
+  {
+   "id": 90584,
+   "token": "Ġalm",
+   "kind": "random",
+   "auroc": 0.7845208948308423,
+   "median_logprob": -17.37270450592041
+  },
+  {
+   "id": 90653,
+   "token": "-mort",
+   "kind": "random",
+   "auroc": 0.5637650646911079,
+   "median_logprob": -17.52638816833496
+  },
+  {
+   "id": 91363,
+   "token": "ĠSupporters",
+   "kind": "random",
+   "auroc": 0.671336457080141,
+   "median_logprob": -20.69494342803955
+  },
+  {
+   "id": 92411,
+   "token": "occus",
+   "kind": "random",
+   "auroc": 0.6134216334542429,
+   "median_logprob": -18.91440486907959
+  },
+  {
+   "id": 93109,
+   "token": "=G",
+   "kind": "random",
+   "auroc": 0.7308802423014416,
+   "median_logprob": -17.187846183776855
+  },
+  {
+   "id": 95003,
+   "token": "Chef",
+   "kind": "random",
+   "auroc": 0.7107763988264842,
+   "median_logprob": -18.655529975891113
+  },
+  {
+   "id": 95158,
+   "token": "Ġdismantle",
+   "kind": "random",
+   "auroc": 0.7898126957995254,
+   "median_logprob": -18.951644897460938
+  },
+  {
+   "id": 95432,
+   "token": "optimize",
+   "kind": "random",
+   "auroc": 0.7189526151328848,
+   "median_logprob": -18.858973503112793
+  },
+  {
+   "id": 95463,
+   "token": "Ġmelhores",
+   "kind": "random",
+   "auroc": 0.6265221732754818,
+   "median_logprob": -13.954950332641602
+  },
+  {
+   "id": 96005,
+   "token": "ntag",
+   "kind": "random",
+   "auroc": 0.576264700354487,
+   "median_logprob": -17.758620262145996
+  },
+  {
+   "id": 96743,
+   "token": "HomeAsUpEnabled",
+   "kind": "random",
+   "auroc": 0.7085284418754944,
+   "median_logprob": -17.642294883728027
+  },
+  {
+   "id": 96893,
+   "token": "alli",
+   "kind": "random",
+   "auroc": 0.7134508808905694,
+   "median_logprob": -17.967875480651855
+  },
+  {
+   "id": 97102,
+   "token": "ĠWhale",
+   "kind": "random",
+   "auroc": 0.7166238759587078,
+   "median_logprob": -18.873149871826172
+  },
+  {
+   "id": 97341,
+   "token": "Ð¾Ð½ÑĤ",
+   "kind": "random",
+   "auroc": 0.6737307768460812,
+   "median_logprob": -16.00037956237793
+  },
+  {
+   "id": 98598,
+   "token": "AUSE",
+   "kind": "random",
+   "auroc": 0.7499829138688128,
+   "median_logprob": -18.56239891052246
+  },
+  {
+   "id": 100039,
+   "token": "Ġresponsiveness",
+   "kind": "random",
+   "auroc": 0.6683206292922623,
+   "median_logprob": -19.358708381652832
+  },
+  {
+   "id": 100286,
+   "token": "ÑģÑĮ",
+   "kind": "random",
+   "auroc": 0.5395646956306742,
+   "median_logprob": -15.936936855316162
+  },
+  {
+   "id": 100366,
+   "token": "à¤Ł",
+   "kind": "random",
+   "auroc": 0.6977252328990441,
+   "median_logprob": -15.018038749694824
+  },
+  {
+   "id": 100877,
+   "token": "à¸Ħà¸§",
+   "kind": "random",
+   "auroc": 0.5095721280977407,
+   "median_logprob": -15.364788055419922
+  },
+  {
+   "id": 101106,
+   "token": "ê´Ģ",
+   "kind": "random",
+   "auroc": 0.5516145640172108,
+   "median_logprob": -15.382164001464844
+  },
+  {
+   "id": 102337,
+   "token": "ÐµÑĢÑĸ",
+   "kind": "random",
+   "auroc": 0.6258777999897482,
+   "median_logprob": -14.189115524291992
+  },
+  {
+   "id": 102386,
+   "token": "Ġà¸¥",
+   "kind": "random",
+   "auroc": 0.7016257705091367,
+   "median_logprob": -14.095880031585693
+  },
+  {
+   "id": 104178,
+   "token": "Ġà¤¬à¤¤",
+   "kind": "random",
+   "auroc": 0.5531761861544043,
+   "median_logprob": -14.80494737625122
+  },
+  {
+   "id": 104487,
+   "token": "Ġdá»ħ",
+   "kind": "random",
+   "auroc": 0.5944116792752264,
+   "median_logprob": -14.43292236328125
+  },
+  {
+   "id": 104822,
+   "token": "ĠÙĨÙĪØ¹",
+   "kind": "random",
+   "auroc": 0.6544602591664581,
+   "median_logprob": -15.477439403533936
+  },
+  {
+   "id": 105261,
+   "token": "ÑĥÐ²Ð°Ð²",
+   "kind": "random",
+   "auroc": 0.6493072830136719,
+   "median_logprob": -15.714683055877686
+  },
+  {
+   "id": 105657,
+   "token": "Ġè¥¿",
+   "kind": "random",
+   "auroc": 0.5982422391274415,
+   "median_logprob": -15.888895034790039
+  },
+  {
+   "id": 106101,
+   "token": "é¸",
+   "kind": "random",
+   "auroc": 0.55068450056736,
+   "median_logprob": -19.50732135772705
+  },
+  {
+   "id": 107005,
+   "token": "ĠNáº¿u",
+   "kind": "random",
+   "auroc": 0.5825941068928469,
+   "median_logprob": -13.870165348052979
+  },
+  {
+   "id": 107128,
+   "token": "ìĿ´ìĬ¤",
+   "kind": "random",
+   "auroc": 0.6741006413329595,
+   "median_logprob": -15.961786270141602
+  },
+  {
+   "id": 107287,
+   "token": "à¸Ľà¸£à¸°à¸Ĭ",
+   "kind": "random",
+   "auroc": 0.7406702185718206,
+   "median_logprob": -14.329879760742188
+  },
+  {
+   "id": 107295,
+   "token": "Ð½Ð¾ÑģÑĤÐµÐ¹",
+   "kind": "random",
+   "auroc": 0.5039737818342264,
+   "median_logprob": -16.30170249938965
+  },
+  {
+   "id": 107384,
+   "token": "Ġå¥³",
+   "kind": "random",
+   "auroc": 0.5228094826017956,
+   "median_logprob": -15.101250648498535
+  },
+  {
+   "id": 107770,
+   "token": "ÑĨÐ¸Ð¾Ð½Ð°Ð»ÑĮ",
+   "kind": "random",
+   "auroc": 0.6247785084611527,
+   "median_logprob": -20.180171966552734
+  },
+  {
+   "id": 108030,
+   "token": "Û±Û¸",
+   "kind": "random",
+   "auroc": 0.6586403309081077,
+   "median_logprob": -16.53624725341797
+  },
+  {
+   "id": 108972,
+   "token": "ĠÄĳÃ¡",
+   "kind": "random",
+   "auroc": 0.6688902507540512,
+   "median_logprob": -16.615674018859863
+  },
+  {
+   "id": 110741,
+   "token": "Ġphim",
+   "kind": "random",
+   "auroc": 0.561458813880773,
+   "median_logprob": -17.286173820495605
+  },
+  {
+   "id": 110949,
+   "token": "ĠÑģÑĤÐ°Ð»",
+   "kind": "random",
+   "auroc": 0.7171112075974991,
+   "median_logprob": -15.787746906280518
+  },
+  {
+   "id": 111309,
+   "token": "drÅ¾",
+   "kind": "random",
+   "auroc": 0.6363735842381444,
+   "median_logprob": -14.83007526397705
+  },
+  {
+   "id": 111392,
+   "token": "à¸łà¸²à¸Ħ",
+   "kind": "random",
+   "auroc": 0.6514840058736089,
+   "median_logprob": -15.31079387664795
+  },
+  {
+   "id": 111614,
+   "token": "ë¡ľëĵľ",
+   "kind": "random",
+   "auroc": 0.6141215366663351,
+   "median_logprob": -15.859434127807617
+  },
+  {
+   "id": 111780,
+   "token": "Ġznovu",
+   "kind": "random",
+   "auroc": 0.5379864898955635,
+   "median_logprob": -15.022600650787354
+  },
+  {
+   "id": 112615,
+   "token": "Î´ÏĮ",
+   "kind": "random",
+   "auroc": 0.5792496223462474,
+   "median_logprob": -16.782756805419922
+  },
+  {
+   "id": 113063,
+   "token": "Ġboj",
+   "kind": "random",
+   "auroc": 0.5660032222433286,
+   "median_logprob": -17.454163551330566
+  },
+  {
+   "id": 114109,
+   "token": "Û²Û²",
+   "kind": "random",
+   "auroc": 0.6916143026999102,
+   "median_logprob": -16.2420654296875
+  },
+  {
+   "id": 114345,
+   "token": "ØªØ¨Ø§Ø±",
+   "kind": "random",
+   "auroc": 0.7612027229262713,
+   "median_logprob": -15.396356582641602
+  },
+  {
+   "id": 115986,
+   "token": "ĠtáºŃn",
+   "kind": "random",
+   "auroc": 0.6283601887112937,
+   "median_logprob": -14.782434940338135
+  },
+  {
+   "id": 116585,
+   "token": "Ġazal",
+   "kind": "random",
+   "auroc": 0.5648976490488553,
+   "median_logprob": -16.058279037475586
+  },
+  {
+   "id": 116836,
+   "token": "ĠÏĦÏģÎ±",
+   "kind": "random",
+   "auroc": 0.6122209558383813,
+   "median_logprob": -14.439035415649414
+  },
+  {
+   "id": 117769,
+   "token": "Ġubyt",
+   "kind": "random",
+   "auroc": 0.6441989066886175,
+   "median_logprob": -15.373430252075195
+  },
+  {
+   "id": 119012,
+   "token": "ãģ¨ãģªãģ£ãģŁ",
+   "kind": "random",
+   "auroc": 0.5740742834629367,
+   "median_logprob": -16.914653778076172
+  },
+  {
+   "id": 119265,
+   "token": "ĠÎĵÎ¹",
+   "kind": "random",
+   "auroc": 0.6452298536924637,
+   "median_logprob": -14.872304916381836
+  },
+  {
+   "id": 120877,
+   "token": "ĠÐĴÐ°ÑģÐ¸Ð»ÑĮ",
+   "kind": "random",
+   "auroc": 0.6161388308462962,
+   "median_logprob": -14.930545330047607
+  },
+  {
+   "id": 121698,
+   "token": "ÑĭÐ²Ð°Ð½Ð¸Ñı",
+   "kind": "random",
+   "auroc": 0.6048750501276937,
+   "median_logprob": -16.045745849609375
+  },
+  {
+   "id": 121930,
+   "token": "ä¸»ç¾©",
+   "kind": "random",
+   "auroc": 0.5383749481134399,
+   "median_logprob": -15.989012241363525
+  },
+  {
+   "id": 122225,
+   "token": "åĪ¤æĸŃ",
+   "kind": "random",
+   "auroc": 0.6255813053603214,
+   "median_logprob": -17.32437038421631
+  },
+  {
+   "id": 122256,
+   "token": "ĠÅŀehir",
+   "kind": "random",
+   "auroc": 0.5717373781231185,
+   "median_logprob": -15.6892671585083
+  },
+  {
+   "id": 122418,
+   "token": "ØŃÙĬØ©",
+   "kind": "random",
+   "auroc": 0.5130544323936966,
+   "median_logprob": -14.300771236419678
+  },
+  {
+   "id": 125370,
+   "token": "ĠÐ¾ÑĤÐ²ÐµÑĩ",
+   "kind": "random",
+   "auroc": 0.5973502425728094,
+   "median_logprob": -14.162789821624756
+  },
+  {
+   "id": 125604,
+   "token": "à¤¿à¤¯à¤¤",
+   "kind": "random",
+   "auroc": 0.6276992318276431,
+   "median_logprob": -15.084666728973389
+  },
+  {
+   "id": 126324,
+   "token": "ĠØ¯ÙĩÙĩ",
+   "kind": "random",
+   "auroc": 0.5618087026701603,
+   "median_logprob": -16.365793228149414
+  },
+  {
+   "id": 126553,
+   "token": "ï»¨",
+   "kind": "random",
+   "auroc": 0.598054542951016,
+   "median_logprob": -12.62231969833374
+  },
+  {
+   "id": 128000,
+   "token": "<|begin_of_text|>",
+   "kind": "special",
+   "auroc": 0.7994389718571318,
+   "median_logprob": -12.93824577331543
+  },
+  {
+   "id": 128003,
+   "token": "<|reserved_special_token_1|>",
+   "kind": "special",
+   "auroc": 0.5218112002605133,
+   "median_logprob": -12.755918025970459
+  },
+  {
+   "id": 128004,
+   "token": "<|finetune_right_pad_id|>",
+   "kind": "special",
+   "auroc": 0.521553651959528,
+   "median_logprob": -12.76000165939331
+  },
+  {
+   "id": 128005,
+   "token": "<|reserved_special_token_2|>",
+   "kind": "special",
+   "auroc": 0.5217545396342964,
+   "median_logprob": -12.772825717926025
+  },
+  {
+   "id": 128006,
+   "token": "<|start_header_id|>",
+   "kind": "special",
+   "auroc": 0.36228892346317787,
+   "median_logprob": -11.6923508644104
+  },
+  {
+   "id": 128007,
+   "token": "<|end_header_id|>",
+   "kind": "special",
+   "auroc": 0.43116814361194783,
+   "median_logprob": -12.223382472991943
+  },
+  {
+   "id": 128008,
+   "token": "<|eom_id|>",
+   "kind": "special",
+   "auroc": 0.38223522275792265,
+   "median_logprob": -11.576926708221436
+  },
+  {
+   "id": 128009,
+   "token": "<|eot_id|>",
+   "kind": "special",
+   "auroc": 0.5291917807668457,
+   "median_logprob": -12.673607349395752
+  },
+  {
+   "id": 128010,
+   "token": "<|python_tag|>",
+   "kind": "special",
+   "auroc": 0.529338646115066,
+   "median_logprob": -12.839751243591309
+  },
+  {
+   "id": 128011,
+   "token": "<|reserved_special_token_3|>",
+   "kind": "special",
+   "auroc": 0.5216579276130976,
+   "median_logprob": -12.766509056091309
+  },
+  {
+   "id": 128012,
+   "token": "<|reserved_special_token_4|>",
+   "kind": "special",
+   "auroc": 0.5208100283529271,
+   "median_logprob": -12.7643461227417
+  },
+  {
+   "id": 128013,
+   "token": "<|reserved_special_token_5|>",
+   "kind": "special",
+   "auroc": 0.5217132062728214,
+   "median_logprob": -12.778972625732422
+  },
+  {
+   "id": 128014,
+   "token": "<|reserved_special_token_6|>",
+   "kind": "special",
+   "auroc": 0.52137123238244,
+   "median_logprob": -12.767495155334473
+  },
+  {
+   "id": 128015,
+   "token": "<|reserved_special_token_7|>",
+   "kind": "special",
+   "auroc": 0.5211606709422197,
+   "median_logprob": -12.772652626037598
+  },
+  {
+   "id": 128016,
+   "token": "<|reserved_special_token_8|>",
+   "kind": "special",
+   "auroc": 0.5215913419547941,
+   "median_logprob": -12.76451587677002
+  },
+  {
+   "id": 128017,
+   "token": "<|reserved_special_token_9|>",
+   "kind": "special",
+   "auroc": 0.522210211677064,
+   "median_logprob": -12.76551866531372
+  },
+  {
+   "id": 128018,
+   "token": "<|reserved_special_token_10|>",
+   "kind": "special",
+   "auroc": 0.5204788589278553,
+   "median_logprob": -12.767697811126709
+  },
+  {
+   "id": 128019,
+   "token": "<|reserved_special_token_11|>",
+   "kind": "special",
+   "auroc": 0.5215198565971061,
+   "median_logprob": -12.755685806274414
+  },
+  {
+   "id": 128020,
+   "token": "<|reserved_special_token_12|>",
+   "kind": "special",
+   "auroc": 0.5212188391682471,
+   "median_logprob": -12.776434898376465
+  },
+  {
+   "id": 128021,
+   "token": "<|reserved_special_token_13|>",
+   "kind": "special",
+   "auroc": 0.521147353810559,
+   "median_logprob": -12.767502307891846
+  },
+  {
+   "id": 128022,
+   "token": "<|reserved_special_token_14|>",
+   "kind": "special",
+   "auroc": 0.5216351879826203,
+   "median_logprob": -12.751345157623291
+  },
+  {
+   "id": 128023,
+   "token": "<|reserved_special_token_15|>",
+   "kind": "special",
+   "auroc": 0.5220918650919284,
+   "median_logprob": -12.741955757141113
+  },
+  {
+   "id": 128024,
+   "token": "<|reserved_special_token_16|>",
+   "kind": "special",
+   "auroc": 0.5218389652236927,
+   "median_logprob": -12.767055988311768
+  },
+  {
+   "id": 128025,
+   "token": "<|reserved_special_token_17|>",
+   "kind": "special",
+   "auroc": 0.5212883143928544,
+   "median_logprob": -12.755124568939209
+  },
+  {
+   "id": 128026,
+   "token": "<|reserved_special_token_18|>",
+   "kind": "special",
+   "auroc": 0.5209851611975971,
+   "median_logprob": -12.762523651123047
+  },
+  {
+   "id": 128027,
+   "token": "<|reserved_special_token_19|>",
+   "kind": "special",
+   "auroc": 0.5202974444173076,
+   "median_logprob": -12.768356323242188
+  },
+  {
+   "id": 128028,
+   "token": "<|reserved_special_token_20|>",
+   "kind": "special",
+   "auroc": 0.5219223857465484,
+   "median_logprob": -12.769410133361816
+  },
+  {
+   "id": 128029,
+   "token": "<|reserved_special_token_21|>",
+   "kind": "special",
+   "auroc": 0.5215683510576818,
+   "median_logprob": -12.76321792602539
+  },
+  {
+   "id": 128030,
+   "token": "<|reserved_special_token_22|>",
+   "kind": "special",
+   "auroc": 0.5303928352826599,
+   "median_logprob": -12.720012664794922
+  },
+  {
+   "id": 128031,
+   "token": "<|reserved_special_token_23|>",
+   "kind": "special",
+   "auroc": 0.5215285252960172,
+   "median_logprob": -12.758572101593018
+  },
+  {
+   "id": 128032,
+   "token": "<|reserved_special_token_24|>",
+   "kind": "special",
+   "auroc": 0.5214966144333585,
+   "median_logprob": -12.767960548400879
+  },
+  {
+   "id": 128033,
+   "token": "<|reserved_special_token_25|>",
+   "kind": "special",
+   "auroc": 0.5218437392897596,
+   "median_logprob": -12.784608840942383
+  },
+  {
+   "id": 128034,
+   "token": "<|reserved_special_token_26|>",
+   "kind": "special",
+   "auroc": 0.5217378304030618,
+   "median_logprob": -12.766869068145752
+  },
+  {
+   "id": 128035,
+   "token": "<|reserved_special_token_27|>",
+   "kind": "special",
+   "auroc": 0.5221437516520782,
+   "median_logprob": -12.762438297271729
+  },
+  {
+   "id": 128036,
+   "token": "<|reserved_special_token_28|>",
+   "kind": "special",
+   "auroc": 0.5221135996558652,
+   "median_logprob": -12.7576904296875
+  },
+  {
+   "id": 128037,
+   "token": "<|reserved_special_token_29|>",
+   "kind": "special",
+   "auroc": 0.5221940049790996,
+   "median_logprob": -12.777242660522461
+  },
+  {
+   "id": 128038,
+   "token": "<|reserved_special_token_30|>",
+   "kind": "special",
+   "auroc": 0.5220286715331989,
+   "median_logprob": -12.75499963760376
+  },
+  {
+   "id": 128039,
+   "token": "<|reserved_special_token_31|>",
+   "kind": "special",
+   "auroc": 0.5194551986564271,
+   "median_logprob": -12.763581275939941
+  },
+  {
+   "id": 128040,
+   "token": "<|reserved_special_token_32|>",
+   "kind": "special",
+   "auroc": 0.520690676701251,
+   "median_logprob": -12.767236709594727
+  },
+  {
+   "id": 128041,
+   "token": "<|reserved_special_token_33|>",
+   "kind": "special",
+   "auroc": 0.5215564158925141,
+   "median_logprob": -12.752874851226807
+  },
+  {
+   "id": 128042,
+   "token": "<|reserved_special_token_34|>",
+   "kind": "special",
+   "auroc": 0.5220830707596996,
+   "median_logprob": -12.753362655639648
+  },
+  {
+   "id": 128043,
+   "token": "<|reserved_special_token_35|>",
+   "kind": "special",
+   "auroc": 0.5221102075562912,
+   "median_logprob": -12.773767948150635
+  },
+  {
+   "id": 128044,
+   "token": "<|reserved_special_token_36|>",
+   "kind": "special",
+   "auroc": 0.521866730186872,
+   "median_logprob": -12.76872730255127
+  },
+  {
+   "id": 128045,
+   "token": "<|reserved_special_token_37|>",
+   "kind": "special",
+   "auroc": 0.5205066238910346,
+   "median_logprob": -12.758504390716553
+  },
+  {
+   "id": 128046,
+   "token": "<|reserved_special_token_38|>",
+   "kind": "special",
+   "auroc": 0.5216649630788806,
+   "median_logprob": -12.761474132537842
+  },
+  {
+   "id": 128047,
+   "token": "<|reserved_special_token_39|>",
+   "kind": "special",
+   "auroc": 0.5213976153791262,
+   "median_logprob": -12.750811100006104
+  },
+  {
+   "id": 128048,
+   "token": "<|reserved_special_token_40|>",
+   "kind": "special",
+   "auroc": 0.5210336556581728,
+   "median_logprob": -12.755096435546875
+  },
+  {
+   "id": 128049,
+   "token": "<|reserved_special_token_41|>",
+   "kind": "special",
+   "auroc": 0.5210596617549065,
+   "median_logprob": -12.765511989593506
+  },
+  {
+   "id": 128050,
+   "token": "<|reserved_special_token_42|>",
+   "kind": "special",
+   "auroc": 0.521553651959528,
+   "median_logprob": -12.761401176452637
+  },
+  {
+   "id": 128051,
+   "token": "<|reserved_special_token_43|>",
+   "kind": "special",
+   "auroc": 0.5219006511826115,
+   "median_logprob": -12.768545627593994
+  },
+  {
+   "id": 128052,
+   "token": "<|reserved_special_token_44|>",
+   "kind": "special",
+   "auroc": 0.5208825187771556,
+   "median_logprob": -12.762301445007324
+  },
+  {
+   "id": 128053,
+   "token": "<|reserved_special_token_45|>",
+   "kind": "special",
+   "auroc": 0.5209958400295892,
+   "median_logprob": -12.756724834442139
+  },
+  {
+   "id": 128054,
+   "token": "<|reserved_special_token_46|>",
+   "kind": "special",
+   "auroc": 0.5223195126633359,
+   "median_logprob": -12.757390975952148
+  },
+  {
+   "id": 128055,
+   "token": "<|reserved_special_token_47|>",
+   "kind": "special",
+   "auroc": 0.5223460212933397,
+   "median_logprob": -12.767057418823242
+  },
+  {
+   "id": 128056,
+   "token": "<|reserved_special_token_48|>",
+   "kind": "special",
+   "auroc": 0.5213307784541875,
+   "median_logprob": -12.770843982696533
+  },
+  {
+   "id": 128057,
+   "token": "<|reserved_special_token_49|>",
+   "kind": "special",
+   "auroc": 0.5224786900766765,
+   "median_logprob": -12.780225276947021
+  },
+  {
+   "id": 128058,
+   "token": "<|reserved_special_token_50|>",
+   "kind": "special",
+   "auroc": 0.519969918358445,
+   "median_logprob": -12.754363059997559
+  },
+  {
+   "id": 128059,
+   "token": "<|reserved_special_token_51|>",
+   "kind": "special",
+   "auroc": 0.522331322195186,
+   "median_logprob": -12.763851642608643
+  },
+  {
+   "id": 128060,
+   "token": "<|reserved_special_token_52|>",
+   "kind": "special",
+   "auroc": 0.5214383205740136,
+   "median_logprob": -12.756420135498047
+  },
+  {
+   "id": 128061,
+   "token": "<|reserved_special_token_53|>",
+   "kind": "special",
+   "auroc": 0.5216177249514804,
+   "median_logprob": -12.76413345336914
+  },
+  {
+   "id": 128062,
+   "token": "<|reserved_special_token_54|>",
+   "kind": "special",
+   "auroc": 0.5194412533581786,
+   "median_logprob": -12.737425804138184
+  },
+  {
+   "id": 128063,
+   "token": "<|reserved_special_token_55|>",
+   "kind": "special",
+   "auroc": 0.5338951152761069,
+   "median_logprob": -12.768863201141357
+  },
+  {
+   "id": 128064,
+   "token": "<|reserved_special_token_56|>",
+   "kind": "special",
+   "auroc": 0.522899184790529,
+   "median_logprob": -12.755885601043701
+  },
+  {
+   "id": 128065,
+   "token": "<|reserved_special_token_57|>",
+   "kind": "special",
+   "auroc": 0.5214179679765699,
+   "median_logprob": -12.768683910369873
+  },
+  {
+   "id": 128066,
+   "token": "<|reserved_special_token_58|>",
+   "kind": "special",
+   "auroc": 0.5224358491153906,
+   "median_logprob": -12.761853694915771
+  },
+  {
+   "id": 128067,
+   "token": "<|reserved_special_token_59|>",
+   "kind": "special",
+   "auroc": 0.5216394595154172,
+   "median_logprob": -12.764524459838867
+  },
+  {
+   "id": 128068,
+   "token": "<|reserved_special_token_60|>",
+   "kind": "special",
+   "auroc": 0.5215380734281513,
+   "median_logprob": -12.772112369537354
+  },
+  {
+   "id": 128069,
+   "token": "<|reserved_special_token_61|>",
+   "kind": "special",
+   "auroc": 0.5212927115589688,
+   "median_logprob": -12.757912635803223
+  },
+  {
+   "id": 128070,
+   "token": "<|reserved_special_token_62|>",
+   "kind": "special",
+   "auroc": 0.5207933191216925,
+   "median_logprob": -12.770070552825928
+  },
+  {
+   "id": 128071,
+   "token": "<|reserved_special_token_63|>",
+   "kind": "special",
+   "auroc": 0.5217227544049554,
+   "median_logprob": -12.763545513153076
+  },
+  {
+   "id": 128072,
+   "token": "<|reserved_special_token_64|>",
+   "kind": "special",
+   "auroc": 0.5212834146934697,
+   "median_logprob": -12.771580696105957
+  },
+  {
+   "id": 128073,
+   "token": "<|reserved_special_token_65|>",
+   "kind": "special",
+   "auroc": 0.5215163388642146,
+   "median_logprob": -12.768113613128662
+  },
+  {
+   "id": 128074,
+   "token": "<|reserved_special_token_66|>",
+   "kind": "special",
+   "auroc": 0.4782869193604963,
+   "median_logprob": -12.87311601638794
+  },
+  {
+   "id": 128075,
+   "token": "<|reserved_special_token_67|>",
+   "kind": "special",
+   "auroc": 0.521251001297541,
+   "median_logprob": -12.772629737854004
+  },
+  {
+   "id": 128076,
+   "token": "<|reserved_special_token_68|>",
+   "kind": "special",
+   "auroc": 0.5209963425628594,
+   "median_logprob": -12.768060684204102
+  },
+  {
+   "id": 128077,
+   "token": "<|reserved_special_token_69|>",
+   "kind": "special",
+   "auroc": 0.5336483714404311,
+   "median_logprob": -12.743147373199463
+  },
+  {
+   "id": 128078,
+   "token": "<|reserved_special_token_70|>",
+   "kind": "special",
+   "auroc": 0.5210563952886501,
+   "median_logprob": -12.759018898010254
+  },
+  {
+   "id": 128079,
+   "token": "<|reserved_special_token_71|>",
+   "kind": "special",
+   "auroc": 0.5367430969517336,
+   "median_logprob": -12.483915328979492
+  },
+  {
+   "id": 128080,
+   "token": "<|reserved_special_token_72|>",
+   "kind": "special",
+   "auroc": 0.5223168743636672,
+   "median_logprob": -12.761024475097656
+  },
+  {
+   "id": 128081,
+   "token": "<|reserved_special_token_73|>",
+   "kind": "special",
+   "auroc": 0.5217104423398351,
+   "median_logprob": -12.759763717651367
+  },
+  {
+   "id": 128082,
+   "token": "<|reserved_special_token_74|>",
+   "kind": "special",
+   "auroc": 0.5210473496897862,
+   "median_logprob": -12.769806861877441
+  },
+  {
+   "id": 128083,
+   "token": "<|reserved_special_token_75|>",
+   "kind": "special",
+   "auroc": 0.5212461015981563,
+   "median_logprob": -12.761382102966309
+  },
+  {
+   "id": 128084,
+   "token": "<|reserved_special_token_76|>",
+   "kind": "special",
+   "auroc": 0.5213184663890673,
+   "median_logprob": -12.769913673400879
+  },
+  {
+   "id": 128085,
+   "token": "<|reserved_special_token_77|>",
+   "kind": "special",
+   "auroc": 0.5198817237695221,
+   "median_logprob": -12.76227617263794
+  },
+  {
+   "id": 128086,
+   "token": "<|reserved_special_token_78|>",
+   "kind": "special",
+   "auroc": 0.5220509086304059,
+   "median_logprob": -12.76790189743042
+  },
+  {
+   "id": 128087,
+   "token": "<|reserved_special_token_79|>",
+   "kind": "special",
+   "auroc": 0.521509429031749,
+   "median_logprob": -12.762485027313232
+  },
+  {
+   "id": 128088,
+   "token": "<|reserved_special_token_80|>",
+   "kind": "special",
+   "auroc": 0.5223579564585074,
+   "median_logprob": -12.76639461517334
+  },
+  {
+   "id": 128089,
+   "token": "<|reserved_special_token_81|>",
+   "kind": "special",
+   "auroc": 0.5216290319500603,
+   "median_logprob": -12.760370254516602
+  },
+  {
+   "id": 128090,
+   "token": "<|reserved_special_token_82|>",
+   "kind": "special",
+   "auroc": 0.5207209543307815,
+   "median_logprob": -12.778593063354492
+  },
+  {
+   "id": 128091,
+   "token": "<|reserved_special_token_83|>",
+   "kind": "special",
+   "auroc": 0.522762621374348,
+   "median_logprob": -12.771699905395508
+  },
+  {
+   "id": 128092,
+   "token": "<|reserved_special_token_84|>",
+   "kind": "special",
+   "auroc": 0.5222868480007719,
+   "median_logprob": -12.766394138336182
+  },
+  {
+   "id": 128093,
+   "token": "<|reserved_special_token_85|>",
+   "kind": "special",
+   "auroc": 0.5567485695390464,
+   "median_logprob": -13.851477146148682
+  },
+  {
+   "id": 128094,
+   "token": "<|reserved_special_token_86|>",
+   "kind": "special",
+   "auroc": 0.5213699760492644,
+   "median_logprob": -12.759475231170654
+  },
+  {
+   "id": 128095,
+   "token": "<|reserved_special_token_87|>",
+   "kind": "special",
+   "auroc": 0.5205742146158786,
+   "median_logprob": -12.759289264678955
+  },
+  {
+   "id": 128096,
+   "token": "<|reserved_special_token_88|>",
+   "kind": "special",
+   "auroc": 0.5203010877835168,
+   "median_logprob": -12.76597547531128
+  },
+  {
+   "id": 128097,
+   "token": "<|reserved_special_token_89|>",
+   "kind": "special",
+   "auroc": 0.5214383205740136,
+   "median_logprob": -12.75853967666626
+  },
+  {
+   "id": 128098,
+   "token": "<|reserved_special_token_90|>",
+   "kind": "special",
+   "auroc": 0.5222000353783421,
+   "median_logprob": -12.77004098892212
+  },
+  {
+   "id": 128099,
+   "token": "<|reserved_special_token_91|>",
+   "kind": "special",
+   "auroc": 0.5228168949675313,
+   "median_logprob": -12.759778022766113
+  },
+  {
+   "id": 128100,
+   "token": "<|reserved_special_token_92|>",
+   "kind": "special",
+   "auroc": 0.5212334126330834,
+   "median_logprob": -12.759421825408936
+  },
+  {
+   "id": 128101,
+   "token": "<|reserved_special_token_93|>",
+   "kind": "special",
+   "auroc": 0.5213770115150473,
+   "median_logprob": -12.761990070343018
+  },
+  {
+   "id": 128102,
+   "token": "<|reserved_special_token_94|>",
+   "kind": "special",
+   "auroc": 0.521492845433832,
+   "median_logprob": -12.767568588256836
+  },
+  {
+   "id": 128103,
+   "token": "<|reserved_special_token_95|>",
+   "kind": "special",
+   "auroc": 0.5218899723506194,
+   "median_logprob": -12.749821186065674
+  },
+  {
+   "id": 128104,
+   "token": "<|reserved_special_token_96|>",
+   "kind": "special",
+   "auroc": 0.5222479016723303,
+   "median_logprob": -12.770222663879395
+  },
+  {
+   "id": 128105,
+   "token": "<|reserved_special_token_97|>",
+   "kind": "special",
+   "auroc": 0.5214624421709839,
+   "median_logprob": -12.767300605773926
+  },
+  {
+   "id": 128106,
+   "token": "<|reserved_special_token_98|>",
+   "kind": "special",
+   "auroc": 0.5040041850970743,
+   "median_logprob": -12.259672164916992
+  },
+  {
+   "id": 128107,
+   "token": "<|reserved_special_token_99|>",
+   "kind": "special",
+   "auroc": 0.5222084528106183,
+   "median_logprob": -12.763342380523682
+  },
+  {
+   "id": 128108,
+   "token": "<|reserved_special_token_100|>",
+   "kind": "special",
+   "auroc": 0.5219478893100118,
+   "median_logprob": -12.759698867797852
+  },
+  {
+   "id": 128109,
+   "token": "<|reserved_special_token_101|>",
+   "kind": "special",
+   "auroc": 0.5213277632545663,
+   "median_logprob": -12.772433280944824
+  },
+  {
+   "id": 128110,
+   "token": "<|reserved_special_token_102|>",
+   "kind": "special",
+   "auroc": 0.5209816434647055,
+   "median_logprob": -12.763384819030762
+  },
+  {
+   "id": 128111,
+   "token": "<|reserved_special_token_103|>",
+   "kind": "special",
+   "auroc": 0.5210869241848156,
+   "median_logprob": -12.76873254776001
+  },
+  {
+   "id": 128112,
+   "token": "<|reserved_special_token_104|>",
+   "kind": "special",
+   "auroc": 0.5222652390701527,
+   "median_logprob": -12.766161918640137
+  },
+  {
+   "id": 128113,
+   "token": "<|reserved_special_token_105|>",
+   "kind": "special",
+   "auroc": 0.5211373031451547,
+   "median_logprob": -12.77045202255249
+  },
+  {
+   "id": 128114,
+   "token": "<|reserved_special_token_106|>",
+   "kind": "special",
+   "auroc": 0.521661194079354,
+   "median_logprob": -12.767903327941895
+  },
+  {
+   "id": 128115,
+   "token": "<|reserved_special_token_107|>",
+   "kind": "special",
+   "auroc": 0.5218439905563947,
+   "median_logprob": -12.763333320617676
+  },
+  {
+   "id": 128116,
+   "token": "<|reserved_special_token_108|>",
+   "kind": "special",
+   "auroc": 0.5216306651831885,
+   "median_logprob": -12.770176410675049
+  },
+  {
+   "id": 128117,
+   "token": "<|reserved_special_token_109|>",
+   "kind": "special",
+   "auroc": 0.5210207154264648,
+   "median_logprob": -12.766920566558838
+  },
+  {
+   "id": 128118,
+   "token": "<|reserved_special_token_110|>",
+   "kind": "special",
+   "auroc": 0.521419349943063,
+   "median_logprob": -12.759132385253906
+  },
+  {
+   "id": 128119,
+   "token": "<|reserved_special_token_111|>",
+   "kind": "special",
+   "auroc": 0.5202204311936471,
+   "median_logprob": -13.159821510314941
+  },
+  {
+   "id": 128120,
+   "token": "<|reserved_special_token_112|>",
+   "kind": "special",
+   "auroc": 0.5217464991019731,
+   "median_logprob": -12.761341571807861
+  },
+  {
+   "id": 128121,
+   "token": "<|reserved_special_token_113|>",
+   "kind": "special",
+   "auroc": 0.5216642092789753,
+   "median_logprob": -12.760046005249023
+  },
+  {
+   "id": 128122,
+   "token": "<|reserved_special_token_114|>",
+   "kind": "special",
+   "auroc": 0.5210395604240979,
+   "median_logprob": -12.764327049255371
+  },
+  {
+   "id": 128123,
+   "token": "<|reserved_special_token_115|>",
+   "kind": "special",
+   "auroc": 0.5212188391682472,
+   "median_logprob": -12.773138523101807
+  },
+  {
+   "id": 128124,
+   "token": "<|reserved_special_token_116|>",
+   "kind": "special",
+   "auroc": 0.5210489829229143,
+   "median_logprob": -12.762249946594238
+  },
+  {
+   "id": 128125,
+   "token": "<|reserved_special_token_117|>",
+   "kind": "special",
+   "auroc": 0.5127429873994808,
+   "median_logprob": -12.773410320281982
+  },
+  {
+   "id": 128126,
+   "token": "<|reserved_special_token_118|>",
+   "kind": "special",
+   "auroc": 0.5218980128829429,
+   "median_logprob": -12.774680137634277
+  },
+  {
+   "id": 128127,
+   "token": "<|reserved_special_token_119|>",
+   "kind": "special",
+   "auroc": 0.5204581294304589,
+   "median_logprob": -12.775187015533447
+  },
+  {
+   "id": 128128,
+   "token": "<|reserved_special_token_120|>",
+   "kind": "special",
+   "auroc": 0.521043455056942,
+   "median_logprob": -12.766321659088135
+  },
+  {
+   "id": 128129,
+   "token": "<|reserved_special_token_121|>",
+   "kind": "special",
+   "auroc": 0.5208604073132661,
+   "median_logprob": -12.766551971435547
+  },
+  {
+   "id": 128130,
+   "token": "<|reserved_special_token_122|>",
+   "kind": "special",
+   "auroc": 0.5214000024121597,
+   "median_logprob": -12.7632474899292
+  },
+  {
+   "id": 128131,
+   "token": "<|reserved_special_token_123|>",
+   "kind": "special",
+   "auroc": 0.5215028960992363,
+   "median_logprob": -12.772014141082764
+  },
+  {
+   "id": 128132,
+   "token": "<|reserved_special_token_124|>",
+   "kind": "special",
+   "auroc": 0.5222325744075886,
+   "median_logprob": -12.778740406036377
+  },
+  {
+   "id": 128133,
+   "token": "<|reserved_special_token_125|>",
+   "kind": "special",
+   "auroc": 0.5121767580372658,
+   "median_logprob": -12.774601936340332
+  },
+  {
+   "id": 128134,
+   "token": "<|reserved_special_token_126|>",
+   "kind": "special",
+   "auroc": 0.5067888475806541,
+   "median_logprob": -12.535730838775635
+  },
+  {
+   "id": 128135,
+   "token": "<|reserved_special_token_127|>",
+   "kind": "special",
+   "auroc": 0.5216780289439061,
+   "median_logprob": -12.75918197631836
+  },
+  {
+   "id": 128136,
+   "token": "<|reserved_special_token_128|>",
+   "kind": "special",
+   "auroc": 0.5209543810347963,
+   "median_logprob": -12.770593643188477
+  },
+  {
+   "id": 128137,
+   "token": "<|reserved_special_token_129|>",
+   "kind": "special",
+   "auroc": 0.5214412101403174,
+   "median_logprob": -12.765576362609863
+  },
+  {
+   "id": 128138,
+   "token": "<|reserved_special_token_130|>",
+   "kind": "special",
+   "auroc": 0.5223112208643773,
+   "median_logprob": -12.766651153564453
+  },
+  {
+   "id": 128139,
+   "token": "<|reserved_special_token_131|>",
+   "kind": "special",
+   "auroc": 0.521834065524308,
+   "median_logprob": -12.759919166564941
+  },
+  {
+   "id": 128140,
+   "token": "<|reserved_special_token_132|>",
+   "kind": "special",
+   "auroc": 0.5215062881988102,
+   "median_logprob": -12.759053230285645
+  },
+  {
+   "id": 128141,
+   "token": "<|reserved_special_token_133|>",
+   "kind": "special",
+   "auroc": 0.522146892485017,
+   "median_logprob": -12.767873287200928
+  },
+  {
+   "id": 128142,
+   "token": "<|reserved_special_token_134|>",
+   "kind": "special",
+   "auroc": 0.5220309329329148,
+   "median_logprob": -12.757288455963135
+  },
+  {
+   "id": 128143,
+   "token": "<|reserved_special_token_135|>",
+   "kind": "special",
+   "auroc": 0.5224893689086686,
+   "median_logprob": -12.761759281158447
+  },
+  {
+   "id": 128144,
+   "token": "<|reserved_special_token_136|>",
+   "kind": "special",
+   "auroc": 0.521779163764537,
+   "median_logprob": -12.753973960876465
+  },
+  {
+   "id": 128145,
+   "token": "<|reserved_special_token_137|>",
+   "kind": "special",
+   "auroc": 0.5236891670913073,
+   "median_logprob": -12.778895854949951
+  },
+  {
+   "id": 128146,
+   "token": "<|reserved_special_token_138|>",
+   "kind": "special",
+   "auroc": 0.5214890764343053,
+   "median_logprob": -12.77049207687378
+  },
+  {
+   "id": 128147,
+   "token": "<|reserved_special_token_139|>",
+   "kind": "special",
+   "auroc": 0.5213993742455719,
+   "median_logprob": -12.759604454040527
+  },
+  {
+   "id": 128148,
+   "token": "<|reserved_special_token_140|>",
+   "kind": "special",
+   "auroc": 0.542538813157125,
+   "median_logprob": -13.279191493988037
+  },
+  {
+   "id": 128149,
+   "token": "<|reserved_special_token_141|>",
+   "kind": "special",
+   "auroc": 0.5212570316967835,
+   "median_logprob": -12.772683143615723
+  },
+  {
+   "id": 128150,
+   "token": "<|reserved_special_token_142|>",
+   "kind": "special",
+   "auroc": 0.5218207483926474,
+   "median_logprob": -12.772667407989502
+  },
+  {
+   "id": 128151,
+   "token": "<|reserved_special_token_143|>",
+   "kind": "special",
+   "auroc": 0.5217829327640636,
+   "median_logprob": -12.760622024536133
+  },
+  {
+   "id": 128152,
+   "token": "<|reserved_special_token_144|>",
+   "kind": "special",
+   "auroc": 0.5206297445422374,
+   "median_logprob": -12.765752792358398
+  },
+  {
+   "id": 128153,
+   "token": "<|reserved_special_token_145|>",
+   "kind": "special",
+   "auroc": 0.521362186783576,
+   "median_logprob": -12.76123571395874
+  },
+  {
+   "id": 128154,
+   "token": "<|reserved_special_token_146|>",
+   "kind": "special",
+   "auroc": 0.5227745565395157,
+   "median_logprob": -12.753687381744385
+  },
+  {
+   "id": 128155,
+   "token": "<|reserved_special_token_147|>",
+   "kind": "special",
+   "auroc": 0.5212658260290122,
+   "median_logprob": -12.761290073394775
+  },
+  {
+   "id": 128156,
+   "token": "<|reserved_special_token_148|>",
+   "kind": "special",
+   "auroc": 0.5217024018075117,
+   "median_logprob": -12.766805648803711
+  },
+  {
+   "id": 128157,
+   "token": "<|reserved_special_token_149|>",
+   "kind": "special",
+   "auroc": 0.5214239983758124,
+   "median_logprob": -12.76961374282837
+  },
+  {
+   "id": 128158,
+   "token": "<|reserved_special_token_150|>",
+   "kind": "special",
+   "auroc": 0.5214354310077098,
+   "median_logprob": -12.767681121826172
+  },
+  {
+   "id": 128159,
+   "token": "<|reserved_special_token_151|>",
+   "kind": "special",
+   "auroc": 0.5215148312644038,
+   "median_logprob": -12.766375064849854
+  },
+  {
+   "id": 128160,
+   "token": "<|reserved_special_token_152|>",
+   "kind": "special",
+   "auroc": 0.5222669979365984,
+   "median_logprob": -12.755669116973877
+  },
+  {
+   "id": 128161,
+   "token": "<|reserved_special_token_153|>",
+   "kind": "special",
+   "auroc": 0.5220309329329147,
+   "median_logprob": -12.758200645446777
+  },
+  {
+   "id": 128162,
+   "token": "<|reserved_special_token_154|>",
+   "kind": "special",
+   "auroc": 0.5220105803354711,
+   "median_logprob": -12.76557731628418
+  },
+  {
+   "id": 128163,
+   "token": "<|reserved_special_token_155|>",
+   "kind": "special",
+   "auroc": 0.5207479654940556,
+   "median_logprob": -12.772614479064941
+  },
+  {
+   "id": 128164,
+   "token": "<|reserved_special_token_156|>",
+   "kind": "special",
+   "auroc": 0.5217527807678507,
+   "median_logprob": -12.758698463439941
+  },
+  {
+   "id": 128165,
+   "token": "<|reserved_special_token_157|>",
+   "kind": "special",
+   "auroc": 0.5056616654555616,
+   "median_logprob": -12.907799243927002
+  },
+  {
+   "id": 128166,
+   "token": "<|reserved_special_token_158|>",
+   "kind": "special",
+   "auroc": 0.5220303047663271,
+   "median_logprob": -12.756406784057617
+  },
+  {
+   "id": 128167,
+   "token": "<|reserved_special_token_159|>",
+   "kind": "special",
+   "auroc": 0.5212636902626139,
+   "median_logprob": -12.76239538192749
+  },
+  {
+   "id": 128168,
+   "token": "<|reserved_special_token_160|>",
+   "kind": "special",
+   "auroc": 0.5223877315547676,
+   "median_logprob": -12.767512798309326
+  },
+  {
+   "id": 128169,
+   "token": "<|reserved_special_token_161|>",
+   "kind": "special",
+   "auroc": 0.5212785149940852,
+   "median_logprob": -12.765403747558594
+  },
+  {
+   "id": 128170,
+   "token": "<|reserved_special_token_162|>",
+   "kind": "special",
+   "auroc": 0.5225413811021359,
+   "median_logprob": -12.752379894256592
+  },
+  {
+   "id": 128171,
+   "token": "<|reserved_special_token_163|>",
+   "kind": "special",
+   "auroc": 0.5219730159735225,
+   "median_logprob": -12.760257720947266
+  },
+  {
+   "id": 128172,
+   "token": "<|reserved_special_token_164|>",
+   "kind": "special",
+   "auroc": 0.5220934983250566,
+   "median_logprob": -12.755600452423096
+  },
+  {
+   "id": 128173,
+   "token": "<|reserved_special_token_165|>",
+   "kind": "special",
+   "auroc": 0.5219693726073136,
+   "median_logprob": -12.760207176208496
+  },
+  {
+   "id": 128174,
+   "token": "<|reserved_special_token_166|>",
+   "kind": "special",
+   "auroc": 0.5218019033950142,
+   "median_logprob": -12.764456272125244
+  },
+  {
+   "id": 128175,
+   "token": "<|reserved_special_token_167|>",
+   "kind": "special",
+   "auroc": 0.5214976194998989,
+   "median_logprob": -12.7574462890625
+  },
+  {
+   "id": 128176,
+   "token": "<|reserved_special_token_168|>",
+   "kind": "special",
+   "auroc": 0.5217772792647737,
+   "median_logprob": -12.778822898864746
+  },
+  {
+   "id": 128177,
+   "token": "<|reserved_special_token_169|>",
+   "kind": "special",
+   "auroc": 0.5214324158080885,
+   "median_logprob": -12.767547130584717
+  },
+  {
+   "id": 128178,
+   "token": "<|reserved_special_token_170|>",
+   "kind": "special",
+   "auroc": 0.5210424499904016,
+   "median_logprob": -12.768378257751465
+  },
+  {
+   "id": 128179,
+   "token": "<|reserved_special_token_171|>",
+   "kind": "special",
+   "auroc": 0.5238429422719931,
+   "median_logprob": -12.765286445617676
+  },
+  {
+   "id": 128180,
+   "token": "<|reserved_special_token_172|>",
+   "kind": "special",
+   "auroc": 0.5210303891919165,
+   "median_logprob": -12.776772499084473
+  },
+  {
+   "id": 128181,
+   "token": "<|reserved_special_token_173|>",
+   "kind": "special",
+   "auroc": 0.5220034192363705,
+   "median_logprob": -12.775683879852295
+  },
+  {
+   "id": 128182,
+   "token": "<|reserved_special_token_174|>",
+   "kind": "special",
+   "auroc": 0.5212308999667323,
+   "median_logprob": -12.763344764709473
+  },
+  {
+   "id": 128183,
+   "token": "<|reserved_special_token_175|>",
+   "kind": "special",
+   "auroc": 0.5230476833718777,
+   "median_logprob": -12.753396034240723
+  },
+  {
+   "id": 128184,
+   "token": "<|reserved_special_token_176|>",
+   "kind": "special",
+   "auroc": 0.5221325702868158,
+   "median_logprob": -12.76051139831543
+  },
+  {
+   "id": 128185,
+   "token": "<|reserved_special_token_177|>",
+   "kind": "special",
+   "auroc": 0.5221712653486223,
+   "median_logprob": -12.759778022766113
+  },
+  {
+   "id": 128186,
+   "token": "<|reserved_special_token_178|>",
+   "kind": "special",
+   "auroc": 0.521489453334258,
+   "median_logprob": -12.766879558563232
+  },
+  {
+   "id": 128187,
+   "token": "<|reserved_special_token_179|>",
+   "kind": "special",
+   "auroc": 0.4316821095140604,
+   "median_logprob": -12.610921859741211
+  },
+  {
+   "id": 128188,
+   "token": "<|reserved_special_token_180|>",
+   "kind": "special",
+   "auroc": 0.5228325991322256,
+   "median_logprob": -12.751699924468994
+  },
+  {
+   "id": 128189,
+   "token": "<|reserved_special_token_181|>",
+   "kind": "special",
+   "auroc": 0.5213003751913395,
+   "median_logprob": -12.762434005737305
+  },
+  {
+   "id": 128190,
+   "token": "<|reserved_special_token_182|>",
+   "kind": "special",
+   "auroc": 0.5218350705908484,
+   "median_logprob": -12.772034645080566
+  },
+  {
+   "id": 128191,
+   "token": "<|reserved_special_token_183|>",
+   "kind": "special",
+   "auroc": 0.5217198648386516,
+   "median_logprob": -12.759377479553223
+  },
+  {
+   "id": 128192,
+   "token": "<|reserved_special_token_184|>",
+   "kind": "special",
+   "auroc": 0.5213325373206333,
+   "median_logprob": -12.7624831199646
+  },
+  {
+   "id": 128193,
+   "token": "<|reserved_special_token_185|>",
+   "kind": "special",
+   "auroc": 0.5226251785249443,
+   "median_logprob": -12.77534008026123
+  },
+  {
+   "id": 128194,
+   "token": "<|reserved_special_token_186|>",
+   "kind": "special",
+   "auroc": 0.5218933644501935,
+   "median_logprob": -12.760037422180176
+  },
+  {
+   "id": 128195,
+   "token": "<|reserved_special_token_187|>",
+   "kind": "special",
+   "auroc": 0.5213356781535722,
+   "median_logprob": -12.766230583190918
+  },
+  {
+   "id": 128196,
+   "token": "<|reserved_special_token_188|>",
+   "kind": "special",
+   "auroc": 0.520969708299538,
+   "median_logprob": -12.763167381286621
+  },
+  {
+   "id": 128197,
+   "token": "<|reserved_special_token_189|>",
+   "kind": "special",
+   "auroc": 0.5213141948562705,
+   "median_logprob": -12.76417350769043
+  },
+  {
+   "id": 128198,
+   "token": "<|reserved_special_token_190|>",
+   "kind": "special",
+   "auroc": 0.5209790051650369,
+   "median_logprob": -12.763514041900635
+  },
+  {
+   "id": 128199,
+   "token": "<|reserved_special_token_191|>",
+   "kind": "special",
+   "auroc": 0.5219265316460276,
+   "median_logprob": -12.771655559539795
+  },
+  {
+   "id": 128200,
+   "token": "<|reserved_special_token_192|>",
+   "kind": "special",
+   "auroc": 0.5219826897389741,
+   "median_logprob": -12.759593963623047
+  },
+  {
+   "id": 128201,
+   "token": "<|reserved_special_token_193|>",
+   "kind": "special",
+   "auroc": 0.5214982476664868,
+   "median_logprob": -12.765904903411865
+  },
+  {
+   "id": 128202,
+   "token": "<|reserved_special_token_194|>",
+   "kind": "special",
+   "auroc": 0.5209759899654157,
+   "median_logprob": -12.771454334259033
+  },
+  {
+   "id": 128203,
+   "token": "<|reserved_special_token_195|>",
+   "kind": "special",
+   "auroc": 0.5221636017162516,
+   "median_logprob": -12.654179096221924
+  },
+  {
+   "id": 128204,
+   "token": "<|reserved_special_token_196|>",
+   "kind": "special",
+   "auroc": 0.5212366790993398,
+   "median_logprob": -12.778502464294434
+  },
+  {
+   "id": 128205,
+   "token": "<|reserved_special_token_197|>",
+   "kind": "special",
+   "auroc": 0.5227959142034999,
+   "median_logprob": -12.762109756469727
+  },
+  {
+   "id": 128206,
+   "token": "<|reserved_special_token_198|>",
+   "kind": "special",
+   "auroc": 0.5204330027669481,
+   "median_logprob": -12.768984317779541
+  },
+  {
+   "id": 128207,
+   "token": "<|reserved_special_token_199|>",
+   "kind": "special",
+   "auroc": 0.521861956120805,
+   "median_logprob": -12.776304244995117
+  },
+  {
+   "id": 128208,
+   "token": "<|reserved_special_token_200|>",
+   "kind": "special",
+   "auroc": 0.5215018910326958,
+   "median_logprob": -12.779910564422607
+  },
+  {
+   "id": 128209,
+   "token": "<|reserved_special_token_201|>",
+   "kind": "special",
+   "auroc": 0.5214448535065264,
+   "median_logprob": -12.767107963562012
+  },
+  {
+   "id": 128210,
+   "token": "<|reserved_special_token_202|>",
+   "kind": "special",
+   "auroc": 0.5216560431133344,
+   "median_logprob": -12.763843536376953
+  },
+  {
+   "id": 128211,
+   "token": "<|reserved_special_token_203|>",
+   "kind": "special",
+   "auroc": 0.5214179679765698,
+   "median_logprob": -12.779141426086426
+  },
+  {
+   "id": 128212,
+   "token": "<|reserved_special_token_204|>",
+   "kind": "special",
+   "auroc": 0.5210346607247133,
+   "median_logprob": -12.76746940612793
+  },
+  {
+   "id": 128213,
+   "token": "<|reserved_special_token_205|>",
+   "kind": "special",
+   "auroc": 0.5216944869085057,
+   "median_logprob": -12.770339965820312
+  },
+  {
+   "id": 128214,
+   "token": "<|reserved_special_token_206|>",
+   "kind": "special",
+   "auroc": 0.5212363021993871,
+   "median_logprob": -12.761893272399902
+  },
+  {
+   "id": 128215,
+   "token": "<|reserved_special_token_207|>",
+   "kind": "special",
+   "auroc": 0.5217114474063755,
+   "median_logprob": -12.759885311126709
+  },
+  {
+   "id": 128216,
+   "token": "<|reserved_special_token_208|>",
+   "kind": "special",
+   "auroc": 0.5218669814535072,
+   "median_logprob": -12.774766445159912
+  },
+  {
+   "id": 128217,
+   "token": "<|reserved_special_token_209|>",
+   "kind": "special",
+   "auroc": 0.5215436012941237,
+   "median_logprob": -12.748013973236084
+  },
+  {
+   "id": 128218,
+   "token": "<|reserved_special_token_210|>",
+   "kind": "special",
+   "auroc": 0.5223990385533474,
+   "median_logprob": -12.757479667663574
+  },
+  {
+   "id": 128219,
+   "token": "<|reserved_special_token_211|>",
+   "kind": "special",
+   "auroc": 0.5208137973524538,
+   "median_logprob": -12.775391578674316
+  },
+  {
+   "id": 128220,
+   "token": "<|reserved_special_token_212|>",
+   "kind": "special",
+   "auroc": 0.5211973558709454,
+   "median_logprob": -12.758400917053223
+  },
+  {
+   "id": 128221,
+   "token": "<|reserved_special_token_213|>",
+   "kind": "special",
+   "auroc": 0.522193628079147,
+   "median_logprob": -12.756302833557129
+  },
+  {
+   "id": 128222,
+   "token": "<|reserved_special_token_214|>",
+   "kind": "special",
+   "auroc": 0.5430740110899042,
+   "median_logprob": -12.736454963684082
+  },
+  {
+   "id": 128223,
+   "token": "<|reserved_special_token_215|>",
+   "kind": "special",
+   "auroc": 0.5210354145246185,
+   "median_logprob": -12.772701740264893
+  },
+  {
+   "id": 128224,
+   "token": "<|reserved_special_token_216|>",
+   "kind": "special",
+   "auroc": 0.5218559257215624,
+   "median_logprob": -12.74931812286377
+  },
+  {
+   "id": 128225,
+   "token": "<|reserved_special_token_217|>",
+   "kind": "special",
+   "auroc": 0.5222095835104763,
+   "median_logprob": -12.753360271453857
+  },
+  {
+   "id": 128226,
+   "token": "<|reserved_special_token_218|>",
+   "kind": "special",
+   "auroc": 0.5215544057594333,
+   "median_logprob": -12.777105808258057
+  },
+  {
+   "id": 128227,
+   "token": "<|reserved_special_token_219|>",
+   "kind": "special",
+   "auroc": 0.5226313345575044,
+   "median_logprob": -12.766416072845459
+  },
+  {
+   "id": 128228,
+   "token": "<|reserved_special_token_220|>",
+   "kind": "special",
+   "auroc": 0.522228554141427,
+   "median_logprob": -12.770633220672607
+  },
+  {
+   "id": 128229,
+   "token": "<|reserved_special_token_221|>",
+   "kind": "special",
+   "auroc": 0.5037865881910712,
+   "median_logprob": -12.377120018005371
+  },
+  {
+   "id": 128230,
+   "token": "<|reserved_special_token_222|>",
+   "kind": "special",
+   "auroc": 0.5201843744315092,
+   "median_logprob": -12.766207218170166
+  },
+  {
+   "id": 128231,
+   "token": "<|reserved_special_token_223|>",
+   "kind": "special",
+   "auroc": 0.5223622279913042,
+   "median_logprob": -12.761806011199951
+  },
+  {
+   "id": 128232,
+   "token": "<|reserved_special_token_224|>",
+   "kind": "special",
+   "auroc": 0.5217169752723478,
+   "median_logprob": -12.767229080200195
+  },
+  {
+   "id": 128233,
+   "token": "<|reserved_special_token_225|>",
+   "kind": "special",
+   "auroc": 0.5221357111197548,
+   "median_logprob": -12.75769853591919
+  },
+  {
+   "id": 128234,
+   "token": "<|reserved_special_token_226|>",
+   "kind": "special",
+   "auroc": 0.5216733805111567,
+   "median_logprob": -12.761646747589111
+  },
+  {
+   "id": 128235,
+   "token": "<|reserved_special_token_227|>",
+   "kind": "special",
+   "auroc": 0.5216517715805374,
+   "median_logprob": -12.775874137878418
+  },
+  {
+   "id": 128236,
+   "token": "<|reserved_special_token_228|>",
+   "kind": "special",
+   "auroc": 0.5207006017333378,
+   "median_logprob": -12.760810375213623
+  },
+  {
+   "id": 128237,
+   "token": "<|reserved_special_token_229|>",
+   "kind": "special",
+   "auroc": 0.5172865163288136,
+   "median_logprob": -12.740265369415283
+  },
+  {
+   "id": 128238,
+   "token": "<|reserved_special_token_230|>",
+   "kind": "special",
+   "auroc": 0.520909153040477,
+   "median_logprob": -12.756196022033691
+  },
+  {
+   "id": 128239,
+   "token": "<|reserved_special_token_231|>",
+   "kind": "special",
+   "auroc": 0.5209973476293999,
+   "median_logprob": -12.774717330932617
+  },
+  {
+   "id": 128240,
+   "token": "<|reserved_special_token_232|>",
+   "kind": "special",
+   "auroc": 0.521832683557815,
+   "median_logprob": -12.766462326049805
+  },
+  {
+   "id": 128241,
+   "token": "<|reserved_special_token_233|>",
+   "kind": "special",
+   "auroc": 0.5214120632106448,
+   "median_logprob": -12.768476963043213
+  },
+  {
+   "id": 128242,
+   "token": "<|reserved_special_token_234|>",
+   "kind": "special",
+   "auroc": 0.5213744988486962,
+   "median_logprob": -12.768782615661621
+  },
+  {
+   "id": 128243,
+   "token": "<|reserved_special_token_235|>",
+   "kind": "special",
+   "auroc": 0.5215086752318437,
+   "median_logprob": -12.76576852798462
+  },
+  {
+   "id": 128244,
+   "token": "<|reserved_special_token_236|>",
+   "kind": "special",
+   "auroc": 0.5213533924513473,
+   "median_logprob": -12.762948036193848
+  },
+  {
+   "id": 128245,
+   "token": "<|reserved_special_token_237|>",
+   "kind": "special",
+   "auroc": 0.522245137739344,
+   "median_logprob": -12.761249542236328
+  },
+  {
+   "id": 128246,
+   "token": "<|reserved_special_token_238|>",
+   "kind": "special",
+   "auroc": 0.5221290525539244,
+   "median_logprob": -12.766225337982178
+  },
+  {
+   "id": 128247,
+   "token": "<|reserved_special_token_239|>",
+   "kind": "special",
+   "auroc": 0.5219727647068874,
+   "median_logprob": -12.767947673797607
+  },
+  {
+   "id": 128248,
+   "token": "<|reserved_special_token_240|>",
+   "kind": "special",
+   "auroc": 0.5200709275457582,
+   "median_logprob": -12.75147533416748
+  },
+  {
+   "id": 128249,
+   "token": "<|reserved_special_token_241|>",
+   "kind": "special",
+   "auroc": 0.5209970963627647,
+   "median_logprob": -12.769382953643799
+  },
+  {
+   "id": 128250,
+   "token": "<|reserved_special_token_242|>",
+   "kind": "special",
+   "auroc": 0.5208184457852032,
+   "median_logprob": -12.77220630645752
+  },
+  {
+   "id": 128251,
+   "token": "<|reserved_special_token_243|>",
+   "kind": "special",
+   "auroc": 0.5218305477914166,
+   "median_logprob": -12.764599323272705
+  },
+  {
+   "id": 128252,
+   "token": "<|reserved_special_token_244|>",
+   "kind": "special",
+   "auroc": 0.5218019033950143,
+   "median_logprob": -12.776122570037842
+  },
+  {
+   "id": 128253,
+   "token": "<|reserved_special_token_245|>",
+   "kind": "special",
+   "auroc": 0.521789842596529,
+   "median_logprob": -12.765639781951904
+  },
+  {
+   "id": 128254,
+   "token": "<|reserved_special_token_246|>",
+   "kind": "special",
+   "auroc": 0.5219011537158817,
+   "median_logprob": -12.768642902374268
+  },
+  {
+   "id": 128255,
+   "token": "<|reserved_special_token_247|>",
+   "kind": "special",
+   "auroc": 0.5218681121533651,
+   "median_logprob": -12.76051950454712
+  }
+ ],
+ "rank_of_eos": 1,
+ "n_candidates": 454,
+ "max_other_auroc": 0.8411849131471749,
+ "n_within_002": 0,
+ "seconds": 8347.07268500328
+}

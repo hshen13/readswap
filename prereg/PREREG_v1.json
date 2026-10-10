@@ -1,0 +1,37 @@
+{
+  "project": "LASERREAD (eacl-laser)",
+  "version": 1,
+  "date_utc": "2026-09-23",
+  "question": "Is the LaSeR last-token self-reward a property of the solution, or of the readout surface (marker token, readout position, response length, reference constant)?",
+  "models": [
+    {"id": "Keven16/OctoThinker-3B-Short-LaSeR", "role": "released LaSeR checkpoint"},
+    {"id": "Keven16/Qwen2.5-7B-LaSeR", "role": "released LaSeR checkpoint"},
+    {"id": "Keven16/ORZ-7B-LaSeR", "role": "released LaSeR checkpoint"}
+  ],
+  "note_models": "LaSeR marker token and reference constant for each checkpoint are read from the LaSeR repository configs and README (/workspace/arr_laser/code/LaSeR); record them in the result files.",
+  "datasets": {
+    "confirmatory": ["math500 (500)", "amc23 (40)", "aime24 (30)", "aime25 (30)", "OlympiadBench (as shipped in /workspace/arr_laser/code/LaSeR/data)"],
+    "pilot": "40 problems from the DeepMath-103K training split, disjoint from all confirmatory sets; debugging only"
+  },
+  "generation": {"samples_per_problem": 8, "temperature": 1.0, "top_p": 1.0, "max_new_tokens": 8192, "seeds": [0, 1, 2], "engine": "vllm", "note": "LaSeR evaluation decoding; solutions are generated once per seed and shared by all readout conditions"},
+  "readout_conditions": {
+    "R0_reference": "LaSeR default: append the trained marker token after the response, read log-prob of the marker, subtract the checkpoint's reference constant (as in the released evaluation script)",
+    "R1_marker_swap": "same position, read log-prob of 3 other unused special tokens of the same tokenizer (fixed list, chosen before running)",
+    "R2_position_eos": "read the marker log-prob at the end-of-sequence position without appending",
+    "R3_position_answer": "read the marker log-prob immediately after the final \\boxed{...} span, truncating the remaining text",
+    "R4_cref_none": "R0 without subtracting the reference constant",
+    "R5_cref_recomputed": "R0 with the reference log-prob recomputed per response by the base model the checkpoint was trained from"
+  },
+  "outcome": "math_verify correctness of the final boxed answer (same grader as LaSeR evaluation)",
+  "metrics": ["AUROC of score vs correctness", "ECE (15 bins) and Brier of sigmoid-free normalised score as used by LaSeR thresholding", "Kendall tau between conditions over the same responses", "weighted-majority accuracy at k=8", "score-length partial correlation controlling for correctness"],
+  "contrasts": {
+    "L1": "AUROC(R0) - AUROC(R1, mean over the 3 swapped markers): is correctness information tied to the trained marker",
+    "L2": "AUROC(R0) - AUROC(R2): readout position (append vs EOS)",
+    "L3": "partial correlation(score, length | correctness) under R0 vs 0: length leakage",
+    "L4": "weighted-majority accuracy(R0) - weighted-majority accuracy(R4): does the reference constant change selection",
+    "L5": "interaction: AUROC gap between short and long responses (median split within problem) under R0 vs under R3"
+  },
+  "statistics": {"unit": "problem (responses clustered within problem)", "ci": "cluster bootstrap over problems, 10000 resamples, 95%", "multiplicity": "Holm across L1-L5 within each checkpoint", "holds": "Holm-adjusted p < 0.05 and CI excludes 0", "general_claim": "stated as general only if it holds for at least 2 of 3 checkpoints"},
+  "exclusions": "responses truncated at max_new_tokens are kept and flagged; problems with any missing condition are removed for that checkpoint and listed",
+  "prior_expectation": "none registered; every contrast is reported with its CI whichever direction it takes"
+}

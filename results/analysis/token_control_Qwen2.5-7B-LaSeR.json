@@ -1,0 +1,82 @@
+{
+ "model": "Qwen2.5-7B-LaSeR",
+ "dataset": "math500",
+ "seed": 0,
+ "n": 4000,
+ "n_correct": 3197,
+ "targets": {
+  "marker": {
+   "token_id": 151652,
+   "auroc": 0.9423841077660369,
+   "spearman_with_marker": 0.9999999999999998,
+   "median_logprob": -13.417531967163086
+  },
+  "r1_151648": {
+   "token_id": 151648,
+   "auroc": 0.9422960738020663,
+   "spearman_with_marker": 0.9997216856701053,
+   "median_logprob": -13.52279281616211
+  },
+  "r1_151649": {
+   "token_id": 151649,
+   "auroc": 0.9423023062950906,
+   "spearman_with_marker": 0.9997232057327002,
+   "median_logprob": -13.52279281616211
+  },
+  "r1_151650": {
+   "token_id": 151650,
+   "auroc": 0.9423026958259048,
+   "spearman_with_marker": 0.9997225676701604,
+   "median_logprob": -13.52279281616211
+  },
+  "under:PostalCodesNL": {
+   "token_id": 83969,
+   "auroc": 0.9422925680247398,
+   "spearman_with_marker": 0.9997251928578246,
+   "median_logprob": -13.52279281616211
+  },
+  "under:useRalative": {
+   "token_id": 88372,
+   "auroc": 0.9423081492573011,
+   "spearman_with_marker": 0.9997095362318461,
+   "median_logprob": -13.508163928985596
+  },
+  "under:\tTokenNameIdentifier": {
+   "token_id": 78783,
+   "auroc": 0.9423030853567187,
+   "spearman_with_marker": 0.9997230375451898,
+   "median_logprob": -13.52279281616211
+  },
+  "trained: the": {
+   "token_id": 279,
+   "auroc": 0.5625551429558611,
+   "spearman_with_marker": 0.05462996122687257,
+   "median_logprob": -20.034875869750977
+  },
+  "trained: answer": {
+   "token_id": 4226,
+   "auroc": 0.9020721481183129,
+   "spearman_with_marker": 0.6970441223152576,
+   "median_logprob": -16.291321754455566
+  },
+  "trained:.": {
+   "token_id": 13,
+   "auroc": 0.08478722463579844,
+   "spearman_with_marker": -0.893829346301834,
+   "median_logprob": -20.60025691986084
+  }
+ },
+ "terminators": {
+  "newline": {
+   "auroc": 0.7726388492324879,
+   "median_logprob": -22.35731315612793
+  },
+  "period": {
+   "auroc": 0.22169406171959938,
+   "median_logprob": -36.359375
+  }
+ },
+ "max_abs_diff_vs_confirmatory_R0_marker": 0.1323394775390625,
+ "auroc_eos_marker": 0.9423841077660369,
+ "seconds": 1962.4464995861053
+}

@@ -1,0 +1,101 @@
+{
+ "OctoThinker-3B-Short-LaSeR": {
+  "primary_auroc_base": 0.5850427621273852,
+  "primary_auroc_checkpoint": 0.8536701933483161,
+  "within_problem_auroc_base": 0.48370994465902684,
+  "within_problem_auroc_checkpoint": 0.6536605636969535,
+  "by_benchmark": {
+   "math500": {
+    "n": 12000,
+    "auroc_base": 0.6813881222719518,
+    "auroc_checkpoint": 0.874611020700444
+   },
+   "amc23": {
+    "n": 960,
+    "auroc_base": 0.5883557281880432,
+    "auroc_checkpoint": 0.8334991236795982
+   },
+   "aime24": {
+    "n": 720,
+    "auroc_base": 0.3323503013206821,
+    "auroc_checkpoint": 0.772919605077574
+   },
+   "aime25": {
+    "n": 720,
+    "auroc_base": 0.448951048951049,
+    "auroc_checkpoint": 0.8436363636363636
+   },
+   "OlympiadBench": {
+    "n": 16200,
+    "auroc_base": 0.5307588013937282,
+    "auroc_checkpoint": 0.8433886550522649
+   }
+  }
+ },
+ "Qwen2.5-7B-LaSeR": {
+  "primary_auroc_base": 0.5979365295349095,
+  "primary_auroc_checkpoint": 0.9137387469785444,
+  "within_problem_auroc_base": 0.5118909904832459,
+  "within_problem_auroc_checkpoint": 0.6991135367935812,
+  "by_benchmark": {
+   "math500": {
+    "n": 12000,
+    "auroc_base": 0.6093545578670408,
+    "auroc_checkpoint": 0.9406078312027679
+   },
+   "amc23": {
+    "n": 960,
+    "auroc_base": 0.5305980251632425,
+    "auroc_checkpoint": 0.9027888375714463
+   },
+   "aime24": {
+    "n": 720,
+    "auroc_base": 0.5416833181091574,
+    "auroc_checkpoint": 0.9721112126056177
+   },
+   "aime25": {
+    "n": 720,
+    "auroc_base": 0.5763412816691504,
+    "auroc_checkpoint": 0.9286736214605067
+   },
+   "OlympiadBench": {
+    "n": 16200,
+    "auroc_base": 0.5969290921831264,
+    "auroc_checkpoint": 0.8912265011428424
+   }
+  }
+ },
+ "ORZ-7B-LaSeR": {
+  "primary_auroc_base": 0.6778282595920909,
+  "primary_auroc_checkpoint": 0.9058422671958064,
+  "within_problem_auroc_base": 0.5652627009080124,
+  "within_problem_auroc_checkpoint": 0.6747695891915511,
+  "by_benchmark": {
+   "math500": {
+    "n": 12000,
+    "auroc_base": 0.6643136222069994,
+    "auroc_checkpoint": 0.9351191428362001
+   },
+   "amc23": {
+    "n": 960,
+    "auroc_base": 0.6811652384973537,
+    "auroc_checkpoint": 0.8729875271675182
+   },
+   "aime24": {
+    "n": 720,
+    "auroc_base": 0.5772342166385135,
+    "auroc_checkpoint": 0.9490339949324325
+   },
+   "aime25": {
+    "n": 720,
+    "auroc_base": 0.6503529411764706,
+    "auroc_checkpoint": 0.889801680672269
+   },
+   "OlympiadBench": {
+    "n": 16200,
+    "auroc_base": 0.6933333268178852,
+    "auroc_checkpoint": 0.8848959228173503
+   }
+  }
+ }
+}

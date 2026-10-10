@@ -1,0 +1,43 @@
+% Demonstration figure (two real MATH500 problems) of the READSWAP paper. Real content only, no model names
+% or scores. Build: pdflatex demo.tex (needs eaclfig.sty from this folder). Source solutions:
+% Left: results/confirmatory/readout/OctoThinker-3B-Short-LaSeR/math500_seed1.jsonl, test/prealgebra/1784.json:
+%   seven samples box 326.5 (correct), one boxes 325.5; RM@8 under R0 selects 326.5, under R4 selects 325.5.
+% Right: same file, test/prealgebra/1317.json: eight correct samples; order by R0 = token lengths
+%   191, 225, 225, 237, 228, 1262, 1563, 5900; the last one's tail is quoted verbatim (whitespace joined).
+\documentclass[border=0pt]{standalone}
+\usepackage{eaclfig}
+\newcommand{\smp}[2][hlgreen]{\setlength{\fboxsep}{1.2pt}\colorbox{#1}{\strut\ttfamily #2}}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\path[use as bounding box] (0,0) rectangle (16.0,5.75);
+\fill[panelcool] (0,0) rectangle (7.62,5.75);
+\fill[panelwarm] (7.78,0) rectangle (16.0,5.75);
+
+% ---------------- left: the constant flips a vote ----------------
+\node[anchor=north west, inner sep=0] at (0.28,5.52) {\ptitle{cooltitle}{Dropping the constant flips a vote}};
+\node[card, anchor=north west, text width=6.8cm] at (0.28,5.06)
+  {\faUser\enspace Add 313.9 to 12.6. Express the result as a decimal.};
+\node[anchor=north west, inner sep=0] at (0.30,3.86) {\lab{eight samples, final answers}};
+\node[anchor=north west, inner sep=0, text width=7.0cm, align=left] at (0.30,3.46)
+  {\smp{326.5}\,\smp{326.5}\,\smp{326.5}\,\smp{326.5}\,\smp{326.5}\\[2pt]
+   \smp{326.5}\,\smp{326.5}\,\smp[hlred]{325.5}};
+\node[card, anchor=north west, text width=6.8cm] at (0.28,2.30)
+  {released scores, summed per answer\hfill\ansgood{326.5}\\[3pt]
+   same scores without the constant\hfill\ansbad{325.5}};
+\node[anchor=north west, inner sep=0, text width=6.9cm, align=left] at (0.30,0.92)
+  {\lab{without the constant every score is negative,}\\[-1pt]\lab{so each further sample lowers its answer's sum}};
+
+% ---------------- right: eight correct solutions ranked by length ----------------
+\node[anchor=north west, inner sep=0] at (8.06,5.52) {\ptitle{warmtitle}{Eight correct solutions, ranked by length}};
+\node[card, anchor=north west, text width=7.4cm] at (8.06,5.06)
+  {\faUser\enspace If $10^x - 10 = 9990$, what is $x$ equal to?};
+\node[anchor=north west, inner sep=0] at (8.08,3.86) {\lab{rank under the released readout\,:\,length in tokens}};
+\node[anchor=north west, inner sep=0, text width=7.6cm, align=left] at (8.08,3.46)
+  {\smp{1:\,191}\,\smp{2:\,225}\,\smp{3:\,225}\,\smp{4:\,237}\,\smp{5:\,228}\\[2pt]
+   \smp{6:\,1262}\,\smp{7:\,1563}\,\smp[hlorange]{8:\,5900}};
+\node[card, anchor=north west, text width=7.4cm] at (8.06,2.30)
+  {\lab{end of the rank-8 solution, graded correct}\\[1pt]
+   \mono{\small The value of \textbackslash( x \textbackslash) is approximately 2.0043.}\\
+   \mono{\small Thus, the value of \textbackslash( x \textbackslash) is: \textbackslash[\textbackslash boxed\{4\}\textbackslash]}};
+\end{tikzpicture}
+\end{document}

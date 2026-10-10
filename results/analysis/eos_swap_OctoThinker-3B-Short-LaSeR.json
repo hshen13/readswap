@@ -1,0 +1,40 @@
+{
+ "model": "OctoThinker-3B-Short-LaSeR",
+ "dataset": "math500",
+ "seed": 0,
+ "n": 4000,
+ "swaps": {
+  "eos": 128001,
+  "newline": 198,
+  "period": 13,
+  "trained_special": 128006,
+  "undertrained_word": 85069
+ },
+ "auroc": {
+  "eos": {
+   "auroc": 0.8761995469160037,
+   "median_logprob": -17.5278902053833
+  },
+  "newline": {
+   "auroc": 0.41193682352740163,
+   "median_logprob": -23.359110832214355
+  },
+  "period": {
+   "auroc": 0.35657135118130495,
+   "median_logprob": -24.658169746398926
+  },
+  "trained_special": {
+   "auroc": 0.36343545311917375,
+   "median_logprob": -11.692174434661865
+  },
+  "undertrained_word": {
+   "auroc": 0.5212860529931385,
+   "median_logprob": -12.765779495239258
+  },
+  "none": {
+   "auroc": 0.44966212175577086,
+   "median_logprob": -27.311800003051758
+  }
+ },
+ "seconds": 2523.4243156909943
+}

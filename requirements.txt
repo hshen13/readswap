@@ -1,0 +1,15 @@
+# Main environment (Python 3.12.14): generation, grading, readouts, analyses, tables and figures.
+# Versions are the ones installed for the runs reported in the paper.
+torch==2.5.1
+transformers==4.49.0
+vllm==0.7.3
+math-verify==0.7.0
+latex2sympy2_extended==1.10.1  # parser used by math-verify; pinned because grading depends on it
+numpy==1.26.4
+scipy==1.17.1
+scikit-learn==1.9.1
+safetensors==0.8.0
+pyarrow==25.0.1
+psutil==7.2.2
+huggingface-hub==0.36.2
+matplotlib==3.11.2

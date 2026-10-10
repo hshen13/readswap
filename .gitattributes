@@ -1,0 +1,4 @@
+# Keep LF line endings on every platform: the pre-registration files are hash-verified and the drivers are bash.
+* text=auto eol=lf
+*.pdf binary
+*.zip binary

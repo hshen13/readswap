@@ -1,0 +1,35 @@
+{
+ "OctoThinker-3B-Short-LaSeR": {
+  "n_correct_untruncated": 9528,
+  "within_problem_corr_score_loglen": -0.7330781478827084,
+  "within_problem_partial_score_loglen_given_ratio": -0.5834836350348718,
+  "within_problem_corr_score_ratio": 0.5758954922776593,
+  "within_problem_corr_loglen_ratio": -0.8808964206103305,
+  "least_repetitive_half": {
+   "n": 4764,
+   "within_problem_corr_score_loglen": -0.25564066450619916
+  }
+ },
+ "Qwen2.5-7B-LaSeR": {
+  "n_correct_untruncated": 17491,
+  "within_problem_corr_score_loglen": -0.4419643977799484,
+  "within_problem_partial_score_loglen_given_ratio": -0.35021217143679295,
+  "within_problem_corr_score_ratio": 0.30117289054226015,
+  "within_problem_corr_loglen_ratio": -0.7953384263640676,
+  "least_repetitive_half": {
+   "n": 8745,
+   "within_problem_corr_score_loglen": -0.21098408990947565
+  }
+ },
+ "ORZ-7B-LaSeR": {
+  "n_correct_untruncated": 18334,
+  "within_problem_corr_score_loglen": -0.4815817737803566,
+  "within_problem_partial_score_loglen_given_ratio": -0.3426068776696192,
+  "within_problem_corr_score_ratio": 0.3661089217551768,
+  "within_problem_corr_loglen_ratio": -0.8310518712084409,
+  "least_repetitive_half": {
+   "n": 9167,
+   "within_problem_corr_score_loglen": -0.06908483965479717
+  }
+ }
+}

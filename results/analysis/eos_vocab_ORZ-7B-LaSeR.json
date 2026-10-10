@@ -1,0 +1,1559 @@
+{
+ "model": "ORZ-7B-LaSeR",
+ "n": 4000,
+ "eos_auroc": 0.9315642475823327,
+ "tokens": [
+  {
+   "id": 151643,
+   "token": "<|endoftext|>",
+   "kind": "eos",
+   "auroc": 0.9315642475823327,
+   "median_logprob": -13.859032154083252
+  },
+  {
+   "id": 1217,
+   "token": "Ġreg",
+   "kind": "random",
+   "auroc": 0.6165708397785428,
+   "median_logprob": -20.596153259277344
+  },
+  {
+   "id": 1334,
+   "token": "Ġarray",
+   "kind": "random",
+   "auroc": 0.44723366744791704,
+   "median_logprob": -20.718647956848145
+  },
+  {
+   "id": 1377,
+   "token": "ember",
+   "kind": "random",
+   "auroc": 0.7040055258550715,
+   "median_logprob": -20.910311698913574
+  },
+  {
+   "id": 1952,
+   "token": "ene",
+   "kind": "random",
+   "auroc": 0.618421815114804,
+   "median_logprob": -20.102229118347168
+  },
+  {
+   "id": 2256,
+   "token": "Ġsuper",
+   "kind": "random",
+   "auroc": 0.37856019836229293,
+   "median_logprob": -19.33317756652832
+  },
+  {
+   "id": 2301,
+   "token": "los",
+   "kind": "random",
+   "auroc": 0.7326584210283656,
+   "median_logprob": -18.904292106628418
+  },
+  {
+   "id": 3116,
+   "token": "Ġmiss",
+   "kind": "random",
+   "auroc": 0.7757585255475625,
+   "median_logprob": -20.35962963104248
+  },
+  {
+   "id": 4418,
+   "token": "Read",
+   "kind": "random",
+   "auroc": 0.7927377134955813,
+   "median_logprob": -21.86673641204834
+  },
+  {
+   "id": 6686,
+   "token": "ĠStreet",
+   "kind": "random",
+   "auroc": 0.4613763287494623,
+   "median_logprob": -19.984760284423828
+  },
+  {
+   "id": 8439,
+   "token": "Root",
+   "kind": "random",
+   "auroc": 0.6711724972812743,
+   "median_logprob": -19.880413055419922
+  },
+  {
+   "id": 8606,
+   "token": "Ġtraditional",
+   "kind": "random",
+   "auroc": 0.7227551108026152,
+   "median_logprob": -19.537339210510254
+  },
+  {
+   "id": 9439,
+   "token": "Ġfurn",
+   "kind": "random",
+   "auroc": 0.18129385544711668,
+   "median_logprob": -25.34956169128418
+  },
+  {
+   "id": 9621,
+   "token": "icians",
+   "kind": "random",
+   "auroc": 0.5511334051559138,
+   "median_logprob": -19.493727684020996
+  },
+  {
+   "id": 10488,
+   "token": "Ġopportunities",
+   "kind": "random",
+   "auroc": 0.6035344915464653,
+   "median_logprob": -21.155277252197266
+  },
+  {
+   "id": 11049,
+   "token": "customer",
+   "kind": "random",
+   "auroc": 0.4943392132255064,
+   "median_logprob": -18.925578117370605
+  },
+  {
+   "id": 11506,
+   "token": "Ġ#[",
+   "kind": "random",
+   "auroc": 0.776452852790358,
+   "median_logprob": -20.464346885681152
+  },
+  {
+   "id": 11682,
+   "token": "Ġdetailed",
+   "kind": "random",
+   "auroc": 0.6313245005940802,
+   "median_logprob": -22.53157615661621
+  },
+  {
+   "id": 11713,
+   "token": "oster",
+   "kind": "random",
+   "auroc": 0.582851026517252,
+   "median_logprob": -19.665525436401367
+  },
+  {
+   "id": 13129,
+   "token": "rank",
+   "kind": "random",
+   "auroc": 0.6088154392323021,
+   "median_logprob": -19.91006374359131
+  },
+  {
+   "id": 13974,
+   "token": "_prefix",
+   "kind": "random",
+   "auroc": 0.7243789440557933,
+   "median_logprob": -20.23503875732422
+  },
+  {
+   "id": 14409,
+   "token": "Ġconversion",
+   "kind": "random",
+   "auroc": 0.7012626900305776,
+   "median_logprob": -21.119925498962402
+  },
+  {
+   "id": 15754,
+   "token": "Ġdeveloper",
+   "kind": "random",
+   "auroc": 0.6769961326628201,
+   "median_logprob": -19.508339881896973
+  },
+  {
+   "id": 16036,
+   "token": "ĠED",
+   "kind": "random",
+   "auroc": 0.7894843367133936,
+   "median_logprob": -19.34675121307373
+  },
+  {
+   "id": 16585,
+   "token": "Ġcareful",
+   "kind": "random",
+   "auroc": 0.8087332535586651,
+   "median_logprob": -22.185269355773926
+  },
+  {
+   "id": 17031,
+   "token": "ĠTX",
+   "kind": "random",
+   "auroc": 0.654919994805764,
+   "median_logprob": -19.744197845458984
+  },
+  {
+   "id": 18070,
+   "token": "Ġsouthern",
+   "kind": "random",
+   "auroc": 0.5059862724969005,
+   "median_logprob": -19.6376371383667
+  },
+  {
+   "id": 18250,
+   "token": "Ġintegrated",
+   "kind": "random",
+   "auroc": 0.7160311552649378,
+   "median_logprob": -20.40994358062744
+  },
+  {
+   "id": 18470,
+   "token": "WORK",
+   "kind": "random",
+   "auroc": 0.6406089861130322,
+   "median_logprob": -20.603318214416504
+  },
+  {
+   "id": 18874,
+   "token": "ĠPrivacy",
+   "kind": "random",
+   "auroc": 0.4370412480717244,
+   "median_logprob": -21.730472564697266
+  },
+  {
+   "id": 19062,
+   "token": "Ġwage",
+   "kind": "random",
+   "auroc": 0.24826925769375072,
+   "median_logprob": -20.461716651916504
+  },
+  {
+   "id": 20552,
+   "token": "ĠApply",
+   "kind": "random",
+   "auroc": 0.7624169947960353,
+   "median_logprob": -21.444395065307617
+  },
+  {
+   "id": 22494,
+   "token": ".getC",
+   "kind": "random",
+   "auroc": 0.6920300199775058,
+   "median_logprob": -20.82880210876465
+  },
+  {
+   "id": 23326,
+   "token": "[js",
+   "kind": "random",
+   "auroc": 0.4298054826261686,
+   "median_logprob": -21.26468276977539
+  },
+  {
+   "id": 24188,
+   "token": "transfer",
+   "kind": "random",
+   "auroc": 0.8438336846210428,
+   "median_logprob": -19.75265407562256
+  },
+  {
+   "id": 24680,
+   "token": ".toolStrip",
+   "kind": "random",
+   "auroc": 0.4600024786826943,
+   "median_logprob": -18.505327224731445
+  },
+  {
+   "id": 24728,
+   "token": "Choice",
+   "kind": "random",
+   "auroc": 0.8473865336468487,
+   "median_logprob": -21.327330589294434
+  },
+  {
+   "id": 25326,
+   "token": "ĠCollections",
+   "kind": "random",
+   "auroc": 0.6331659588039552,
+   "median_logprob": -19.036787033081055
+  },
+  {
+   "id": 25663,
+   "token": "Safe",
+   "kind": "random",
+   "auroc": 0.7392544240890736,
+   "median_logprob": -20.74826431274414
+  },
+  {
+   "id": 27446,
+   "token": "cg",
+   "kind": "random",
+   "auroc": 0.37196927110232436,
+   "median_logprob": -20.18004322052002
+  },
+  {
+   "id": 27617,
+   "token": "ĠCharg",
+   "kind": "random",
+   "auroc": 0.7596098654955104,
+   "median_logprob": -20.475622177124023
+  },
+  {
+   "id": 28135,
+   "token": "Ġindependently",
+   "kind": "random",
+   "auroc": 0.45392378431399927,
+   "median_logprob": -23.23776626586914
+  },
+  {
+   "id": 28798,
+   "token": ":\"+",
+   "kind": "random",
+   "auroc": 0.6854796991234515,
+   "median_logprob": -21.230749130249023
+  },
+  {
+   "id": 30163,
+   "token": ".mkdir",
+   "kind": "random",
+   "auroc": 0.48885227262633346,
+   "median_logprob": -20.51035499572754
+  },
+  {
+   "id": 30507,
+   "token": ".nl",
+   "kind": "random",
+   "auroc": 0.5038588775120455,
+   "median_logprob": -21.605198860168457
+  },
+  {
+   "id": 31687,
+   "token": "GROUND",
+   "kind": "random",
+   "auroc": 0.6894874667905163,
+   "median_logprob": -19.989931106567383
+  },
+  {
+   "id": 31908,
+   "token": "Ġmills",
+   "kind": "random",
+   "auroc": 0.42479672475497626,
+   "median_logprob": -20.37816333770752
+  },
+  {
+   "id": 32898,
+   "token": "ĠserÃ¡",
+   "kind": "random",
+   "auroc": 0.49777172347545157,
+   "median_logprob": -23.0733642578125
+  },
+  {
+   "id": 33807,
+   "token": ".tx",
+   "kind": "random",
+   "auroc": 0.3550850429264698,
+   "median_logprob": -22.037999153137207
+  },
+  {
+   "id": 35155,
+   "token": "dan",
+   "kind": "random",
+   "auroc": 0.4468914738814098,
+   "median_logprob": -20.766742706298828
+  },
+  {
+   "id": 35853,
+   "token": "ĉZ",
+   "kind": "random",
+   "auroc": 0.5001283754603646,
+   "median_logprob": -21.466151237487793
+  },
+  {
+   "id": 36134,
+   "token": "ĠTap",
+   "kind": "random",
+   "auroc": 0.7827569973085566,
+   "median_logprob": -21.184986114501953
+  },
+  {
+   "id": 36871,
+   "token": "akespeare",
+   "kind": "random",
+   "auroc": 0.34352977105177784,
+   "median_logprob": -21.22885799407959
+  },
+  {
+   "id": 41316,
+   "token": "ĠHA",
+   "kind": "random",
+   "auroc": 0.7480723589234057,
+   "median_logprob": -20.910634994506836
+  },
+  {
+   "id": 41782,
+   "token": "='%",
+   "kind": "random",
+   "auroc": 0.6014603924693729,
+   "median_logprob": -20.461434364318848
+  },
+  {
+   "id": 41916,
+   "token": "geom",
+   "kind": "random",
+   "auroc": 0.6764248935879524,
+   "median_logprob": -19.465429306030273
+  },
+  {
+   "id": 42422,
+   "token": "Ġuncovered",
+   "kind": "random",
+   "auroc": 0.7176862892893414,
+   "median_logprob": -22.49899196624756
+  },
+  {
+   "id": 43577,
+   "token": "swagen",
+   "kind": "random",
+   "auroc": 0.407682393612274,
+   "median_logprob": -20.422006607055664
+  },
+  {
+   "id": 44727,
+   "token": "ĠNF",
+   "kind": "random",
+   "auroc": 0.47015408016127513,
+   "median_logprob": -19.716291427612305
+  },
+  {
+   "id": 44844,
+   "token": "_Method",
+   "kind": "random",
+   "auroc": 0.6736886140060799,
+   "median_logprob": -21.035971641540527
+  },
+  {
+   "id": 45197,
+   "token": ".rawValue",
+   "kind": "random",
+   "auroc": 0.32013900080324553,
+   "median_logprob": -22.381732940673828
+  },
+  {
+   "id": 46821,
+   "token": "privacy",
+   "kind": "random",
+   "auroc": 0.5006395508931506,
+   "median_logprob": -20.403165817260742
+  },
+  {
+   "id": 48896,
+   "token": "Ġeve",
+   "kind": "random",
+   "auroc": 0.6148721384644602,
+   "median_logprob": -20.09959602355957
+  },
+  {
+   "id": 49216,
+   "token": "/problems",
+   "kind": "random",
+   "auroc": 0.5809778445527564,
+   "median_logprob": -20.929190635681152
+  },
+  {
+   "id": 49827,
+   "token": "ĠPredicate",
+   "kind": "random",
+   "auroc": 0.689485563365239,
+   "median_logprob": -20.869887351989746
+  },
+  {
+   "id": 50535,
+   "token": "ĠFI",
+   "kind": "random",
+   "auroc": 0.7752746325437503,
+   "median_logprob": -19.739020347595215
+  },
+  {
+   "id": 50891,
+   "token": "ĠWORLD",
+   "kind": "random",
+   "auroc": 0.508057622181926,
+   "median_logprob": -20.452221870422363
+  },
+  {
+   "id": 51708,
+   "token": "ĠEMAIL",
+   "kind": "random",
+   "auroc": 0.5321974960228986,
+   "median_logprob": -18.975253105163574
+  },
+  {
+   "id": 53586,
+   "token": "Ð°ÑĨÐ¸Ð¸",
+   "kind": "random",
+   "auroc": 0.6165974877324241,
+   "median_logprob": -20.584773063659668
+  },
+  {
+   "id": 55356,
+   "token": "rysler",
+   "kind": "random",
+   "auroc": 0.48482610518158886,
+   "median_logprob": -20.030019760131836
+  },
+  {
+   "id": 57370,
+   "token": "ĠfÃ¸",
+   "kind": "random",
+   "auroc": 0.5372134446118049,
+   "median_logprob": -19.168044090270996
+  },
+  {
+   "id": 58095,
+   "token": "ĠÐ»Ð¸",
+   "kind": "random",
+   "auroc": 0.45234415282559254,
+   "median_logprob": -20.170674324035645
+  },
+  {
+   "id": 58517,
+   "token": "Ġfading",
+   "kind": "random",
+   "auroc": 0.8455949874775766,
+   "median_logprob": -19.24416446685791
+  },
+  {
+   "id": 59193,
+   "token": "getTable",
+   "kind": "random",
+   "auroc": 0.8245502946290838,
+   "median_logprob": -20.202025413513184
+  },
+  {
+   "id": 59718,
+   "token": "<Customer",
+   "kind": "random",
+   "auroc": 0.5900301121878858,
+   "median_logprob": -19.166905403137207
+  },
+  {
+   "id": 60880,
+   "token": "(Document",
+   "kind": "random",
+   "auroc": 0.634226801158467,
+   "median_logprob": -20.68906879425049
+  },
+  {
+   "id": 61556,
+   "token": "Ġ[]).",
+   "kind": "random",
+   "auroc": 0.7693672464500061,
+   "median_logprob": -23.799715995788574
+  },
+  {
+   "id": 62734,
+   "token": "ThanOr",
+   "kind": "random",
+   "auroc": 0.8551212080067373,
+   "median_logprob": -19.68772792816162
+  },
+  {
+   "id": 64229,
+   "token": "ĠElm",
+   "kind": "random",
+   "auroc": 0.6670676549250706,
+   "median_logprob": -19.79024600982666
+  },
+  {
+   "id": 64254,
+   "token": "Ġwhiskey",
+   "kind": "random",
+   "auroc": 0.3400270455582725,
+   "median_logprob": -20.389766693115234
+  },
+  {
+   "id": 65854,
+   "token": "ĠVive",
+   "kind": "random",
+   "auroc": 0.6344294102046436,
+   "median_logprob": -22.098283767700195
+  },
+  {
+   "id": 66637,
+   "token": "czas",
+   "kind": "random",
+   "auroc": 0.4890185051005453,
+   "median_logprob": -19.8512601852417
+  },
+  {
+   "id": 66874,
+   "token": "Ġuserdata",
+   "kind": "random",
+   "auroc": 0.6169697131199721,
+   "median_logprob": -19.718456268310547
+  },
+  {
+   "id": 70053,
+   "token": "(pipe",
+   "kind": "random",
+   "auroc": 0.516823318566983,
+   "median_logprob": -20.894261360168457
+  },
+  {
+   "id": 70239,
+   "token": "_PHASE",
+   "kind": "random",
+   "auroc": 0.7498296434376875,
+   "median_logprob": -20.632288932800293
+  },
+  {
+   "id": 71618,
+   "token": "èµ·",
+   "kind": "random",
+   "auroc": 0.6096819207168384,
+   "median_logprob": -20.548734664916992
+  },
+  {
+   "id": 72757,
+   "token": "------+------+",
+   "kind": "random",
+   "auroc": 0.4125037698395075,
+   "median_logprob": -23.107797622680664
+  },
+  {
+   "id": 72783,
+   "token": ",message",
+   "kind": "random",
+   "auroc": 0.44280778069495325,
+   "median_logprob": -20.56272792816162
+  },
+  {
+   "id": 75391,
+   "token": "-yyyy",
+   "kind": "random",
+   "auroc": 0.699221372166593,
+   "median_logprob": -20.59323787689209
+  },
+  {
+   "id": 75457,
+   "token": "Ġvetor",
+   "kind": "random",
+   "auroc": 0.4076255023456544,
+   "median_logprob": -20.55017852783203
+  },
+  {
+   "id": 75822,
+   "token": "ĠMarriott",
+   "kind": "random",
+   "auroc": 0.43225963228361547,
+   "median_logprob": -21.00430965423584
+  },
+  {
+   "id": 76481,
+   "token": "postalcode",
+   "kind": "random",
+   "auroc": 0.5737752833037033,
+   "median_logprob": -19.12971782684326
+  },
+  {
+   "id": 76698,
+   "token": "_signals",
+   "kind": "random",
+   "auroc": 0.4184115789166465,
+   "median_logprob": -20.545236587524414
+  },
+  {
+   "id": 77405,
+   "token": "-article",
+   "kind": "random",
+   "auroc": 0.5767334176762223,
+   "median_logprob": -20.563976287841797
+  },
+  {
+   "id": 78516,
+   "token": "Walking",
+   "kind": "random",
+   "auroc": 0.766814541661538,
+   "median_logprob": -21.342445373535156
+  },
+  {
+   "id": 79951,
+   "token": "_sta",
+   "kind": "random",
+   "auroc": 0.7067346147192299,
+   "median_logprob": -21.58456325531006
+  },
+  {
+   "id": 80932,
+   "token": "imeInterval",
+   "kind": "random",
+   "auroc": 0.6338746674821787,
+   "median_logprob": -20.08258056640625
+  },
+  {
+   "id": 81119,
+   "token": "ĠProtector",
+   "kind": "random",
+   "auroc": 0.563292485826884,
+   "median_logprob": -19.72233009338379
+  },
+  {
+   "id": 83100,
+   "token": "_-_",
+   "kind": "random",
+   "auroc": 0.7416922888858153,
+   "median_logprob": -20.104308128356934
+  },
+  {
+   "id": 83412,
+   "token": "Ġfunciones",
+   "kind": "random",
+   "auroc": 0.3930945422875535,
+   "median_logprob": -20.69844150543213
+  },
+  {
+   "id": 84279,
+   "token": "ĠblockIdx",
+   "kind": "random",
+   "auroc": 0.6387732381789889,
+   "median_logprob": -21.406010627746582
+  },
+  {
+   "id": 84614,
+   "token": "ĠFieldType",
+   "kind": "random",
+   "auroc": 0.5141661368799646,
+   "median_logprob": -20.174509048461914
+  },
+  {
+   "id": 84828,
+   "token": "/business",
+   "kind": "random",
+   "auroc": 0.6608212476402814,
+   "median_logprob": -19.384623527526855
+  },
+  {
+   "id": 85693,
+   "token": "Tiny",
+   "kind": "random",
+   "auroc": 0.6113666635788878,
+   "median_logprob": -19.69917583465576
+  },
+  {
+   "id": 86121,
+   "token": "ÑĢÑĥÐ¿Ð¿",
+   "kind": "random",
+   "auroc": 0.4853427793985091,
+   "median_logprob": -18.674891471862793
+  },
+  {
+   "id": 86295,
+   "token": "\\controllers",
+   "kind": "random",
+   "auroc": 0.22808385561208022,
+   "median_logprob": -20.0213680267334
+  },
+  {
+   "id": 86995,
+   "token": "ĠbuttonText",
+   "kind": "random",
+   "auroc": 0.34528430617399253,
+   "median_logprob": -21.21484088897705
+  },
+  {
+   "id": 87677,
+   "token": "PEnd",
+   "kind": "random",
+   "auroc": 0.6736881910226851,
+   "median_logprob": -19.516775131225586
+  },
+  {
+   "id": 87819,
+   "token": "Ġincremented",
+   "kind": "random",
+   "auroc": 0.6498886073229424,
+   "median_logprob": -21.752300262451172
+  },
+  {
+   "id": 89108,
+   "token": ".instant",
+   "kind": "random",
+   "auroc": 0.7266960470932793,
+   "median_logprob": -19.81204891204834
+  },
+  {
+   "id": 89368,
+   "token": "_VE",
+   "kind": "random",
+   "auroc": 0.459060917645556,
+   "median_logprob": -19.007349014282227
+  },
+  {
+   "id": 89939,
+   "token": "Ġgdk",
+   "kind": "random",
+   "auroc": 0.6848947130882482,
+   "median_logprob": -19.295949935913086
+  },
+  {
+   "id": 90635,
+   "token": ".ONE",
+   "kind": "random",
+   "auroc": 0.7687803569895257,
+   "median_logprob": -20.23508358001709
+  },
+  {
+   "id": 91279,
+   "token": "Ġdcc",
+   "kind": "random",
+   "auroc": 0.337248044653511,
+   "median_logprob": -20.788962364196777
+  },
+  {
+   "id": 91684,
+   "token": ".statistics",
+   "kind": "random",
+   "auroc": 0.42983128461326,
+   "median_logprob": -20.421730995178223
+  },
+  {
+   "id": 91711,
+   "token": "ĠBaz",
+   "kind": "random",
+   "auroc": 0.7795918125642142,
+   "median_logprob": -20.31547451019287
+  },
+  {
+   "id": 92740,
+   "token": "Ġhorrend",
+   "kind": "random",
+   "auroc": 0.835696118577473,
+   "median_logprob": -18.26225757598877
+  },
+  {
+   "id": 93498,
+   "token": "bic",
+   "kind": "random",
+   "auroc": 0.6756527374004879,
+   "median_logprob": -19.24489116668701
+  },
+  {
+   "id": 93734,
+   "token": "Ġfds",
+   "kind": "random",
+   "auroc": 0.7491327782945225,
+   "median_logprob": -21.432703971862793
+  },
+  {
+   "id": 93918,
+   "token": "arov",
+   "kind": "random",
+   "auroc": 0.615346725833584,
+   "median_logprob": -19.823307037353516
+  },
+  {
+   "id": 95666,
+   "token": "AUDIO",
+   "kind": "random",
+   "auroc": 0.6920111972164309,
+   "median_logprob": -20.286611557006836
+  },
+  {
+   "id": 95904,
+   "token": "oralType",
+   "kind": "random",
+   "auroc": 0.3345566013115023,
+   "median_logprob": -20.993249893188477
+  },
+  {
+   "id": 96188,
+   "token": "occer",
+   "kind": "random",
+   "auroc": 0.6306390560025785,
+   "median_logprob": -19.965928077697754
+  },
+  {
+   "id": 96864,
+   "token": "Ġpacman",
+   "kind": "random",
+   "auroc": 0.3894869169121028,
+   "median_logprob": -20.374791145324707
+  },
+  {
+   "id": 97658,
+   "token": "Ġbufsize",
+   "kind": "random",
+   "auroc": 0.5132385342948591,
+   "median_logprob": -21.422234535217285
+  },
+  {
+   "id": 97843,
+   "token": "ĠValidates",
+   "kind": "random",
+   "auroc": 0.5756774396307524,
+   "median_logprob": -22.751190185546875
+  },
+  {
+   "id": 98489,
+   "token": "Ġpinnacle",
+   "kind": "random",
+   "auroc": 0.6884069557081397,
+   "median_logprob": -19.42325210571289
+  },
+  {
+   "id": 100718,
+   "token": "å¯Ĵ",
+   "kind": "random",
+   "auroc": 0.7776769667353169,
+   "median_logprob": -20.51218318939209
+  },
+  {
+   "id": 101037,
+   "token": "åĲĹ",
+   "kind": "random",
+   "auroc": 0.4259838276528778,
+   "median_logprob": -22.672558784484863
+  },
+  {
+   "id": 101574,
+   "token": "åįµ",
+   "kind": "random",
+   "auroc": 0.1824712297269346,
+   "median_logprob": -23.2388858795166
+  },
+  {
+   "id": 101697,
+   "token": "èŀº",
+   "kind": "random",
+   "auroc": 0.4424478218258586,
+   "median_logprob": -19.751218795776367
+  },
+  {
+   "id": 101837,
+   "token": "åĬĥ",
+   "kind": "random",
+   "auroc": 0.7261413043708144,
+   "median_logprob": -18.008259773254395
+  },
+  {
+   "id": 102085,
+   "token": "ä¸įçŁ¥",
+   "kind": "random",
+   "auroc": 0.8364412038276613,
+   "median_logprob": -20.05140209197998
+  },
+  {
+   "id": 102455,
+   "token": "åĺĽ",
+   "kind": "random",
+   "auroc": 0.6375133821371575,
+   "median_logprob": -21.09455394744873
+  },
+  {
+   "id": 103283,
+   "token": "åİŁæĸĩ",
+   "kind": "random",
+   "auroc": 0.787053239650971,
+   "median_logprob": -21.737500190734863
+  },
+  {
+   "id": 103752,
+   "token": "èĢģçĪ·",
+   "kind": "random",
+   "auroc": 0.7147154654149742,
+   "median_logprob": -21.89443874359131
+  },
+  {
+   "id": 103994,
+   "token": "æľĢé«ĺ",
+   "kind": "random",
+   "auroc": 0.3190164028730724,
+   "median_logprob": -21.587419509887695
+  },
+  {
+   "id": 104680,
+   "token": "èĴĤ",
+   "kind": "random",
+   "auroc": 0.678336778533085,
+   "median_logprob": -18.84627914428711
+  },
+  {
+   "id": 105645,
+   "token": "åıĳå¸ĥçļĦ",
+   "kind": "random",
+   "auroc": 0.8055481885947603,
+   "median_logprob": -19.435458183288574
+  },
+  {
+   "id": 107334,
+   "token": "åĪ¶å®ļäºĨ",
+   "kind": "random",
+   "auroc": 0.7086077966837256,
+   "median_logprob": -20.949777603149414
+  },
+  {
+   "id": 107399,
+   "token": "æĦ£",
+   "kind": "random",
+   "auroc": 0.8313924740256471,
+   "median_logprob": -20.24333095550537
+  },
+  {
+   "id": 108245,
+   "token": "èĭıèģĶ",
+   "kind": "random",
+   "auroc": 0.3246714793717343,
+   "median_logprob": -21.99819564819336
+  },
+  {
+   "id": 109493,
+   "token": "æ°ĳä¿Ĺ",
+   "kind": "random",
+   "auroc": 0.4826521820232903,
+   "median_logprob": -19.984962463378906
+  },
+  {
+   "id": 110316,
+   "token": "æ»ĭåĳ³",
+   "kind": "random",
+   "auroc": 0.406934770461716,
+   "median_logprob": -19.629165649414062
+  },
+  {
+   "id": 112562,
+   "token": "å°ıåº·ç¤¾ä¼ļ",
+   "kind": "random",
+   "auroc": 0.49664870256188354,
+   "median_logprob": -21.525643348693848
+  },
+  {
+   "id": 112754,
+   "token": "åįĥåħĥ",
+   "kind": "random",
+   "auroc": 0.2402987700911825,
+   "median_logprob": -21.679412841796875
+  },
+  {
+   "id": 113068,
+   "token": "èĢĮçİ°åľ¨",
+   "kind": "random",
+   "auroc": 0.8254339069411152,
+   "median_logprob": -21.988412857055664
+  },
+  {
+   "id": 113103,
+   "token": "åıĺåİĭåĻ¨",
+   "kind": "random",
+   "auroc": 0.5357685333346869,
+   "median_logprob": -25.70783042907715
+  },
+  {
+   "id": 113741,
+   "token": "è¿ĺä¸įå¦Ĥ",
+   "kind": "random",
+   "auroc": 0.8794708816116006,
+   "median_logprob": -19.48834800720215
+  },
+  {
+   "id": 114627,
+   "token": "éĻĲæľŁ",
+   "kind": "random",
+   "auroc": 0.4616430197799726,
+   "median_logprob": -22.981752395629883
+  },
+  {
+   "id": 114808,
+   "token": "å¼ķåıĳäºĨ",
+   "kind": "random",
+   "auroc": 0.8343032342579328,
+   "median_logprob": -19.791616439819336
+  },
+  {
+   "id": 115039,
+   "token": "æľĽåİ»",
+   "kind": "random",
+   "auroc": 0.6483785566030035,
+   "median_logprob": -20.871853828430176
+  },
+  {
+   "id": 115324,
+   "token": "éĩĮç¨ĭç¢ĳ",
+   "kind": "random",
+   "auroc": 0.2555999829114708,
+   "median_logprob": -21.316767692565918
+  },
+  {
+   "id": 116836,
+   "token": "åĬłå¼·",
+   "kind": "random",
+   "auroc": 0.6212551693858154,
+   "median_logprob": -18.0153865814209
+  },
+  {
+   "id": 118525,
+   "token": "æ±¾",
+   "kind": "random",
+   "auroc": 0.4300546198457887,
+   "median_logprob": -19.086488723754883
+  },
+  {
+   "id": 118823,
+   "token": "éĩįè¦ģä¸¾æİª",
+   "kind": "random",
+   "auroc": 0.37496801188075757,
+   "median_logprob": -22.99740505218506
+  },
+  {
+   "id": 118918,
+   "token": "ç£ģåľº",
+   "kind": "random",
+   "auroc": 0.43238546984361037,
+   "median_logprob": -23.014992713928223
+  },
+  {
+   "id": 119526,
+   "token": "èłķ",
+   "kind": "random",
+   "auroc": 0.42415950027049787,
+   "median_logprob": -22.239059448242188
+  },
+  {
+   "id": 119786,
+   "token": "çºŃ",
+   "kind": "random",
+   "auroc": 0.5223923179447744,
+   "median_logprob": -18.80964469909668
+  },
+  {
+   "id": 121252,
+   "token": "èħ©",
+   "kind": "random",
+   "auroc": 0.7225939541291427,
+   "median_logprob": -20.4971342086792
+  },
+  {
+   "id": 121308,
+   "token": "æ»ĥ",
+   "kind": "random",
+   "auroc": 0.7245823990687598,
+   "median_logprob": -17.316558837890625
+  },
+  {
+   "id": 123430,
+   "token": "èĸģ",
+   "kind": "random",
+   "auroc": 0.42285544246389517,
+   "median_logprob": -19.533501625061035
+  },
+  {
+   "id": 123812,
+   "token": "ðĿĲ",
+   "kind": "random",
+   "auroc": 0.6013146746898157,
+   "median_logprob": -22.517857551574707
+  },
+  {
+   "id": 124192,
+   "token": "ãģ¹",
+   "kind": "random",
+   "auroc": 0.6723329522252945,
+   "median_logprob": -17.930908203125
+  },
+  {
+   "id": 124705,
+   "token": "Ð¾Ð»Ð¾Ð³",
+   "kind": "random",
+   "auroc": 0.47931293961192967,
+   "median_logprob": -19.029406547546387
+  },
+  {
+   "id": 125182,
+   "token": "Ġ×Ķ×ĺ",
+   "kind": "random",
+   "auroc": 0.5788620816112622,
+   "median_logprob": -17.68661117553711
+  },
+  {
+   "id": 125704,
+   "token": "Ø¶Ø¹",
+   "kind": "random",
+   "auroc": 0.7822769111552987,
+   "median_logprob": -18.140287399291992
+  },
+  {
+   "id": 126792,
+   "token": "à¹ģà¸ķà¹Īà¸ĩ",
+   "kind": "random",
+   "auroc": 0.711916372798953,
+   "median_logprob": -21.7042818069458
+  },
+  {
+   "id": 126944,
+   "token": "×¨×ĳ",
+   "kind": "random",
+   "auroc": 0.8383585875569282,
+   "median_logprob": -18.452372550964355
+  },
+  {
+   "id": 127110,
+   "token": "ÙĪÙĬØ±",
+   "kind": "random",
+   "auroc": 0.5578992360496904,
+   "median_logprob": -16.82925033569336
+  },
+  {
+   "id": 127122,
+   "token": "Ä±rÄ±m",
+   "kind": "random",
+   "auroc": 0.8285314143422672,
+   "median_logprob": -20.21298122406006
+  },
+  {
+   "id": 127220,
+   "token": "ãĥ¡ãĥª",
+   "kind": "random",
+   "auroc": 0.49066771735741965,
+   "median_logprob": -16.880379676818848
+  },
+  {
+   "id": 127682,
+   "token": "Ð½Ð°ÑĤ",
+   "kind": "random",
+   "auroc": 0.6438048371535079,
+   "median_logprob": -19.08769702911377
+  },
+  {
+   "id": 128010,
+   "token": "ĠÙħØ³Ø§Ø¡",
+   "kind": "random",
+   "auroc": 0.45621297044741915,
+   "median_logprob": -18.656847953796387
+  },
+  {
+   "id": 129125,
+   "token": "ëĵ¤ìĿĦ",
+   "kind": "random",
+   "auroc": 0.7070414891722596,
+   "median_logprob": -17.34687900543213
+  },
+  {
+   "id": 131197,
+   "token": "Ġ×ĳ×Ĳ×¨×¥",
+   "kind": "random",
+   "auroc": 0.47811399317896974,
+   "median_logprob": -16.72510051727295
+  },
+  {
+   "id": 131472,
+   "token": "ĠÅ¼ycia",
+   "kind": "random",
+   "auroc": 0.7729685270745326,
+   "median_logprob": -21.206050872802734
+  },
+  {
+   "id": 131884,
+   "token": "ĠÐĽÐµ",
+   "kind": "random",
+   "auroc": 0.6091616511410611,
+   "median_logprob": -18.424817085266113
+  },
+  {
+   "id": 131990,
+   "token": "ãĤĵãģ§ãģĻãģĳãģ©",
+   "kind": "random",
+   "auroc": 0.8584164601450242,
+   "median_logprob": -20.414493560791016
+  },
+  {
+   "id": 132258,
+   "token": "wÅĤ",
+   "kind": "random",
+   "auroc": 0.6191095861149779,
+   "median_logprob": -19.355274200439453
+  },
+  {
+   "id": 132433,
+   "token": "æ§ĺãĢħãģª",
+   "kind": "random",
+   "auroc": 0.8762327322316308,
+   "median_logprob": -18.21410369873047
+  },
+  {
+   "id": 133435,
+   "token": "×¡×ĵ",
+   "kind": "random",
+   "auroc": 0.7986899358291891,
+   "median_logprob": -18.282529830932617
+  },
+  {
+   "id": 133975,
+   "token": "Ð¾Ð²Ð°Ð»",
+   "kind": "random",
+   "auroc": 0.5574451633752213,
+   "median_logprob": -19.968649864196777
+  },
+  {
+   "id": 135207,
+   "token": "mÄ±yor",
+   "kind": "random",
+   "auroc": 0.8662088717383221,
+   "median_logprob": -19.529356002807617
+  },
+  {
+   "id": 135482,
+   "token": "Ø³ØªØ·ÙĬØ¹",
+   "kind": "random",
+   "auroc": 0.803011134191905,
+   "median_logprob": -19.124272346496582
+  },
+  {
+   "id": 137416,
+   "token": "ãģĨãģ¡ãģ«",
+   "kind": "random",
+   "auroc": 0.6061741194225938,
+   "median_logprob": -18.380390167236328
+  },
+  {
+   "id": 138153,
+   "token": "Ð¸Ð½Ð´Ð¸Ð²Ð¸Ð´ÑĥÐ°Ð»ÑĮÐ½",
+   "kind": "random",
+   "auroc": 0.4947564863446156,
+   "median_logprob": -17.811325073242188
+  },
+  {
+   "id": 138435,
+   "token": "Ġ×ķ×¨×§",
+   "kind": "random",
+   "auroc": 0.8479213961497514,
+   "median_logprob": -16.388720512390137
+  },
+  {
+   "id": 139531,
+   "token": "ĠgÃ¼nlÃ¼k",
+   "kind": "random",
+   "auroc": 0.4755629803240814,
+   "median_logprob": -18.178479194641113
+  },
+  {
+   "id": 141026,
+   "token": "ĠznalazÅĤ",
+   "kind": "random",
+   "auroc": 0.4914849212764455,
+   "median_logprob": -21.500478744506836
+  },
+  {
+   "id": 141327,
+   "token": "Ø²Ø§Ø¯",
+   "kind": "random",
+   "auroc": 0.622373960465434,
+   "median_logprob": -19.960800170898438
+  },
+  {
+   "id": 143219,
+   "token": "ĠÄĳáºŃm",
+   "kind": "random",
+   "auroc": 0.5741386260399576,
+   "median_logprob": -19.11685276031494
+  },
+  {
+   "id": 144210,
+   "token": "ëł¬",
+   "kind": "random",
+   "auroc": 0.8157784649848001,
+   "median_logprob": -17.584721565246582
+  },
+  {
+   "id": 144460,
+   "token": "ëĥĦ",
+   "kind": "random",
+   "auroc": 0.6501123655388661,
+   "median_logprob": -18.3154239654541
+  },
+  {
+   "id": 144830,
+   "token": "ãĥĤ",
+   "kind": "random",
+   "auroc": 0.6175052100979671,
+   "median_logprob": -18.068317413330078
+  },
+  {
+   "id": 144866,
+   "token": "ï»ª",
+   "kind": "random",
+   "auroc": 0.718264296098528,
+   "median_logprob": -19.781325340270996
+  },
+  {
+   "id": 145061,
+   "token": "ëĮĲ",
+   "kind": "random",
+   "auroc": 0.45162085122024365,
+   "median_logprob": -19.225818634033203
+  },
+  {
+   "id": 148556,
+   "token": "ðŁŁ¢",
+   "kind": "random",
+   "auroc": 0.519481134729094,
+   "median_logprob": -20.456445693969727
+  },
+  {
+   "id": 148817,
+   "token": "ãĲĤ",
+   "kind": "random",
+   "auroc": 0.644909035306001,
+   "median_logprob": -18.253522872924805
+  },
+  {
+   "id": 149684,
+   "token": "âŁ·",
+   "kind": "random",
+   "auroc": 0.491090912244058,
+   "median_logprob": -20.03789234161377
+  },
+  {
+   "id": 149956,
+   "token": "ðŁ¦¶",
+   "kind": "random",
+   "auroc": 0.5696708639308947,
+   "median_logprob": -20.350425720214844
+  },
+  {
+   "id": 151644,
+   "token": "<|im_start|>",
+   "kind": "special",
+   "auroc": 0.7117243383376499,
+   "median_logprob": -21.69713592529297
+  },
+  {
+   "id": 151645,
+   "token": "<|im_end|>",
+   "kind": "special",
+   "auroc": 0.7117323750221538,
+   "median_logprob": -21.69713592529297
+  },
+  {
+   "id": 151646,
+   "token": "<|object_ref_start|>",
+   "kind": "special",
+   "auroc": 0.711745487507397,
+   "median_logprob": -21.69713592529297
+  },
+  {
+   "id": 151647,
+   "token": "<|object_ref_end|>",
+   "kind": "special",
+   "auroc": 0.7119303312509861,
+   "median_logprob": -21.69713592529297
+  },
+  {
+   "id": 151648,
+   "token": "<|box_start|>",
+   "kind": "special",
+   "auroc": 0.7118977615295756,
+   "median_logprob": -21.69713592529297
+  },
+  {
+   "id": 151649,
+   "token": "<|box_end|>",
+   "kind": "special",
+   "auroc": 0.7118744974428539,
+   "median_logprob": -21.69713592529297
+  },
+  {
+   "id": 151650,
+   "token": "<|quad_start|>",
+   "kind": "special",
+   "auroc": 0.7114993111715413,
+   "median_logprob": -21.69713592529297
+  },
+  {
+   "id": 151651,
+   "token": "<|quad_end|>",
+   "kind": "special",
+   "auroc": 0.7114532059814929,
+   "median_logprob": -21.69713592529297
+  },
+  {
+   "id": 151653,
+   "token": "<|vision_end|>",
+   "kind": "special",
+   "auroc": 0.7118931087122312,
+   "median_logprob": -21.69713592529297
+  },
+  {
+   "id": 151654,
+   "token": "<|vision_pad|>",
+   "kind": "special",
+   "auroc": 0.7130537751479489,
+   "median_logprob": -21.70224666595459
+  },
+  {
+   "id": 151655,
+   "token": "<|image_pad|>",
+   "kind": "special",
+   "auroc": 0.7129882127217332,
+   "median_logprob": -21.70224666595459
+  },
+  {
+   "id": 151656,
+   "token": "<|video_pad|>",
+   "kind": "special",
+   "auroc": 0.7128228262143113,
+   "median_logprob": -21.702778816223145
+  },
+  {
+   "id": 151657,
+   "token": "<tool_call>",
+   "kind": "special",
+   "auroc": 0.7127995621275895,
+   "median_logprob": -21.70392894744873
+  },
+  {
+   "id": 151658,
+   "token": "</tool_call>",
+   "kind": "special",
+   "auroc": 0.7127475351700119,
+   "median_logprob": -21.70392894744873
+  },
+  {
+   "id": 151659,
+   "token": "<|fim_prefix|>",
+   "kind": "special",
+   "auroc": 0.7126845106441657,
+   "median_logprob": -21.70392894744873
+  },
+  {
+   "id": 151660,
+   "token": "<|fim_middle|>",
+   "kind": "special",
+   "auroc": 0.7130144376922195,
+   "median_logprob": -21.702778816223145
+  },
+  {
+   "id": 151661,
+   "token": "<|fim_suffix|>",
+   "kind": "special",
+   "auroc": 0.7130017481903713,
+   "median_logprob": -21.702778816223145
+  },
+  {
+   "id": 151662,
+   "token": "<|fim_pad|>",
+   "kind": "special",
+   "auroc": 0.7130377017789413,
+   "median_logprob": -21.702778816223145
+  },
+  {
+   "id": 151663,
+   "token": "<|repo_name|>",
+   "kind": "special",
+   "auroc": 0.7130546211147389,
+   "median_logprob": -21.70392894744873
+  },
+  {
+   "id": 151664,
+   "token": "<|file_sep|>",
+   "kind": "special",
+   "auroc": 0.712832554832395,
+   "median_logprob": -21.704699516296387
+  }
+ ],
+ "rank_of_eos": 1,
+ "n_candidates": 220,
+ "max_other_auroc": 0.8794708816116006,
+ "n_within_002": 0,
+ "seconds": 3589.3080518245697
+}

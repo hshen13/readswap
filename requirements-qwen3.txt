@@ -1,0 +1,11 @@
+# Second environment (Python 3.10.19) for the Qwen3-4B replication only: q3_generate.py, q3_train.py and
+# q3_readout.py need a vLLM / transformers release that supports Qwen3. Grading and analysis use requirements.txt.
+torch==2.8.0
+transformers==4.57.1
+vllm==0.11.0
+peft==0.17.1
+accelerate==1.11.0
+numpy==2.2.6
+scipy==1.15.3
+safetensors==0.5.3
+huggingface-hub==0.36.2

@@ -1,0 +1,157 @@
+{
+ "OctoThinker-3B-Short-LaSeR": {
+  "n_responses": 30600,
+  "partial_all": -0.623819269919825,
+  "partial_no_trunc": -0.6146372085681064,
+  "truncated": {
+   "total": 5162,
+   "correct": 270,
+   "incorrect": 4892
+  },
+  "partial_within_problem": -0.6352005902960617,
+  "partial_within_problem_no_trunc": -0.6058608828783312,
+  "spearman_within_problem_correct": {
+   "n_problems": 575,
+   "mean": -0.4694529176633762,
+   "share_negative": 0.8660869565217392
+  },
+  "spearman_within_problem_incorrect": {
+   "n_problems": 1019,
+   "mean": -0.637207506855504,
+   "share_negative": 0.9528949950932286
+  },
+  "within_problem_auroc": {
+   "n_problems": 645,
+   "mean": 0.6536605636969535
+  },
+  "pairs": {
+   "pairs": 53492,
+   "incorrect_scores_higher": 0.33917221266731473,
+   "pairs_incorrect_shorter": 19600,
+   "incorrect_shorter_scores_higher": 0.6808673469387755,
+   "incorrect_longer_scores_higher": 0.1415673315236634
+  },
+  "example": {
+   "pid": "math500:test/prealgebra/1317.json",
+   "seed": 1,
+   "short": {
+    "k": 3,
+    "len": 191,
+    "R0": 0.9491721153259278,
+    "tail": "that \\( 10000 \\) is a power of 10. Specifically, \\( 10000 \\) can be rewritten as \\( 10^4 \\). Thus, we set \\( 10^x = 10^4 \\). Since the bases are the same, the exponents must be equal:\n\n\\[ x = 4 \\]\n\nThus, \\( x \\) is equal to \\( \\boxed{4} \\]."
+   },
+   "long": {
+    "k": 7,
+    "len": 5900,
+    "R0": 0.1703826904296875,
+    "tail": " \\) is:\n\\[\n\\boxed{4}\n\\]\n\nThis value is not accurate.\n\nThe value of \\( x \\) is approximately 2.0043.\n\nThus, the value of \\( x \\) is:\n\\[\n\\boxed{4}\n\\]\n\nThe value of \\( x \\) is approximately 2.0043.\n\nThus, the value of \\( x \\) is:\n\\[\\boxed{4}\\]"
+   }
+  }
+ },
+ "Qwen2.5-7B-LaSeR": {
+  "n_responses": 30600,
+  "partial_all": -0.5056235775542623,
+  "partial_no_trunc": -0.5203854957225076,
+  "truncated": {
+   "total": 1906,
+   "correct": 32,
+   "incorrect": 1874
+  },
+  "partial_within_problem": -0.41678479057710643,
+  "partial_within_problem_no_trunc": -0.36220844909780436,
+  "spearman_within_problem_correct": {
+   "n_problems": 890,
+   "mean": -0.2056367271505036,
+   "share_negative": 0.6865168539325842
+  },
+  "spearman_within_problem_incorrect": {
+   "n_problems": 671,
+   "mean": -0.45343271686952186,
+   "share_negative": 0.8807749627421758
+  },
+  "within_problem_auroc": {
+   "n_problems": 559,
+   "mean": 0.6991135367935812
+  },
+  "pairs": {
+   "pairs": 46917,
+   "incorrect_scores_higher": 0.2974827887546092,
+   "pairs_incorrect_shorter": 16810,
+   "incorrect_shorter_scores_higher": 0.5552647233789411,
+   "incorrect_longer_scores_higher": 0.15355233002291827
+  },
+  "example": {
+   "pid": "OlympiadBench:2239",
+   "seed": 1,
+   "short": {
+    "k": 7,
+    "len": 1292,
+    "R0": 1.0014635086059571,
+    "tail": " to check if \\( 96 \\) is three times \\( 32 \\):\n\\[\n96 = 3 \\times 32\n\\]\nThis is true.\n\nSince all the conditions are satisfied, our solution is correct. Therefore, the number of children is \\(\\boxed{3}\\).\n\n</think> <answer> \\boxed{3} </answer>"
+   },
+   "long": {
+    "k": 1,
+    "len": 7189,
+    "R0": 0.06820240020751954,
+    "tail": "t conclude:\n\n\\[\n\\boxed{3}\n\\]\n\nThisboxed answer is provided with the understanding that it may not perfectly align with the theoretical solution due to the non-integer result obtained from the equations. </think> <answer> \\boxed{3} </answer>"
+   }
+  }
+ },
+ "ORZ-7B-LaSeR": {
+  "n_responses": 30600,
+  "partial_all": -0.6766893817404255,
+  "partial_no_trunc": -0.6678337688470644,
+  "truncated": {
+   "total": 1618,
+   "correct": 94,
+   "incorrect": 1524
+  },
+  "partial_within_problem": -0.5563382894814876,
+  "partial_within_problem_no_trunc": -0.5067527364254817,
+  "spearman_within_problem_correct": {
+   "n_problems": 897,
+   "mean": -0.2087723416459452,
+   "share_negative": 0.6599777034559643
+  },
+  "spearman_within_problem_incorrect": {
+   "n_problems": 636,
+   "mean": -0.4192109694343758,
+   "share_negative": 0.8663522012578616
+  },
+  "within_problem_auroc": {
+   "n_problems": 492,
+   "mean": 0.6747695891915511
+  },
+  "pairs": {
+   "pairs": 40598,
+   "incorrect_scores_higher": 0.31676437262919355,
+   "pairs_incorrect_shorter": 14453,
+   "incorrect_shorter_scores_higher": 0.5918494430222099,
+   "incorrect_longer_scores_higher": 0.16469688276917194
+  },
+  "example": {
+   "pid": "math500:test/prealgebra/805.json",
+   "seed": 1,
+   "short": {
+    "k": 6,
+    "len": 640,
+    "R0": 0.9557025909423829,
+    "tail": " is \\( n = 41 \\) and \\( n + 2 = 43 \\). Both 41 and 43 are prime numbers.\n\nTherefore, the number of students that showed up to the archery class this week is \\( n = 41 \\).\n\nThe answer is \\(\\boxed{41}\\).\n</think>\n<answer> \\boxed{41}\n</answer>"
+   },
+   "long": {
+    "k": 5,
+    "len": 5161,
+    "R0": 0.10980224609375,
+    "tail": "ider the number 47:\n- \\( n = 47 \\)\n  - \\( n \\) is not between 30 and 50. This was an error in the previous check.\n\nThe correct number within the range [30, 50] that fits all the criteria is:\n\\boxed{31}\n</think>\n<answer> \\boxed{41}\n</answer>"
+   }
+  }
+ },
+ "gpu_hours_wallclock_incl_queue": {
+  "OctoThinker-3B-Short-LaSeR|generation": 158.64805555555554,
+  "OctoThinker-3B-Short-LaSeR|readout": 117.2425,
+  "Qwen2.5-7B-LaSeR|generation": 86.59916666666668,
+  "Qwen2.5-7B-LaSeR|readout": 15.163611111111111,
+  "ORZ-7B-LaSeR|generation": 49.82444444444446,
+  "ORZ-7B-LaSeR|readout": 12.476944444444445
+ }
+}

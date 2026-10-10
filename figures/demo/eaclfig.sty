@@ -1,0 +1,52 @@
+% Shared visual style (fonts, colours, TikZ styles) for the TikZ figures of the paper.
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{eaclfig}
+\RequirePackage[T1]{fontenc}
+\RequirePackage{newtxtext}
+\RequirePackage{newtxmath}
+\RequirePackage{helvet}
+\RequirePackage{inconsolata}
+\RequirePackage{fontawesome5}
+\RequirePackage{xcolor}
+\RequirePackage{tikz}
+\usetikzlibrary{positioning,calc,arrows.meta,fit,backgrounds,shapes.misc}
+\renewcommand{\familydefault}{\sfdefault}
+
+% palette: cool = original method, warm = our protocol
+\definecolor{coolbg}{HTML}{E9F1FA}
+\definecolor{cooltitle}{HTML}{1F4E79}
+\definecolor{coolline}{HTML}{9DB7D1}
+\definecolor{warmbg}{HTML}{FCEBDA}
+\definecolor{warmtitle}{HTML}{B8561B}
+\definecolor{accent}{HTML}{E07B2A}
+\definecolor{cardline}{HTML}{C5CFD9}
+\definecolor{ink}{HTML}{222222}
+\definecolor{muted}{HTML}{6B7785}
+\definecolor{hlblue}{HTML}{D4E5F7}
+\definecolor{hlorange}{HTML}{FAD3AD}
+\definecolor{hlred}{HTML}{F7D4D7}
+\definecolor{txred}{HTML}{B3261E}
+\definecolor{hlgreen}{HTML}{D5EFDC}
+\definecolor{txgreen}{HTML}{1E7B34}
+\definecolor{chipgrey}{HTML}{EEF1F4}
+
+\tikzset{
+  every picture/.style={font=\fontsize{9}{10.8}\selectfont, text=ink},
+  panelcool/.style={rounded corners=5pt, fill=coolbg, draw=none},
+  panelwarm/.style={rounded corners=5pt, fill=warmbg, draw=none},
+  card/.style={rounded corners=2.5pt, fill=white, draw=cardline, line width=0.5pt,
+               inner xsep=4pt, inner ysep=3pt, align=left},
+  chip/.style={rounded corners=2pt, fill=chipgrey, draw=none, inner xsep=3pt, inner ysep=1.6pt},
+  flow/.style={-{Stealth[length=4pt,width=3.4pt]}, line width=0.7pt, draw=muted},
+  flowwarm/.style={-{Stealth[length=4pt,width=3.4pt]}, line width=0.8pt, draw=accent},
+}
+% text helpers
+\newcommand{\ptitle}[2]{{\fontsize{10.5}{12}\selectfont\bfseries\color{#1}#2}}
+\newcommand{\lab}[1]{{\color{muted}#1}}
+\newcommand{\mono}[1]{{\ttfamily #1}}
+\newcommand{\hl}[2]{\setlength{\fboxsep}{1pt}\colorbox{#1}{\strut #2}}
+\newcommand{\good}{{\color{txgreen}\faCheck}}
+\newcommand{\bad}{{\color{txred}\faTimes}}
+\newcommand{\ansgood}[1]{\setlength{\fboxsep}{1.5pt}\colorbox{hlgreen}{\strut\color{txgreen}#1}\,\good}
+\newcommand{\ansbad}[1]{\setlength{\fboxsep}{1.5pt}\colorbox{hlred}{\strut\color{txred}#1}\,\bad}
+\endinput

@@ -1,0 +1,122 @@
+{
+  "confirmatory": [
+    {
+      "path": "data/confirmatory/OlympiadBench/test.jsonl",
+      "revision": "RUCBM/LaSeR commit 48996f78e76986982f8678a892c21483998823fe",
+      "rows": 675,
+      "sha256": "5ee85c9bdfd623654b4172c7b3168478ff5b57d3e45b7d3e1f2089178f5d2728",
+      "source": "LaSeR@48996f7:data/OlympiadBench/test.jsonl"
+    },
+    {
+      "path": "data/confirmatory/aime24/test.jsonl",
+      "revision": "RUCBM/LaSeR commit 48996f78e76986982f8678a892c21483998823fe",
+      "rows": 30,
+      "sha256": "1c1004689dbaec0bd43b71f7083cabffefc27716783e19235947dc355031a95c",
+      "source": "LaSeR@48996f7:data/aime24/test.jsonl"
+    },
+    {
+      "path": "data/confirmatory/aime25/test.jsonl",
+      "revision": "RUCBM/LaSeR commit 48996f78e76986982f8678a892c21483998823fe",
+      "rows": 30,
+      "sha256": "b4e273c02d3e7fe1b74b59eae768fc8230bfb0f79539890cb56f4361caac0331",
+      "source": "LaSeR@48996f7:data/aime25/test.jsonl"
+    },
+    {
+      "path": "data/confirmatory/amc23/test.jsonl",
+      "revision": "RUCBM/LaSeR commit 48996f78e76986982f8678a892c21483998823fe",
+      "rows": 40,
+      "sha256": "9e2f9d5c955b2eb00d34170e6eb805e67d7ceea174006a30f993c2a40511d4ab",
+      "source": "LaSeR@48996f7:data/amc23/test.jsonl"
+    },
+    {
+      "path": "data/confirmatory/math500/test.jsonl",
+      "revision": "RUCBM/LaSeR commit 48996f78e76986982f8678a892c21483998823fe",
+      "rows": 500,
+      "sha256": "35dc41080a3680858b27fa7e0533d2d547825316fc5dafe5d316f4ccc5a06132",
+      "source": "LaSeR@48996f7:data/math500/test.jsonl"
+    }
+  ],
+  "created_utc": "2026-09-23T20:38:53.243905+00:00",
+  "deepmath_shards": [
+    {
+      "bytes": 216818587,
+      "path": "data/deepmath_raw/data/train-00000-of-00010.parquet",
+      "revision": "5cf055d1fe3d7a2eb19719ac020211469736ae44",
+      "sha256": "d6412432f30425e848a224dc641e681eb1ed51b970d52536eda7daefc01d8c8b",
+      "source": "https://huggingface.co/datasets/zwhe99/DeepMath-103K"
+    },
+    {
+      "bytes": 212374597,
+      "path": "data/deepmath_raw/data/train-00001-of-00010.parquet",
+      "revision": "5cf055d1fe3d7a2eb19719ac020211469736ae44",
+      "sha256": "eef9d3012456239eb0f4cd462ac7bebb7d6c4f675c41329c680ef8a506ded512",
+      "source": "https://huggingface.co/datasets/zwhe99/DeepMath-103K"
+    },
+    {
+      "bytes": 213616309,
+      "path": "data/deepmath_raw/data/train-00002-of-00010.parquet",
+      "revision": "5cf055d1fe3d7a2eb19719ac020211469736ae44",
+      "sha256": "20e4dc6527d94c2057a9b727f8b58994395de602e284b3294f7d2451f75d681a",
+      "source": "https://huggingface.co/datasets/zwhe99/DeepMath-103K"
+    },
+    {
+      "bytes": 208137532,
+      "path": "data/deepmath_raw/data/train-00003-of-00010.parquet",
+      "revision": "5cf055d1fe3d7a2eb19719ac020211469736ae44",
+      "sha256": "c5b20135f93e7890da191973ad77d88e67c95144ccc169ec592489f044e7c38a",
+      "source": "https://huggingface.co/datasets/zwhe99/DeepMath-103K"
+    },
+    {
+      "bytes": 207032084,
+      "path": "data/deepmath_raw/data/train-00004-of-00010.parquet",
+      "revision": "5cf055d1fe3d7a2eb19719ac020211469736ae44",
+      "sha256": "4153e531d78ca278d2e12e6d08099b66126b26b99ca6a92b3d6f95c156818749",
+      "source": "https://huggingface.co/datasets/zwhe99/DeepMath-103K"
+    },
+    {
+      "bytes": 207744721,
+      "path": "data/deepmath_raw/data/train-00005-of-00010.parquet",
+      "revision": "5cf055d1fe3d7a2eb19719ac020211469736ae44",
+      "sha256": "110586bdc6f35b0434bccbd582f1e97e8328da0752ccd36590a50178885f0360",
+      "source": "https://huggingface.co/datasets/zwhe99/DeepMath-103K"
+    },
+    {
+      "bytes": 207048095,
+      "path": "data/deepmath_raw/data/train-00006-of-00010.parquet",
+      "revision": "5cf055d1fe3d7a2eb19719ac020211469736ae44",
+      "sha256": "e39c00ed42a6a1af74ddc042840884a59adcb9139a23f535e399ddf0c292ef76",
+      "source": "https://huggingface.co/datasets/zwhe99/DeepMath-103K"
+    },
+    {
+      "bytes": 207374607,
+      "path": "data/deepmath_raw/data/train-00007-of-00010.parquet",
+      "revision": "5cf055d1fe3d7a2eb19719ac020211469736ae44",
+      "sha256": "fdeb213b5c2d0bb50f1081ae48b7ce4fa38147efe623de5d6d836a32f4044dad",
+      "source": "https://huggingface.co/datasets/zwhe99/DeepMath-103K"
+    },
+    {
+      "bytes": 273432098,
+      "path": "data/deepmath_raw/data/train-00008-of-00010.parquet",
+      "revision": "5cf055d1fe3d7a2eb19719ac020211469736ae44",
+      "sha256": "d8e5b1417f0364312896d259efbea0600c1fac22eacb2f71187c5b0e9704f388",
+      "source": "https://huggingface.co/datasets/zwhe99/DeepMath-103K"
+    },
+    {
+      "bytes": 182527630,
+      "path": "data/deepmath_raw/data/train-00009-of-00010.parquet",
+      "revision": "5cf055d1fe3d7a2eb19719ac020211469736ae44",
+      "sha256": "67639c6620cabce348e91c2cc331c4877307ed1a5d8fbd1c0d7dcca561cea8df",
+      "source": "https://huggingface.co/datasets/zwhe99/DeepMath-103K"
+    }
+  ],
+  "pilot": {
+    "confirmatory_overlap_exact_strings": 0,
+    "n": 40,
+    "path": "data/pilot/DeepMath-103K_train_seed0_n40.jsonl",
+    "revision": "5cf055d1fe3d7a2eb19719ac020211469736ae44",
+    "seed": 0,
+    "sha256": "1e764cc4fe13a60c7386b3262a2d611bf5c4c277fb5981c8711643a7f45d6608",
+    "source": "zwhe99/DeepMath-103K train split, after exact-string exclusion against confirmatory questions"
+  },
+  "schema_version": 1
+}

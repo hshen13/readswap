@@ -1,0 +1,21 @@
+# Generated tables and figures
+outputs/*
+!outputs/.gitkeep
+
+# Large or local run artifacts (not part of the release)
+data/models/
+data/deepmath_raw/
+results/confirmatory/
+results/_dev/
+results/pilot/
+results/q3/
+results/q3_s*/
+logs/
+third_party/
+
+# Python and LaTeX by-products
+__pycache__/
+*.pyc
+*.aux
+*.log
+*.bak*

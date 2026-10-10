@@ -1,0 +1,113 @@
+{
+ "OctoThinker-3B-Short-LaSeR": {
+  "observed": {
+   "within_problem_auroc_r0": 0.6536605636969535,
+   "within_problem_auroc_len": 0.6178064451065634,
+   "n_eligible_problems": 645,
+   "matched_pair_auroc": 0.5828537701047661,
+   "n_matched_pairs": 6777,
+   "vote_gain_linear": 0.011764705882352941,
+   "vote_gain_exp": 0.009411764705882354,
+   "benchmark_auroc_len": 0.800214353732429,
+   "benchmark_auroc_r0": 0.8536701933483161,
+   "benchmark_auroc_r0_minus_loglen": 0.680060143576866
+  },
+  "ci95": {
+   "within_problem_auroc_r0": [
+    0.6337077489685514,
+    0.6721798311193452
+   ],
+   "within_problem_auroc_len": [
+    0.5981903066365704,
+    0.6373556385587783
+   ],
+   "matched_pair_auroc": [
+    0.5533299057942491,
+    0.6117523548413366
+   ],
+   "vote_gain_linear": [
+    0.006274509803921568,
+    0.017254901960784313
+   ],
+   "vote_gain_exp": [
+    0.0049673202614379085,
+    0.01411764705882353
+   ]
+  },
+  "n_problems": 1275
+ },
+ "Qwen2.5-7B-LaSeR": {
+  "observed": {
+   "within_problem_auroc_r0": 0.6991135367935812,
+   "within_problem_auroc_len": 0.6419137847034044,
+   "n_eligible_problems": 559,
+   "matched_pair_auroc": 0.6303306181121227,
+   "n_matched_pairs": 8348,
+   "vote_gain_linear": 0.009934640522875817,
+   "vote_gain_exp": 0.009150326797385621,
+   "benchmark_auroc_len": 0.8339166652911449,
+   "benchmark_auroc_r0": 0.9137387469785444,
+   "benchmark_auroc_r0_minus_loglen": 0.7449518540453649
+  },
+  "ci95": {
+   "within_problem_auroc_r0": [
+    0.6746733305220287,
+    0.7228800356114594
+   ],
+   "within_problem_auroc_len": [
+    0.6198283395233717,
+    0.6637788611029489
+   ],
+   "matched_pair_auroc": [
+    0.5959058680631727,
+    0.6646769121750299
+   ],
+   "vote_gain_linear": [
+    0.0033986928104575162,
+    0.017254901960784313
+   ],
+   "vote_gain_exp": [
+    0.004183006535947713,
+    0.014640522875816995
+   ]
+  },
+  "n_problems": 1275
+ },
+ "ORZ-7B-LaSeR": {
+  "observed": {
+   "within_problem_auroc_r0": 0.6747695891915511,
+   "within_problem_auroc_len": 0.633616098928002,
+   "n_eligible_problems": 492,
+   "matched_pair_auroc": 0.5987483626837433,
+   "n_matched_pairs": 6871,
+   "vote_gain_linear": 0.004705882352941176,
+   "vote_gain_exp": 0.0018300653594771244,
+   "benchmark_auroc_len": 0.8652171784836045,
+   "benchmark_auroc_r0": 0.9058422671958064,
+   "benchmark_auroc_r0_minus_loglen": 0.6790384397846748
+  },
+  "ci95": {
+   "within_problem_auroc_r0": [
+    0.648832209246355,
+    0.6988120880442209
+   ],
+   "within_problem_auroc_len": [
+    0.6088300401921495,
+    0.6560352665120083
+   ],
+   "matched_pair_auroc": [
+    0.5647553565419132,
+    0.6319198051516995
+   ],
+   "vote_gain_linear": [
+    -0.0007843137254901957,
+    0.01019607843137255
+   ],
+   "vote_gain_exp": [
+    -0.001568627450980392,
+    0.005490196078431373
+   ]
+  },
+  "n_problems": 1275
+ }
+}

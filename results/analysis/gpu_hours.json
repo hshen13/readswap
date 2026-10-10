@@ -1,0 +1,22 @@
+{
+ "successful": {
+  "ORZ-7B-LaSeR|dev_other": 0.62,
+  "ORZ-7B-LaSeR|generation": 10.56,
+  "ORZ-7B-LaSeR|readout": 8.27,
+  "OctoThinker-3B-Short-LaSeR|crosscheck": 6.67,
+  "OctoThinker-3B-Short-LaSeR|dev_other": 0.46,
+  "OctoThinker-3B-Short-LaSeR|dev_readout": 1.02,
+  "OctoThinker-3B-Short-LaSeR|generation": 11.23,
+  "OctoThinker-3B-Short-LaSeR|readout": 4.87,
+  "Qwen2.5-7B-LaSeR|dev_other": 0.55,
+  "Qwen2.5-7B-LaSeR|generation": 8.18,
+  "Qwen2.5-7B-LaSeR|readout": 5.11,
+  "other|dev_other": 0.0,
+  "other|dev_readout": 0.03
+ },
+ "failed_or_killed": {
+  "OctoThinker-3B-Short-LaSeR|dev_readout": 0.06,
+  "OctoThinker-3B-Short-LaSeR|generation": 1.47,
+  "other|dev_other": 0.0
+ }
+}

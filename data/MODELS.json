@@ -1,0 +1,38 @@
+{
+  "models": [
+    {
+      "base_model_local_path": null,
+      "base_model_repo_id": "OctoThinker/OctoThinker-3B-Short-Base",
+      "base_model_revision": "01b58beede3c9de3cef10cd11dadbd89fcf96e48",
+      "download_status": "downloaded",
+      "gated": false,
+      "key": "OctoThinker-3B-Short-LaSeR",
+      "local_path": "data/models/OctoThinker-3B-Short-LaSeR",
+      "model_id": "Keven16/OctoThinker-3B-Short-LaSeR",
+      "revision": "d964b7c68d5f55eecf586f4eaeffb5786690ad89"
+    },
+    {
+      "base_model_local_path": null,
+      "base_model_repo_id": "Qwen/Qwen2.5-7B",
+      "base_model_revision": "d149729398750b98c0af14eb82c78cfe92750796",
+      "download_status": "downloaded",
+      "gated": false,
+      "key": "Qwen2.5-7B-LaSeR",
+      "local_path": "data/models/Qwen2.5-7B-LaSeR",
+      "model_id": "Keven16/Qwen2.5-7B-LaSeR",
+      "revision": "e77250921afdf935ebc00d3f8c40f9864f063004"
+    },
+    {
+      "base_model_local_path": null,
+      "base_model_repo_id": "Open-Reasoner-Zero/Open-Reasoner-Zero-7B",
+      "base_model_revision": "0e38a598946c6fa65ec48f99b2b6a8a5107c7ee1",
+      "download_status": "downloaded",
+      "gated": false,
+      "key": "ORZ-7B-LaSeR",
+      "local_path": "data/models/ORZ-7B-LaSeR",
+      "model_id": "Keven16/ORZ-7B-LaSeR",
+      "revision": "d0439aa43bd6922b6c26289a387b43ed34700559"
+    }
+  ],
+  "schema_version": 1
+}

@@ -1,0 +1,40 @@
+{
+ "model": "ORZ-7B-LaSeR",
+ "dataset": "math500",
+ "seed": 0,
+ "n": 4000,
+ "swaps": {
+  "eos": 151643,
+  "newline": 198,
+  "period": 13,
+  "trained_special": 151644,
+  "undertrained_word": 83969
+ },
+ "auroc": {
+  "eos": {
+   "auroc": 0.9311789097095415,
+   "median_logprob": -13.865683555603027
+  },
+  "newline": {
+   "auroc": 0.8700172027346722,
+   "median_logprob": -22.041549682617188
+  },
+  "period": {
+   "auroc": 0.4299101710164164,
+   "median_logprob": -33.85259437561035
+  },
+  "trained_special": {
+   "auroc": 0.7128063298619086,
+   "median_logprob": -21.714085578918457
+  },
+  "undertrained_word": {
+   "auroc": 0.7119715721319928,
+   "median_logprob": -21.71397304534912
+  },
+  "none": {
+   "auroc": 0.6225634570263676,
+   "median_logprob": -35.0
+  }
+ },
+ "seconds": 4564.9512095451355
+}
