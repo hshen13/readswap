@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# Idempotent driver for the READSWAP pilot (stage E1): 40 DeepMath-103K problems, OctoThinker-3B, seed 0.
+# Idempotent driver for the READSWAP pilot: 40 DeepMath-103K problems, OctoThinker-3B, seed 0.
 # Generates, grades and reads out the pilot solutions, then checks R0 against the released LaSeR scorer
 # (calculate_self_rewarding_scores.py of the LaSeR repository in $LASER_REPO) on 20 solutions. The result,
-# results/pilot/octothinker_seed0_unit_compare.json, is the gate that run_E2_readout.sh waits for.
+# results/pilot/octothinker_seed0_unit_compare.json, is the gate that run_readouts.sh waits for.
 set -euo pipefail
 
 ROOT="${READSWAP_ROOT:-$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)}"
@@ -173,7 +173,7 @@ confirmatory_problems = 500 + 40 + 30 + 30 + 675
 scale = 3 * 3 * confirmatory_problems / 40
 report = {
     "schema_version": 1,
-    "stage": "E1",
+    "stage": "pilot",
     "model": "Keven16/OctoThinker-3B-Short-LaSeR",
     "dataset": "DeepMath-103K train split pilot",
     "n_problems": 40,
@@ -224,11 +224,11 @@ out.with_name(out.name + ".sha256").write_text(
 PY
 fi
 
-if ! grep -qs 'E1 pilot completed' logs/progress.log; then
+if ! grep -qs 'pilot completed' logs/progress.log; then
   report_sha="$(sha256sum "$REPORT" | awk '{print $1}')"
   compare_sha="$(sha256sum "$UNIT_COMPARE" | awk '{print $1}')"
   max_error="$($PY -c 'import json,sys; print(json.load(open(sys.argv[1]))["max_absolute_error"])' "$UNIT_COMPARE")"
-  printf '%s E1 pilot completed; report=%s sha256=%s; unit_compare=%s sha256=%s max_absolute_error=%s; analysis=%s\n' \
+  printf '%s pilot completed; report=%s sha256=%s; unit_compare=%s sha256=%s max_absolute_error=%s; analysis=%s\n' \
     "$(date -u +%FT%TZ)" "$REPORT" "$report_sha" "$UNIT_COMPARE" "$compare_sha" "$max_error" "$ANALYSIS" >> logs/progress.log
 fi
 if [ "$(tail -n 1 logs/progress.log 2>/dev/null || true)" != "E1_DONE" ]; then

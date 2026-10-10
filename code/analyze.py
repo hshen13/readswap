@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Preregistered metrics and clustered-bootstrap contrasts for LASERREAD."""
+"""Preregistered metrics and clustered-bootstrap contrasts for READSWAP (pilot)."""
 
 from __future__ import annotations
 

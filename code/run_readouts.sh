@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Idempotent driver for the READSWAP confirmatory stage, phase 2: readouts R0-R5 and the L1-L5 analysis.
-# Requires the pilot unit check of run_e1_rest.sh (released-scorer comparison) and the graded files of
-# run_E2_gen.sh.
+# Requires the pilot unit check of run_pilot.sh (released-scorer comparison) and the graded files of
+# run_generation.sh.
 set -euo pipefail
 
 ROOT="${READSWAP_ROOT:-$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)}"
@@ -97,7 +97,7 @@ if x.get('max_absolute_error') is None or float(x['max_absolute_error']) > 0.01:
     raise SystemExit(1)
 PY
 then
-  printf '%s E2b stopped before fast readout: pilot official R0 comparison mismatch; see %s\n' "$(date -u +%FT%TZ)" "$GATE" >> logs/progress.log
+  printf '%s readout stopped before fast readout: pilot official R0 comparison mismatch; see %s\n' "$(date -u +%FT%TZ)" "$GATE" >> logs/progress.log
   exit 2
 fi
 
@@ -132,12 +132,12 @@ if [ ! -s "$EQUIV" ] || [ ! -s "$EQUIV.sha256" ]; then
   "$PY" code/compare_readout_fast.py --fast "$FAST_PILOT" --reference "$PILOT_READOUT" --output "$EQUIV" || true
 fi
 if ! equiv_ok; then
-  printf '%s E2b stopped: readout_fast equivalence failed and no recorded decision; see %s\n' "$(date -u +%FT%TZ)" "$EQUIV" >> logs/progress.log
+  printf '%s readout stopped: readout_fast equivalence failed and no recorded decision; see %s\n' "$(date -u +%FT%TZ)" "$EQUIV" >> logs/progress.log
   exit 4
 fi
-if ! grep -qs 'E2b equivalence' logs/progress.log; then
+if ! grep -qs 'readout equivalence' logs/progress.log; then
   digest="$(awk '{print $1}' "$EQUIV.sha256")"
-  printf '%s E2b equivalence gate: pass=%s; artifact=%s sha256=%s; decision=%s\n' "$(date -u +%FT%TZ)" \
+  printf '%s readout equivalence gate: pass=%s; artifact=%s sha256=%s; decision=%s\n' "$(date -u +%FT%TZ)" \
     "$("$PY" -c 'import json,sys; print(json.load(open(sys.argv[1]))["pass"])' "$EQUIV")" "$EQUIV" "$digest" "$DECISION" >> logs/progress.log
 fi
 
@@ -183,7 +183,7 @@ for model in "${MODELS[@]}"; do
         grade="results/confirmatory/graded/$model/${dataset}_seed${seed}.jsonl"
         if ! valid_grade "$grade" "$expected"; then
           # Re-grade a graded file that lacks the released response surface, if its generation is finished.
-          # Files not graded yet are left to run_E2_gen.sh, so the two drivers never write the same file;
+          # Files not graded yet are left to run_generation.sh, so the two drivers never write the same file;
           # until the grade is valid, keep waiting.
           if [ -s "$grade" ] && [ -s "$gen" ] && [ -s "$gen.sha256" ] && [ -s "${gen%.jsonl}_summary.json" ]; then
             "$PY" -u code/grade.py --input "$gen" --output "$grade" || true

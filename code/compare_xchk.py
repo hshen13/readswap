@@ -307,10 +307,10 @@ def _verify_pilot_equivalence(report: dict[str, Any], path: str) -> dict[str, An
 
 def _markdown(report: dict[str, Any]) -> str:
     def fmt(value: Any) -> str:
-        return "—" if value is None else f"{value:.6g}"
+        return "n/a" if value is None else f"{value:.6g}"
 
     lines = [
-        "# XCHK readout comparison",
+        "# Readout cross-check: transformers vs. vLLM",
         "",
         "OctoThinker-3B-Short-LaSeR, seed 0; score-scale comparison of the fast readout and the vLLM reference.",
         "",
@@ -338,9 +338,9 @@ def _markdown(report: dict[str, Any]) -> str:
     lines.append("|---|---:|---:|---:|---:|")
     for scope, contrasts in report["contrasts"].items():
         for contrast, item in contrasts.items():
-            fast = "—" if item["fast"] is None else f"{item['fast']:.6g}"
-            vllm = "—" if item["vllm"] is None else f"{item['vllm']:.6g}"
-            diff = "—" if item["difference_fast_minus_vllm"] is None else f"{item['difference_fast_minus_vllm']:.6g}"
+            fast = "n/a" if item["fast"] is None else f"{item['fast']:.6g}"
+            vllm = "n/a" if item["vllm"] is None else f"{item['vllm']:.6g}"
+            diff = "n/a" if item["difference_fast_minus_vllm"] is None else f"{item['difference_fast_minus_vllm']:.6g}"
             lines.append(
                 f"| {scope} / {contrast} | {fast} | {vllm} | {diff} | ±{item['a1_equivalence_bound']:.6g} |"
             )

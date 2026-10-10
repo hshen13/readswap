@@ -22,7 +22,7 @@ AMC and AIME problems are competition problems of the Mathematical Association o
 `pilot/DeepMath-103K_train_seed0_n40.jsonl` holds 40 problems drawn with seed 0 from the training split of
 DeepMath-103K (https://huggingface.co/datasets/zwhe99/DeepMath-103K, MIT License, revision
 `5cf055d1fe3d7a2eb19719ac020211469736ae44`), after removing every problem whose text equals a confirmatory problem.
-It is used only by the pilot (`code/run_e1_rest.sh`) and enters no table of the paper.
+It is used only by the pilot (`code/run_pilot.sh`) and enters no table of the paper.
 
 ## Registries
 

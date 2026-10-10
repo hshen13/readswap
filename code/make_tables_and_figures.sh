@@ -11,7 +11,7 @@ test -s results/analysis/ORZ-7B-LaSeR_confirm.json || { echo "ORZ confirm JSON m
 "$PY" code/laser_paper_tables.py
 "$PY" code/make_figures.py --analysis-root results/analysis --output-dir outputs
 "$PY" code/make_laser_more_figs.py
-"$PY" code/make_token_figure_v3.py
+"$PY" code/make_token_figure.py
 "$PY" code/make_mechanism_figs.py
 if [ -d results/confirmatory/readout/ORZ-7B-LaSeR ]; then
   "$PY" code/make_calibration_fig.py

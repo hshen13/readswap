@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fill R5 in an existing R0--R4 readout artifact in a fresh GPU process."""
+"""Fill R5 in an existing R0 to R4 readout artifact in a fresh GPU process."""
 
 from __future__ import annotations
 

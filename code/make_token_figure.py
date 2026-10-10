@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Figure 2 (token control): token sweep and end-of-sequence control.
+"""Figure 3 (token control): token sweep and end-of-sequence control.
 
 Top: AUROC of tokens read after EOS, sampled at random within bins of cosine similarity between their output row and
 the marker's row (results/analysis/token_sweep_*.json, seed-zero MATH500). Bottom: the marker read after the token

@@ -109,7 +109,7 @@ print(cfg.get("base_model_local_path") or "")
 PY
 }
 
-# Wait without holding a GPU.  The E2 driver owns the fast-readout files.
+# Wait without holding a GPU.  run_readouts.sh owns the fast-readout files.
 while true; do
   ready=1
   for spec in "${DATASETS[@]}"; do

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # READSWAP confirmatory stage, phase 1: generation and grading only, idempotent.
-# Generation runs up to 256 sequences at a time in vLLM. The readout phase is run_E2_readout.sh.
+# Generation runs up to 256 sequences at a time in vLLM. The readout phase is run_readouts.sh.
 set -euo pipefail
 
 ROOT="${READSWAP_ROOT:-$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)}"
@@ -93,4 +93,4 @@ for model in "${MODELS[@]}"; do
 done
 
 date -u +%FT%TZ > results/confirmatory/GEN_DONE
-echo "$(date -u +%FT%TZ) E2 phase 1 complete: all generation and grading" >> logs/progress.log
+echo "$(date -u +%FT%TZ) generation complete: all generation and grading" >> logs/progress.log

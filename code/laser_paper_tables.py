@@ -99,7 +99,7 @@ lines = [r"\begin{table*}[t]", r"\centering", r"\small", r"\setlength{\tabcolsep
          r"\begin{tabular}{@{}lccccc@{}}", r"\toprule",
          r" & $L_1$: marker & $L_2$: EOS token & $L_3$: length & $L_4$: constant & $L_5$: answer position \\",
          r" & $\Delta$AUROC ($\times 10^{3}$) & $\Delta$AUROC & partial $r$ & $\Delta$vote accuracy"
-         r" & $\Delta$short--long gap \\",
+         r" & $\Delta$gap, short vs.\ long \\",
          r"\midrule"]
 for i, (k, label) in enumerate(avail):
     est, ivs = [], []
@@ -206,7 +206,7 @@ for key, label in CKPTS:
         continue
     rel = 100 * e["marker_change_l2"] / ck["marker_norm"]
     lines.append(f"{SHORT[label]} & {ck['marker_norm']:.3f} & {min(ck['cos_marker_swap']):.6f} & "
-                 f"{max(ck['l2_marker_swap']):.4f} & {rel:.2f}\% \\\\")
+                 f"{max(ck['l2_marker_swap']):.4f} & {rel:.2f}\\% \\\\")
 lines += [r"\bottomrule", r"\end{tabular}",
           r"\caption{Output-embedding row of the marker in each released checkpoint: its norm, its smallest"
           r" cosine similarity and largest distance to the three swapped tokens, and how far LaSeR training moved"
