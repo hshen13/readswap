@@ -3,7 +3,7 @@
 
 voting.pdf (one column): weighted-voting accuracy of each readout minus unweighted voting, per checkpoint.
 benchmarks.pdf (two columns): primary AUROC of R0, R2, R3 and R5 on each benchmark, one panel per checkpoint,
-               followed by AIME and HMMT 2026 when results/analysis/newdata.json exists (exploratory).
+               followed by AIME26 and HMMT26 when results/analysis/newdata.json exists (exploratory).
 LASER_ANALYSIS_DIR overrides the analysis directory. Writes outputs/figs/.
 """
 import json
@@ -51,7 +51,7 @@ eaclplot.save(fig, OUT / "voting.pdf")
 
 # ---- per-benchmark AUROC ----
 bench = [("math500", "MATH500"), ("amc23", "AMC23"), ("aime24", "AIME24"), ("aime25", "AIME25"), ("OlympiadBench", "OlympiadBench")]
-new_sets = [("aime_2026", "AIME 2026"), ("hmmt_feb_2026", "HMMT 2026")]
+new_sets = [("aime_2026", "AIME26"), ("hmmt_feb_2026", "HMMT26")]
 newdata = json.loads((A / "newdata.json").read_text())["laser_new_problems"] if (A / "newdata.json").exists() else {}
 keys = {label: key for key, label in CKPTS}
 reads = [("R0_reference", "$R_0$", eaclplot.BLUE, "o"), ("R5_cref_recomputed", "$R_5$", eaclplot.GREEN, "^"),

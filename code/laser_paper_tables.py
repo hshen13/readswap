@@ -117,7 +117,7 @@ for i, (k, label) in enumerate(avail):
     lines.append(label + " & " + " & ".join(est) + r" \\")
     lines.append(" & " + " & ".join(ivs) + r" \\" + ("[3pt]" if i < len(avail) - 1 else ""))
 lines += [r"\bottomrule", r"\end{tabular}",
-          r"\caption{Pre-specified contrasts for each checkpoint, with the 95\% cluster-bootstrap interval over"
+          r"\caption{Pre-specified contrasts for each model, with the 95\% cluster-bootstrap interval over"
           r" problems below each estimate. Bold marks a Holm-corrected $p<0.05$ with an interval that excludes"
           r" zero, and $^{\dagger}$ marks a 90\% interval inside the equivalence bound. $L_1$ is scaled by"
           r" $10^{3}$.}",
@@ -208,7 +208,7 @@ for key, label in CKPTS:
     lines.append(f"{SHORT[label]} & {ck['marker_norm']:.3f} & {min(ck['cos_marker_swap']):.6f} & "
                  f"{max(ck['l2_marker_swap']):.4f} & {rel:.2f}\\% \\\\")
 lines += [r"\bottomrule", r"\end{tabular}",
-          r"\caption{Output-embedding row of the marker in each released checkpoint: its norm, its smallest"
+          r"\caption{Output-embedding row of the marker in each LaSeR model: its norm, its smallest"
           r" cosine similarity and largest distance to the three swapped tokens, and how far LaSeR training moved"
           r" it from the base model, relative to its norm. The rows stay almost identical.}",
           r"\label{tab:unembed}", r"\end{table}"]
@@ -293,7 +293,7 @@ for i, (k, l) in enumerate(avail):
         lines.append(r"\midrule")
 lines += [r"\bottomrule", r"\end{tabular}",
           r"\caption{Primary AUROC of each readout computed on each generation seed alone, with the five benchmarks"
-          r" of that seed. The three seeds of a checkpoint agree to within a few thousandths, so the pooled"
+          r" of that seed. The three seeds of a model agree to within a few thousandths, so the pooled"
           r" estimates do not hide a seed that behaves differently.}",
           r"\label{tab:app-perseed-auroc}", r"\end{table}"]
 write(OUT / "app_perseed_auroc.tex", lines)

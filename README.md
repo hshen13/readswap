@@ -66,8 +66,8 @@ bash code/run_eos_swap.sh
 bash code/run_mech.sh
 bash code/run_extra_controls.sh
 python code/q3_prepare.py && bash code/q3_pipeline.sh    # Qwen3-4B replication
-bash code/run_new_problems.sh      # AIME and HMMT 2026 (exploratory)
-bash code/run_new_models.sh        # score-only training in Qwen3.5-4B and Gemma-4-12B (exploratory)
+bash code/run_new_problems.sh      # AIME26 and HMMT26 (supplementary)
+bash code/run_new_models.sh        # score-only training in Qwen3.5-4B and Gemma-4-12B (supplementary)
 python code/newdata_analysis.py && python code/unembed_2026.py
 bash code/make_tables_and_figures.sh
 ```
@@ -79,9 +79,9 @@ bash code/make_tables_and_figures.sh
 
 - `data/confirmatory/`: the five benchmarks shipped with the LaSeR repository (MATH500, AMC23, AIME24, AIME25,
   OlympiadBench), with sources and licenses in [`data/README.md`](data/README.md).
-- `data/new_problems/`: AIME 2026 and HMMT February 2026 from MathArena (CC BY-NC-SA 4.0), for the exploratory runs.
+- `data/new_problems/`: AIME26 and HMMT26 from MathArena (CC BY-NC-SA 4.0), for the supplementary experiments.
 - `results/analysis/`: every number reported in the paper, as JSON.
-- The per-solution readouts (problem, eight solutions, grades and all six scores) of every run, the 2026 problems
+- The per-solution readouts (problem, eight solutions, grades and all six scores) of every run, AIME26, HMMT26
   and the score-only models included, are in a separate archive, `readswap_data.zip`, submitted with the paper. Unzip it in the repository root to run the CPU analyses that
   read them.
 
@@ -103,7 +103,7 @@ locked file's hash is `a04f5c089ba93688537966e2efc6e374aa4f4b58eb5819a79e4d60a3a
 | `code/eos_swap_control.py`, `code/eos_vocab.py`, `code/mech_control.py` | replace the EOS token; split the score into logit and normalizer |
 | `code/laser_lengthctl.py`, `code/laser_extra.py`, `code/laser_repeat.py` | length, truncation and repetition controls |
 | `code/q3_*.py` | Qwen3-4B replication |
-| `code/run_new_problems.sh`, `code/run_new_models.sh`, `code/qwen35_4b_*.py`, `code/gemma4_12b_*.py` | the 2026 problems and score-only training in Qwen3.5-4B and Gemma-4-12B |
+| `code/run_new_problems.sh`, `code/run_new_models.sh`, `code/qwen35_4b_*.py`, `code/gemma4_12b_*.py` | AIME26, HMMT26 and score-only training in Qwen3.5-4B and Gemma-4-12B |
 | `code/newdata_analysis.py`, `code/unembed_2026.py` | metrics of the runs above; unused-token rows in eight models from 2026 |
 | `code/laser_*tables.py`, `code/make_*.py` | tables and figures |
 | `tests/` | unit tests: `PYTHONPATH=code python -m unittest discover -s tests` |

@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
-"""Tables for the supplementary experiments: the LaSeR checkpoints on 2026 problems and score-only training.
+"""Tables for the supplementary experiments: the LaSeR models on AIME26 and HMMT26, and score-only training.
 
 newdata.tex         (main text, one column): AUROC of R0, R1, R2 and length alone over all solutions, and of R0
-                    and length within problems, for the LaSeR checkpoints on the 2026 problems and for the models
+                    and length within problems, for the LaSeR models on AIME26 and HMMT26 and for the models
                     trained only on the score term.
-app_newdata.tex     (appendix, two columns): the same with 95% intervals, by 2026 set, with the partial
+app_newdata.tex     (appendix, two columns): the same with 95% intervals, by set, with the partial
                     correlation of R0 with length.
 app_trained.tex     (appendix, two columns): every readout of the three score-only models on the five benchmarks
-                    and on the 2026 problems.
-app_unembed2026.tex (appendix, two columns): output rows of unused tokens in eight models released in 2026.
+                    and on AIME26 and HMMT26.
+app_unembed2026.tex (appendix, two columns): output rows of unused tokens in eight open models.
 Reads results/analysis/newdata.json and results/analysis/unembed_2026.json. Writes outputs/tables/.
 """
 import json
@@ -21,7 +21,7 @@ OUT = Path(os.environ.get("TABLE_OUT", str(ROOT / "outputs/tables")))
 OUT.mkdir(parents=True, exist_ok=True)
 LASER = [("OctoThinker-3B-Short-LaSeR", "OctoThinker-3B"), ("Qwen2.5-7B-LaSeR", "Qwen2.5-7B"), ("ORZ-7B-LaSeR", "ORZ-7B")]
 TRAINED = [("Qwen3-4B seed 0", "Qwen3-4B"), ("Qwen3.5-4B", "Qwen3.5-4B"), ("Gemma-4-12B", "Gemma-4-12B")]
-SETS = [("aime_2026", "AIME 2026"), ("hmmt_feb_2026", "HMMT 2026")]
+SETS = [("aime_2026", "AIME26"), ("hmmt_feb_2026", "HMMT26")]
 PC = "partial_correlation_score_length_given_correctness"
 
 
@@ -55,14 +55,14 @@ lines = [r"\begin{table}[t]", r"\centering", r"\small", r"\setlength{\tabcolsep}
          r" & \multicolumn{4}{c}{AUROC, all solutions} & \multicolumn{2}{c}{Within problem} \\",
          r"\cmidrule(lr){2-5}\cmidrule(lr){6-7}",
          r" & $R_0$ & $R_1$ & $R_2$ & length & $R_0$ & length \\", r"\midrule",
-         r"\multicolumn{7}{@{}l}{\emph{LaSeR models, AIME and HMMT 2026}} \\"]
+         r"\multicolumn{7}{@{}l}{\emph{LaSeR models, AIME26 and HMMT26}} \\"]
 for key, label in LASER:
     lines.append(label + " & " + " & ".join(num(v) for v in values(new["laser_new_problems"][key]["pooled"])) + r" \\")
 lines += [r"\midrule", r"\multicolumn{7}{@{}l}{\emph{Score term trained alone, five benchmarks}} \\"]
 for key, label in TRAINED:
     lines.append(label + " & " + " & ".join(num(v) for v in values(new["trained_models"][key]["benchmarks"])) + r" \\")
 lines += [r"\bottomrule", r"\end{tabular}",
-          r"\caption{Supplementary experiments: the LaSeR models on 2026 problems, and models trained on the "
+          r"\caption{Supplementary experiments: the LaSeR models on AIME26 and HMMT26, and models trained on the "
           r"score term alone. Length: negative token count. Within problem: mean AUROC over "
           r"problems with correct and wrong solutions. Intervals in Table~\ref{tab:app-newdata}.}",
           r"\label{tab:new}", r"\end{table}"]
@@ -93,11 +93,11 @@ for key, label in TRAINED:
     entry = new["trained_models"][key]
     lines += rows(label, "benchmarks", entry["benchmarks"])
     if "new_problems" in entry:
-        lines += rows("", "2026 sets", entry["new_problems"])
+        lines += rows("", "AIME/HMMT26", entry["new_problems"])
 lines[-1] = lines[-1].replace(r" \\[2pt]", r" \\")
 lines += [r"\bottomrule", r"\end{tabular}",
           r"\caption{Supplementary experiments with 95\% problem-bootstrap intervals (10,000 resamples). Top: the "
-          r"LaSeR checkpoints on each 2026 set, three seeds pooled. Bottom: the models trained on the score term "
+          r"LaSeR models on AIME26 and HMMT26, three seeds pooled. Bottom: the models trained on the score term "
           r"alone, first seed. Within-problem values average over the problems listed, those with correct and wrong "
           r"solutions.}",
           r"\label{tab:app-newdata}", r"\end{table*}"]
@@ -108,11 +108,11 @@ readouts = [("$R_0$ released readout", "R0_reference"), ("$R_1$ other unused tok
             ("$R_2$ without EOS", "R2_position_eos"), ("$R_3$ at the answer", "R3_position_answer"),
             ("$R_4$ no constant", "R4_cref_none"), ("$R_5$ base reference", "R5_cref_recomputed"),
             ("length only", "length_only"), ("untrained model, $R_0$", "BASE_R0")]
-lines = [r"\begin{table*}[t]", r"\centering", r"\small", r"\setlength{\tabcolsep}{4pt}",
+lines = [r"\begin{table*}[t]", r"\centering", r"\small", r"\setlength{\tabcolsep}{3pt}",
          r"\begin{tabular}{@{}l" + "cc" * len(TRAINED) + "@{}}", r"\toprule",
          " & " + " & ".join(r"\multicolumn{2}{c}{" + label + "}" for _, label in TRAINED) + r" \\",
          "".join(rf"\cmidrule(lr){{{2 + 2 * i}-{3 + 2 * i}}}" for i in range(len(TRAINED))),
-         " & " + " & ".join(["benchmarks & 2026"] * len(TRAINED)) + r" \\", r"\midrule"]
+         " & " + " & ".join(["benchmarks & AIME/HMMT"] * len(TRAINED)) + r" \\", r"\midrule"]
 
 
 def cell(key, part, fn):
@@ -136,20 +136,20 @@ for label, fn in extra:
     lines.append(label + " & " + " & ".join(vals) + r" \\")
 lines += [r"\bottomrule", r"\end{tabular}",
           r"\caption{Models trained on LaSeR's self-score term alone (first seed), read on their own fixed "
-          r"solutions to the five benchmarks and to AIME and HMMT 2026: AUROC of every readout, the partial "
+          r"solutions to the five benchmarks and to AIME26 and HMMT26: AUROC of every readout, the partial "
           r"correlation of $R_0$ with length given correctness, its calibration error, the gain of weighted over "
           r"majority voting and the share of correct solutions. Qwen3-4B was read on the five benchmarks.}",
           r"\label{tab:app-trained}", r"\end{table*}"]
 write("app_trained.tex", lines)
 
-# ---- appendix: unused-token rows in 2026 models ----
+# ---- appendix: unused-token rows in eight open models ----
 geo = json.loads((A / "unembed_2026.json").read_text())
 short = {"gemma-4-12B-it": "Gemma-4-12B", "Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16": "Nemotron-3-Nano-Omni-30B"}
 lines = [r"\begin{table*}[t]", r"\centering", r"\small", r"\setlength{\tabcolsep}{4.5pt}",
-         r"\begin{tabular}{@{}llrrrrrr@{}}", r"\toprule",
-         r" & & \multicolumn{3}{c}{Unused tokens} & \multicolumn{2}{c}{Pairwise cosine, median} & Lowest four ids \\",
-         r"\cmidrule(lr){3-5}\cmidrule(lr){6-7}",
-         r"Model & Released & count & median cosine & 5th pct. & special & ordinary & min.\ cosine \\",
+         r"\begin{tabular}{@{}lrrrrrr@{}}", r"\toprule",
+         r" & \multicolumn{3}{c}{Unused tokens} & \multicolumn{2}{c}{Pairwise cosine, median} & Lowest four ids \\",
+         r"\cmidrule(lr){2-4}\cmidrule(lr){5-6}",
+         r"Model & count & median cosine & 5th pct. & special & ordinary & min.\ cosine \\",
          r"\midrule"]
 for m in geo["models"]:
     if "error" in m:
@@ -158,11 +158,11 @@ for m in geo["models"]:
     rule = m.get("rule_cosine_to_marker")
     name = short.get(m["repo"].split("/")[1], m["repo"].split("/")[1])
     lines.append(" & ".join([
-        name, m["created"], str(u["n"]), num(u.get("pairwise_median"), 3), num(u.get("pairwise_p05"), 3),
+        name, str(u["n"]), num(u.get("pairwise_median"), 3), num(u.get("pairwise_p05"), 3),
         num(s.get("pairwise_median"), 3), num(o.get("pairwise_median"), 3),
         num(min(rule[1:]), 3) if rule and len(rule) > 1 else "--"]) + r" \\")
 lines += [r"\bottomrule", r"\end{tabular}",
-          r"\caption{Output rows of unused tokens in open models first released in 2026. Unused "
+          r"\caption{Output rows of unused tokens in eight open models. Unused "
           r"tokens are those named unused or reserved and the padding rows past the tokenizer's vocabulary; "
           r"special tokens are all other added tokens; ordinary tokens are 2,000 drawn at random. The last column "
           r"gives the smallest cosine between the lowest-id unused token and the next three.}",

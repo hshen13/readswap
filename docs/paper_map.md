@@ -11,13 +11,13 @@ everything else is exploratory.
 | Table 2 (contrasts L1 to L5 with intervals and verdicts; pre-specified) | `code/laser_paper_tables.py` -> `contrasts.tex` | `*_confirm.json` |
 | Figure 3 (token sweep by cosine with the marker's output row; marker read after tokens in the EOS position) | `code/make_token_figure.py` -> `token_control.pdf` | `token_sweep_*.json`, `mech_summary.json` |
 | Table 3 (length checks of R0) | `code/laser_new_tables.py` -> `length_checks.tex` | `laser_extra.json`, `length_control.json` |
-| Table 4 and Section 4.6 (supplementary experiments: 2026 problems; score-only training in Qwen3-4B, Qwen3.5-4B and Gemma-4-12B) | `code/newdata_tables.py` -> `newdata.tex` | `newdata.json` (`code/newdata_analysis.py`) |
+| Table 4 and Section 4.6 (supplementary experiments: AIME26 and HMMT26; score-only training in Qwen3-4B, Qwen3.5-4B and Gemma-4-12B) | `code/newdata_tables.py` -> `newdata.tex` | `newdata.json` (`code/newdata_analysis.py`) |
 | Tables 5 to 7 (readout configuration, models, datasets; Appendices A to D) | written by hand | `data/LASER_CONFIGS.json`, `data/MANIFEST.json`, `data/MODELS.json` |
 | Appendix D compute hours | `code/laser_gpu_hours.py` | GPU wrapper logs -> `gpu_hours.json` |
-| Figure 4 (AUROC of four readouts per benchmark and on the 2026 sets) | `code/make_laser_more_figs.py` -> `benchmarks.pdf` | `*_confirm.json`, `newdata.json` |
+| Figure 4 (AUROC of four readouts per benchmark and on AIME26 and HMMT26) | `code/make_laser_more_figs.py` -> `benchmarks.pdf` | `*_confirm.json`, `newdata.json` |
 | Figure 5 (AUROC of every readout on each seed) | `code/make_mechanism_figs.py` -> `perseed.pdf` | `*_confirm.json` |
 | Figure 6 (exhaustive token test: score difference against cosine with the marker's row) | `code/make_mechanism_figs.py` -> `exhaustive.pdf` | `exhaustive_tokens_*.json` (`code/exhaustive_tokens.py`) |
-| Table 8 (2026 problems and score-only models with intervals) | `code/newdata_tables.py` -> `app_newdata.tex` | `newdata.json` |
+| Table 8 (AIME26, HMMT26 and score-only models with intervals) | `code/newdata_tables.py` -> `app_newdata.tex` | `newdata.json` |
 | Figure 7 (marker read after candidate tokens in the EOS position) | `code/make_mechanism_figs.py` -> `eos_vocab.pdf` | `eos_vocab_*.json` (`code/eos_vocab.py`) |
 | Table 9 (output-embedding rows of marker and R1 tokens) | `code/laser_paper_tables.py` -> `app_unembed.tex` | `unembedding_rows.json` (`code/unembed_check.py`) |
 | Appendix F.1, shared output direction | `code/unembed_scope.py` | `unembedding_scope.json` |

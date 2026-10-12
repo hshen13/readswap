@@ -2,7 +2,7 @@
 # Score-only training in Qwen3.5-4B and Gemma-4-12B (exploratory), the protocol of q3_pipeline.sh with seed 0:
 # the base model writes eight solutions per problem once, a LoRA adapter learns only LaSeR's self-reward term on
 # the training solutions, and the untrained and trained models read the same fixed test solutions.
-# Test sets: the five benchmarks and the two 2026 sets. Every step is skipped when its output exists.
+# Test sets: the five benchmarks, AIME26 and HMMT26. Every step is skipped when its output exists.
 # PYTHON_NEW runs the 2026 stack (requirements-2026.txt); PYTHON runs grading.
 set -u
 ulimit -c 0

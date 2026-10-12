@@ -82,7 +82,7 @@ def main() -> None:
                 curves.append([np.nan if x is None else x for x in curve])
             mean = np.nanmean(np.asarray(curves, dtype=float), axis=0)
             ax.plot(range(1, 11), mean, color=color, linestyle=style, marker=mk, label=label + suffix)
-    ax.set_xlabel("Response-length decile"); ax.set_ylabel("Within-checkpoint z-scored score")
+    ax.set_xlabel("Response-length decile"); ax.set_ylabel("Within-model z-scored score")
     eaclplot.finish(ax, "y"); fig.legend(loc="outside upper center", ncol=2)
     eaclplot.save(fig, out / "figs" / "length_score.pdf")
 

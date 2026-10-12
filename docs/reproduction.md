@@ -150,13 +150,13 @@ removes problems whose text equals a benchmark problem, shuffles with seed 0 and
 uses `PYTHON_Q3` for generation, training and readout and `PYTHON` for grading and analysis. Training seeds 1 and 2
 (`q3_replication_s1.json`, `q3_replication_s2.json`) come from `run_extra_controls.sh`.
 
-### 5. Problems and models from 2026 (exploratory)
+### 5. Supplementary experiments: AIME26, HMMT26 and score-only training
 
 These runs came after the confirmatory analysis. A separate plan fixed their models, data, marker rule and protocol
 before they started; the paper's Appendix A gives its hash.
 
 ```bash
-bash code/run_new_problems.sh          # the three checkpoints on AIME 2026 and HMMT February 2026
+bash code/run_new_problems.sh          # the three LaSeR models on AIME26 and HMMT26
 bash code/run_new_models.sh            # score-only training in Qwen3.5-4B and Gemma-4-12B (needs step 4's train.jsonl)
 python code/newdata_analysis.py        # newdata.json: both, plus the Qwen3-4B seeds of step 4
 python code/unembed_2026.py            # unembed_2026.json: unused-token rows in eight models from 2026 (CPU)

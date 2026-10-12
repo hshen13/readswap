@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# The three LaSeR checkpoints on AIME 2026 and HMMT February 2026 (exploratory).
+# The three LaSeR models on AIME26 and HMMT26 (MathArena's AIME 2026 and HMMT February 2026), supplementary.
 # Same generation, grading and readouts as the confirmatory runs: eight solutions per problem, seeds 0 to 2,
 # temperature 1.0, top-p 1.0, at most 8,192 new tokens, readouts R0 to R5 in transformers.
 # Every step is skipped when its output exists. Then: python code/newdata_analysis.py
