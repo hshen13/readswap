@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Tables for the exploratory runs on new problems and new models.
+"""Tables for the supplementary experiments: the LaSeR checkpoints on 2026 problems and score-only training.
 
 newdata.tex         (main text, one column): AUROC of R0, R1, R2 and length alone over all solutions, and of R0
                     and length within problems, for the LaSeR checkpoints on the 2026 problems and for the models
@@ -62,8 +62,8 @@ lines += [r"\midrule", r"\multicolumn{7}{@{}l}{\emph{Score term trained alone, f
 for key, label in TRAINED:
     lines.append(label + " & " + " & ".join(num(v) for v in values(new["trained_models"][key]["benchmarks"])) + r" \\")
 lines += [r"\bottomrule", r"\end{tabular}",
-          r"\caption{Supplementary experiments (exploratory): the LaSeR models on 2026 problems, and models "
-          r"trained only on the score term. Length: negative token count. Within problem: mean AUROC over "
+          r"\caption{Supplementary experiments: the LaSeR models on 2026 problems, and models trained on the "
+          r"score term alone. Length: negative token count. Within problem: mean AUROC over "
           r"problems with correct and wrong solutions. Intervals in Table~\ref{tab:app-newdata}.}",
           r"\label{tab:new}", r"\end{table}"]
 write("newdata.tex", lines)
@@ -96,9 +96,9 @@ for key, label in TRAINED:
         lines += rows("", "2026 sets", entry["new_problems"])
 lines[-1] = lines[-1].replace(r" \\[2pt]", r" \\")
 lines += [r"\bottomrule", r"\end{tabular}",
-          r"\caption{Exploratory readouts with 95\% problem-bootstrap intervals (10,000 resamples). Top: the LaSeR "
-          r"checkpoints on each 2026 set, three seeds pooled. Bottom: the models trained only on the score term, "
-          r"first seed. Within-problem values average over the problems listed, those with correct and wrong "
+          r"\caption{Supplementary experiments with 95\% problem-bootstrap intervals (10,000 resamples). Top: the "
+          r"LaSeR checkpoints on each 2026 set, three seeds pooled. Bottom: the models trained on the score term "
+          r"alone, first seed. Within-problem values average over the problems listed, those with correct and wrong "
           r"solutions.}",
           r"\label{tab:app-newdata}", r"\end{table*}"]
 write("app_newdata.tex", lines)
@@ -135,11 +135,10 @@ for label, fn in extra:
     vals = [cell(key, part, fn) for key, _ in TRAINED for part in ["benchmarks", "new_problems"]]
     lines.append(label + " & " + " & ".join(vals) + r" \\")
 lines += [r"\bottomrule", r"\end{tabular}",
-          r"\caption{Models trained only on LaSeR's self-score term (exploratory, first seed), read on their own "
-          r"fixed solutions to the five benchmarks and to AIME and HMMT 2026: AUROC of every readout, the "
-          r"partial correlation of $R_0$ with length given correctness, its calibration error, the gain of "
-          r"weighted over majority voting and the share of correct solutions. Qwen3-4B was not run on the 2026 "
-          r"problems.}",
+          r"\caption{Models trained on LaSeR's self-score term alone (first seed), read on their own fixed "
+          r"solutions to the five benchmarks and to AIME and HMMT 2026: AUROC of every readout, the partial "
+          r"correlation of $R_0$ with length given correctness, its calibration error, the gain of weighted over "
+          r"majority voting and the share of correct solutions. Qwen3-4B was read on the five benchmarks.}",
           r"\label{tab:app-trained}", r"\end{table*}"]
 write("app_trained.tex", lines)
 
@@ -163,7 +162,7 @@ for m in geo["models"]:
         num(s.get("pairwise_median"), 3), num(o.get("pairwise_median"), 3),
         num(min(rule[1:]), 3) if rule and len(rule) > 1 else "--"]) + r" \\")
 lines += [r"\bottomrule", r"\end{tabular}",
-          r"\caption{Output rows of unused tokens in open models first released in 2026 (exploratory). Unused "
+          r"\caption{Output rows of unused tokens in open models first released in 2026. Unused "
           r"tokens are those named unused or reserved and the padding rows past the tokenizer's vocabulary; "
           r"special tokens are all other added tokens; ordinary tokens are 2,000 drawn at random. The last column "
           r"gives the smallest cosine between the lowest-id unused token and the next three.}",

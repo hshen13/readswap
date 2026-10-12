@@ -61,7 +61,7 @@ for i, (k, _) in enumerate(CK):
         sci(c["within_problem_auroc_r0"]), sci(c["within_problem_auroc_len"]), sci(c["matched_pair_auroc"]),
         sci([100 * x for x in c["vote_gain_linear"]], 1)]) + " \\\\" + ("[3pt]" if i < len(CK) - 1 else ""))
 L += ["\\bottomrule", "\\end{tabular}",
-      "\\caption{Length controls of the released score $R_0$ (exploratory). Length scores a solution by its negative "
+      "\\caption{Length controls of the released score $R_0$. Length scores a solution by its negative "
       "token count; $R_0$ w/o length removes a linear fit on log length, cross-fitted over problems; matched pairs "
       "join a correct and a wrong solution to one problem within 10\\% in length. Brackets: 95\\% problem-bootstrap "
       "intervals.}",
