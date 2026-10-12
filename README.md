@@ -27,7 +27,8 @@ conda create -n readswap python=3.12 -y && conda activate readswap
 pip install -r requirements.txt
 ```
 
-The Qwen3-4B replication uses a second environment with a newer stack (Python 3.10, `requirements-qwen3.txt`).
+The Qwen3-4B replication uses a second environment with a newer stack (Python 3.10, `requirements-qwen3.txt`),
+and score-only training in Qwen3.5-4B and Gemma-4-12B a third (Python 3.10, `requirements-2026.txt`).
 The data figures need `pdflatex` with the `newtx` fonts.
 
 Download the three LaSeR models into `data/models/` and their base models into the Hugging Face cache. The
@@ -40,6 +41,9 @@ done
 huggingface-cli download OctoThinker/OctoThinker-3B-Short-Base
 huggingface-cli download Qwen/Qwen2.5-7B
 huggingface-cli download Open-Reasoner-Zero/Open-Reasoner-Zero-7B
+huggingface-cli download Qwen/Qwen3-4B                                                      # replications
+huggingface-cli download Qwen/Qwen3.5-4B --revision 851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a
+huggingface-cli download google/gemma-4-12B-it --revision 707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7
 git clone https://github.com/RUCBM/LaSeR.git third_party/LaSeR   # LaSeR's own scorer, used by the pilot check
 ```
 
@@ -51,7 +55,7 @@ All tables and figures can be rebuilt on a CPU from the analysis files in `resul
 bash code/make_tables_and_figures.sh    # writes outputs/tables/ and outputs/figs/
 ```
 
-The full pipeline took about 90 GPU hours on one NVIDIA A800 (80 GB):
+The full pipeline took about 120 GPU hours on one NVIDIA A800 (80 GB):
 
 ```bash
 bash code/run_pilot.sh             # check our readout against LaSeR's own scorer
@@ -62,6 +66,9 @@ bash code/run_eos_swap.sh
 bash code/run_mech.sh
 bash code/run_extra_controls.sh
 python code/q3_prepare.py && bash code/q3_pipeline.sh    # Qwen3-4B replication
+bash code/run_new_problems.sh      # AIME and HMMT 2026 (exploratory)
+bash code/run_new_models.sh        # score-only training in Qwen3.5-4B and Gemma-4-12B (exploratory)
+python code/newdata_analysis.py && python code/unembed_2026.py
 bash code/make_tables_and_figures.sh
 ```
 
@@ -72,9 +79,10 @@ bash code/make_tables_and_figures.sh
 
 - `data/confirmatory/`: the five benchmarks shipped with the LaSeR repository (MATH500, AMC23, AIME24, AIME25,
   OlympiadBench), with sources and licenses in [`data/README.md`](data/README.md).
+- `data/new_problems/`: AIME 2026 and HMMT February 2026 from MathArena (CC BY-NC-SA 4.0), for the exploratory runs.
 - `results/analysis/`: every number reported in the paper, as JSON.
-- The per-solution readouts (problem, eight solutions, grades and all six scores) are in a separate archive,
-  `readswap_data.zip`, submitted with the paper. Unzip it in the repository root to run the CPU analyses that
+- The per-solution readouts (problem, eight solutions, grades and all six scores) of every run, the 2026 problems
+  and the score-only models included, are in a separate archive, `readswap_data.zip`, submitted with the paper. Unzip it in the repository root to run the CPU analyses that
   read them.
 
 ## Pre-registration
@@ -95,6 +103,8 @@ locked file's hash is `a04f5c089ba93688537966e2efc6e374aa4f4b58eb5819a79e4d60a3a
 | `code/eos_swap_control.py`, `code/eos_vocab.py`, `code/mech_control.py` | replace the EOS token; split the score into logit and normalizer |
 | `code/laser_lengthctl.py`, `code/laser_extra.py`, `code/laser_repeat.py` | length, truncation and repetition controls |
 | `code/q3_*.py` | Qwen3-4B replication |
+| `code/run_new_problems.sh`, `code/run_new_models.sh`, `code/qwen35_4b_*.py`, `code/gemma4_12b_*.py` | the 2026 problems and score-only training in Qwen3.5-4B and Gemma-4-12B |
+| `code/newdata_analysis.py`, `code/unembed_2026.py` | metrics of the runs above; unused-token rows in eight models from 2026 |
 | `code/laser_*tables.py`, `code/make_*.py` | tables and figures |
 | `tests/` | unit tests: `PYTHONPATH=code python -m unittest discover -s tests` |
 

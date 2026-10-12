@@ -2,7 +2,8 @@
 """Two data figures for READSWAP from the confirmatory JSONs.
 
 voting.pdf (one column): weighted-voting accuracy of each readout minus unweighted voting, per checkpoint.
-benchmarks.pdf (two columns): primary AUROC of R0, R2, R3 and R5 on each benchmark, one panel per checkpoint.
+benchmarks.pdf (two columns): primary AUROC of R0, R2, R3 and R5 on each benchmark, one panel per checkpoint,
+               followed by AIME and HMMT 2026 when results/analysis/newdata.json exists (exploratory).
 LASER_ANALYSIS_DIR overrides the analysis directory. Writes outputs/figs/.
 """
 import json
@@ -50,20 +51,28 @@ eaclplot.save(fig, OUT / "voting.pdf")
 
 # ---- per-benchmark AUROC ----
 bench = [("math500", "MATH500"), ("amc23", "AMC23"), ("aime24", "AIME24"), ("aime25", "AIME25"), ("OlympiadBench", "OlympiadBench")]
+new_sets = [("aime_2026", "AIME 2026"), ("hmmt_feb_2026", "HMMT 2026")]
+newdata = json.loads((A / "newdata.json").read_text())["laser_new_problems"] if (A / "newdata.json").exists() else {}
+keys = {label: key for key, label in CKPTS}
 reads = [("R0_reference", "$R_0$", eaclplot.BLUE, "o"), ("R5_cref_recomputed", "$R_5$", eaclplot.GREEN, "^"),
          ("R2_position_eos", "$R_2$", eaclplot.ORANGE, "s"), ("R3_position_answer", "$R_3$", eaclplot.BROWN, "D")]
-fig, axes = plt.subplots(1, len(data), figsize=(eaclplot.FULL, 1.75), sharey=True, squeeze=False)
+shown = bench + (new_sets if newdata else [])
+fig, axes = plt.subplots(1, len(data), figsize=(eaclplot.FULL, 2.2 if newdata else 1.75), sharey=True, squeeze=False)
 for i, (label, d) in enumerate(data):
     ax = axes[0][i]
-    yb = np.arange(len(bench), dtype=float)
+    yb = np.arange(len(shown), dtype=float)
     for r_i, (cond, rl, col, mk) in enumerate(reads):
         xs = [d["by_benchmark"][b][cond]["primary_auroc"] for b, _ in bench]
+        if newdata:
+            xs += [newdata[keys[label]]["by_dataset"][b]["readouts"][cond]["primary_auroc"] for b, _ in new_sets]
         off = (r_i - (len(reads) - 1) / 2) * 0.16
         ax.plot(xs, yb + off, linestyle="none", marker=mk, markersize=3.2, color=col, label=rl if i == 0 else None)
     ax.axvline(0.5, color=eaclplot.GREY, linestyle="--", linewidth=0.8)
     ax.set_xlim(0.0, 1.0)
     ax.set_xticks([0, 0.5, 1.0], ["0", "0.5", "1"])
-    ax.set_yticks(yb, [b[1] for b in bench])
+    if newdata:
+        ax.axhline(len(bench) - 0.5, color=eaclplot.GREY, linestyle=":", linewidth=0.6)
+    ax.set_yticks(yb, [b[1] for b in shown])
     ax.invert_yaxis()
     ax.set_xlabel("AUROC")
     eaclplot.panel_title(ax, label)

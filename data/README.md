@@ -17,6 +17,20 @@ They are used for evaluation only.
 The LaSeR repository itself is released under the MIT License (Copyright (c) 2025 RUCBM).
 AMC and AIME problems are competition problems of the Mathematical Association of America.
 
+## Problems from 2026 (`new_problems/`)
+
+Two exploratory sets written after the LaSeR checkpoints were trained, from MathArena
+(https://matharena.ai, Hugging Face datasets `MathArena/aime_2026` at revision
+`d2de22f3c656b4f56cf8981212186377d1e23bc3` and `MathArena/hmmt_feb_2026` at revision
+`02fba4f74d8e68e73e66a02d540fd979c05c274c`). Problems and answers are copied unchanged into the format of the
+benchmark files. Both datasets are released under CC BY-NC-SA 4.0, and so are these copies. They are used for
+evaluation only.
+
+| File | Problems | SHA-256 | Source and license |
+|---|---:|---|---|
+| `new_problems/aime_2026/test.jsonl` | 30 | `f2890dcaac79ce287afd0138e7c2fca9d9a2e536418052f31ae8ef1d991296e0` | AIME 2026 I and II, MathArena, CC BY-NC-SA 4.0 |
+| `new_problems/hmmt_feb_2026/test.jsonl` | 33 | `19107260ece97911fa7c402f81eec03a83662d656819b3de42c99260b51bf042` | HMMT February 2026, MathArena, CC BY-NC-SA 4.0 |
+
 ## Pilot file (`pilot/`)
 
 `pilot/DeepMath-103K_train_seed0_n40.jsonl` holds 40 problems drawn with seed 0 from the training split of

@@ -150,7 +150,29 @@ removes problems whose text equals a benchmark problem, shuffles with seed 0 and
 uses `PYTHON_Q3` for generation, training and readout and `PYTHON` for grading and analysis. Training seeds 1 and 2
 (`q3_replication_s1.json`, `q3_replication_s2.json`) come from `run_extra_controls.sh`.
 
-### 5. Tables and figures
+### 5. Problems and models from 2026 (exploratory)
+
+These runs came after the confirmatory analysis. A separate plan fixed their models, data, marker rule and protocol
+before they started; the paper's Appendix A gives its hash.
+
+```bash
+bash code/run_new_problems.sh          # the three checkpoints on AIME 2026 and HMMT February 2026
+bash code/run_new_models.sh            # score-only training in Qwen3.5-4B and Gemma-4-12B (needs step 4's train.jsonl)
+python code/newdata_analysis.py        # newdata.json: both, plus the Qwen3-4B seeds of step 4
+python code/unembed_2026.py            # unembed_2026.json: unused-token rows in eight models from 2026 (CPU)
+```
+
+`run_new_problems.sh` uses the confirmatory generation, grading and readout scripts unchanged on
+`data/new_problems/` (eight solutions, seeds 0 to 2). `run_new_models.sh` repeats `q3_pipeline.sh` with seed 0 for
+each model; the scripts `qwen35_4b_*.py` and `gemma4_12b_*.py` differ from `q3_*.py` only in the model, the chat
+template call, the end-of-turn token, the marker and R1 ids (the four unused tokens with the smallest ids) and, for
+Gemma, its logit soft-capping. They run in a third environment, `PYTHON_NEW` (`requirements-2026.txt`).
+`newdata_analysis.py` takes about an hour in one process with 10,000 bootstrap resamples per model; `--part laser`,
+`--part trained --model NAME` and `--part merge --parts ...` split the work over processes.
+`unembed_2026.py` reads cached weights in place and otherwise downloads only the shard holding the output matrix,
+at most 12 GB per model, and deletes it after use.
+
+### 6. Tables and figures
 
 ```bash
 bash code/make_tables_and_figures.sh

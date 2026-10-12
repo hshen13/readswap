@@ -1,0 +1,15 @@
+# Third environment (Python 3.10.19) for score-only training in Qwen3.5-4B and Gemma-4-12B only:
+# qwen35_4b_*.py and gemma4_12b_*.py (generate, train, readout). Grading and analysis use requirements.txt.
+# vLLM and torch are the CUDA 12.9 builds (vLLM wheel from its GitHub release page); with CUDA 12.4 drivers set
+# VLLM_USE_FLASHINFER_SAMPLER=0, as code/run_new_models.sh does.
+torch==2.13.0
+transformers==5.17.0
+vllm==0.30.0
+peft==0.21.2
+accelerate==1.15.0
+numpy==2.2.6
+safetensors==0.8.0
+huggingface-hub==1.33.0
+tokenizers==0.23.2
+flash-linear-attention==0.5.2  # Qwen3.5's linear-attention layers
+fla-core==0.5.2

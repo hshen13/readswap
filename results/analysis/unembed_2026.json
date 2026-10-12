@@ -1,0 +1,418 @@
+{
+ "exploratory": true,
+ "ordinary_seed": 20261011,
+ "models": [
+  {
+   "repo": "Qwen/Qwen3.5-0.8B",
+   "created": "2026-02-28",
+   "revision": "2fc06364715b967f1860aea9cf38778875588b17",
+   "matrix": "model.language_model.embed_tokens.weight",
+   "tied": true,
+   "shape": [
+    248320,
+    1024
+   ],
+   "tokenizer_size": 248077,
+   "U": {
+    "n": 243,
+    "norm_median": 0.4215400218963623,
+    "cos_to_mean_median": 0.9999997615814209,
+    "frac_cos_to_mean_gt_0.99": 1.0,
+    "pairwise_median": 0.9999998211860657,
+    "pairwise_p05": 0.9999991059303284
+   },
+   "S": {
+    "n": 33,
+    "norm_median": 0.4964853525161743,
+    "cos_to_mean_median": 0.4109310209751129,
+    "frac_cos_to_mean_gt_0.99": 0.0,
+    "pairwise_median": 0.16419822722673416,
+    "pairwise_p05": -0.022057344857603287
+   },
+   "O": {
+    "n": 2000,
+    "norm_median": 0.6240164339542389,
+    "cos_to_mean_median": 0.46026550233364105,
+    "frac_cos_to_mean_gt_0.99": 0.0,
+    "pairwise_median": 0.20271660387516022,
+    "pairwise_p05": 0.059708069823682305
+   },
+   "rule_tokens": [
+    "padding row 248077",
+    "padding row 248078",
+    "padding row 248079",
+    "padding row 248080"
+   ],
+   "rule_token_ids": [
+    248077,
+    248078,
+    248079,
+    248080
+   ],
+   "rule_cosine_to_marker": [
+    0.9999999403953552,
+    0.9999999403953552,
+    0.9999999403953552,
+    0.9999999403953552
+   ]
+  },
+  {
+   "repo": "Qwen/Qwen3.5-2B",
+   "created": "2026-02-28",
+   "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+   "matrix": "model.language_model.embed_tokens.weight",
+   "tied": true,
+   "shape": [
+    248320,
+    2048
+   ],
+   "tokenizer_size": 248077,
+   "U": {
+    "n": 243,
+    "norm_median": 0.48019659519195557,
+    "cos_to_mean_median": 1.0,
+    "frac_cos_to_mean_gt_0.99": 1.0,
+    "pairwise_median": 0.9999998807907104,
+    "pairwise_p05": 0.9999997615814209
+   },
+   "S": {
+    "n": 33,
+    "norm_median": 0.5192733407020569,
+    "cos_to_mean_median": 0.40318578481674194,
+    "frac_cos_to_mean_gt_0.99": 0.0,
+    "pairwise_median": 0.14572186768054962,
+    "pairwise_p05": -0.06430465951561927
+   },
+   "O": {
+    "n": 2000,
+    "norm_median": 0.6724519431591034,
+    "cos_to_mean_median": 0.45122434198856354,
+    "frac_cos_to_mean_gt_0.99": 0.0,
+    "pairwise_median": 0.19401536881923676,
+    "pairwise_p05": 0.0530021857470274
+   },
+   "rule_tokens": [
+    "padding row 248077",
+    "padding row 248078",
+    "padding row 248079",
+    "padding row 248080"
+   ],
+   "rule_token_ids": [
+    248077,
+    248078,
+    248079,
+    248080
+   ],
+   "rule_cosine_to_marker": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "repo": "Qwen/Qwen3.5-4B",
+   "created": "2026-02-27",
+   "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+   "matrix": "model.language_model.embed_tokens.weight",
+   "tied": true,
+   "shape": [
+    248320,
+    2560
+   ],
+   "tokenizer_size": 248077,
+   "U": {
+    "n": 243,
+    "norm_median": 0.4447299838066101,
+    "cos_to_mean_median": 1.0000001192092896,
+    "frac_cos_to_mean_gt_0.99": 1.0,
+    "pairwise_median": 1.0,
+    "pairwise_p05": 0.9999999403953552
+   },
+   "S": {
+    "n": 33,
+    "norm_median": 0.5381540060043335,
+    "cos_to_mean_median": 0.37466269731521606,
+    "frac_cos_to_mean_gt_0.99": 0.0,
+    "pairwise_median": 0.1275503858923912,
+    "pairwise_p05": -0.1159538775682449
+   },
+   "O": {
+    "n": 2000,
+    "norm_median": 0.6512601375579834,
+    "cos_to_mean_median": 0.39188744127750397,
+    "frac_cos_to_mean_gt_0.99": 0.0,
+    "pairwise_median": 0.14481563866138458,
+    "pairwise_p05": 0.027287326380610467
+   },
+   "rule_tokens": [
+    "padding row 248077",
+    "padding row 248078",
+    "padding row 248079",
+    "padding row 248080"
+   ],
+   "rule_token_ids": [
+    248077,
+    248078,
+    248079,
+    248080
+   ],
+   "rule_cosine_to_marker": [
+    1.0000001192092896,
+    1.0000001192092896,
+    1.0000001192092896,
+    1.000000238418579
+   ]
+  },
+  {
+   "repo": "Qwen/Qwen3.5-9B",
+   "created": "2026-02-27",
+   "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+   "matrix": "lm_head.weight",
+   "tied": false,
+   "shape": [
+    248320,
+    4096
+   ],
+   "tokenizer_size": 248077,
+   "U": {
+    "n": 243,
+    "norm_median": 0.4175538420677185,
+    "cos_to_mean_median": 0.9085135459899902,
+    "frac_cos_to_mean_gt_0.99": 0.0,
+    "pairwise_median": 0.8246596455574036,
+    "pairwise_p05": 0.8190706968307495
+   },
+   "S": {
+    "n": 33,
+    "norm_median": 0.7791427969932556,
+    "cos_to_mean_median": 0.4889613389968872,
+    "frac_cos_to_mean_gt_0.99": 0.0,
+    "pairwise_median": 0.20721358060836792,
+    "pairwise_p05": -0.09570042416453362
+   },
+   "O": {
+    "n": 2000,
+    "norm_median": 0.9757536351680756,
+    "cos_to_mean_median": 0.30363067984580994,
+    "frac_cos_to_mean_gt_0.99": 0.0,
+    "pairwise_median": 0.08478205651044846,
+    "pairwise_p05": 0.010333991143852472
+   },
+   "rule_tokens": [
+    "padding row 248077",
+    "padding row 248078",
+    "padding row 248079",
+    "padding row 248080"
+   ],
+   "rule_token_ids": [
+    248077,
+    248078,
+    248079,
+    248080
+   ],
+   "rule_cosine_to_marker": [
+    0.9999997615814209,
+    0.822914719581604,
+    0.8258201479911804,
+    0.828012228012085
+   ]
+  },
+  {
+   "repo": "Qwen/Qwen3.6-35B-A3B",
+   "created": "2026-04-15",
+   "revision": "995ad96eacd98c81ed38be0c5b274b04031597b0",
+   "matrix": "lm_head.weight",
+   "tied": false,
+   "shape": [
+    248320,
+    2048
+   ],
+   "tokenizer_size": 248077,
+   "U": {
+    "n": 243,
+    "norm_median": 0.3906485438346863,
+    "cos_to_mean_median": 1.0000001192092896,
+    "frac_cos_to_mean_gt_0.99": 1.0,
+    "pairwise_median": 1.0,
+    "pairwise_p05": 0.9999998807907104
+   },
+   "S": {
+    "n": 33,
+    "norm_median": 0.6780060529708862,
+    "cos_to_mean_median": 0.5603523254394531,
+    "frac_cos_to_mean_gt_0.99": 0.0,
+    "pairwise_median": 0.2724263221025467,
+    "pairwise_p05": -0.11336816847324371
+   },
+   "O": {
+    "n": 2000,
+    "norm_median": 0.8213710784912109,
+    "cos_to_mean_median": 0.351646363735199,
+    "frac_cos_to_mean_gt_0.99": 0.0,
+    "pairwise_median": 0.11255878582596779,
+    "pairwise_p05": 0.013488448783755309
+   },
+   "rule_tokens": [
+    "padding row 248077",
+    "padding row 248078",
+    "padding row 248079",
+    "padding row 248080"
+   ],
+   "rule_token_ids": [
+    248077,
+    248078,
+    248079,
+    248080
+   ],
+   "rule_cosine_to_marker": [
+    1.000000238418579,
+    1.000000238418579,
+    1.000000238418579,
+    1.000000238418579
+   ]
+  },
+  {
+   "repo": "google/gemma-4-12B-it",
+   "created": "2026-05-23",
+   "revision": "707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7",
+   "matrix": "model.language_model.embed_tokens.weight",
+   "tied": true,
+   "shape": [
+    262144,
+    3840
+   ],
+   "tokenizer_size": 262144,
+   "U": {
+    "n": 6227,
+    "norm_median": 1.0003812313079834,
+    "cos_to_mean_median": 0.9994826316833496,
+    "frac_cos_to_mean_gt_0.99": 0.985225630319576,
+    "pairwise_median": 0.9989315271377563,
+    "pairwise_p05": 0.9979077875614166
+   },
+   "S": {
+    "n": 24,
+    "norm_median": 1.0569086074829102,
+    "cos_to_mean_median": 0.3538545072078705,
+    "frac_cos_to_mean_gt_0.99": 0.0,
+    "pairwise_median": 0.05376185290515423,
+    "pairwise_p05": -0.036082468926906586
+   },
+   "O": {
+    "n": 2000,
+    "norm_median": 1.0289484858512878,
+    "cos_to_mean_median": 0.2109214961528778,
+    "frac_cos_to_mean_gt_0.99": 0.0,
+    "pairwise_median": 0.04177287966012955,
+    "pairwise_p05": 0.00891306758858264
+   },
+   "rule_tokens": [
+    "<unused0>",
+    "<unused1>",
+    "<unused2>",
+    "<unused3>"
+   ],
+   "rule_token_ids": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "rule_cosine_to_marker": [
+    1.0,
+    0.10667027533054352,
+    0.14197364449501038,
+    0.10722379386425018
+   ]
+  },
+  {
+   "repo": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
+   "created": "2026-04-20",
+   "revision": "e5e9932441de940c9a62185c870ea5bcd4cd24e2",
+   "matrix": "language_model.lm_head.weight",
+   "tied": false,
+   "shape": [
+    131072,
+    2688
+   ],
+   "tokenizer_size": 131072,
+   "U": {
+    "n": 0
+   },
+   "S": {
+    "n": 1000,
+    "norm_median": 0.3112899363040924,
+    "cos_to_mean_median": 0.9999769926071167,
+    "frac_cos_to_mean_gt_0.99": 0.982,
+    "pairwise_median": 0.999998152256012,
+    "pairwise_p05": 0.999948263168335
+   },
+   "O": {
+    "n": 2000,
+    "norm_median": 1.045810878276825,
+    "cos_to_mean_median": 0.22012928128242493,
+    "frac_cos_to_mean_gt_0.99": 0.0,
+    "pairwise_median": 0.04342705197632313,
+    "pairwise_p05": -0.00565811595879495
+   },
+   "rule_tokens": [],
+   "rule_token_ids": [],
+   "rule_cosine_to_marker": null
+  },
+  {
+   "repo": "zai-org/GLM-4.7-Flash",
+   "created": "2026-01-19",
+   "revision": "7dd20894a642a0aa287e9827cb1a1f7f91386b67",
+   "matrix": "lm_head.weight",
+   "tied": false,
+   "shape": [
+    154880,
+    2048
+   ],
+   "tokenizer_size": 154856,
+   "U": {
+    "n": 24,
+    "norm_median": 0.7019738852977753,
+    "cos_to_mean_median": 0.9999949336051941,
+    "frac_cos_to_mean_gt_0.99": 1.0,
+    "pairwise_median": 0.9999995827674866,
+    "pairwise_p05": 0.9990628808736801
+   },
+   "S": {
+    "n": 36,
+    "norm_median": 0.702133059501648,
+    "cos_to_mean_median": 0.9865258932113647,
+    "frac_cos_to_mean_gt_0.99": 0.0,
+    "pairwise_median": 0.7043530941009521,
+    "pairwise_p05": 0.09453228786587715
+   },
+   "O": {
+    "n": 2000,
+    "norm_median": 1.4290316104888916,
+    "cos_to_mean_median": 0.47918371856212616,
+    "frac_cos_to_mean_gt_0.99": 0.0,
+    "pairwise_median": 0.23128407448530197,
+    "pairwise_p05": 0.17502779364585877
+   },
+   "rule_tokens": [
+    "padding row 154856",
+    "padding row 154857",
+    "padding row 154858",
+    "padding row 154859"
+   ],
+   "rule_token_ids": [
+    154856,
+    154857,
+    154858,
+    154859
+   ],
+   "rule_cosine_to_marker": [
+    0.9999998807907104,
+    0.9999993443489075,
+    0.9999995231628418,
+    0.9999997615814209
+   ]
+  }
+ ]
+}

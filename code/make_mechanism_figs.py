@@ -6,8 +6,6 @@ exhaustive.pdf  (two columns): score difference to the marker against the cosine
 eos_vocab.pdf   (two columns): AUROC of the marker read after each candidate token in the EOS position.
 terms.pdf       (two columns): the marker's logit after EOS for correct and wrong solutions, base model and
                  LaSeR checkpoint.
-q3_tokens.pdf   (one column): AUROC of tokens read at the released point in Qwen3-4B before and after training,
-                 with the median gain in log-probability.
 perseed.pdf     (two columns): AUROC of every readout on each generation seed.
 """
 import json
@@ -117,30 +115,6 @@ for j, (k, label) in enumerate(CK):
 h, l = axes[0][0].get_legend_handles_labels()
 fig.legend(h, l, loc="outside upper center", ncol=2, handlelength=1.4, columnspacing=1.2)
 eaclplot.save(fig, OUT / "terms.pdf")
-
-# ---- Qwen3-4B: every token read there gains ----
-q = json.loads((A / "q3_replication.json").read_text())
-ts = q["math500"]["token_sweep"]
-names = {"marker": "marker and $R_1$ tokens", "under-trained word 'PostalCodesNL'": "PostalCodesNL",
-         "under-trained word 'useRalative'": "useRalative", "under-trained word '\\tTokenNameIdentifier'": "TokenNameIdentifier",
-         "trained word ' the'": "``the''", "trained word ' answer'": "``answer''", "trained word '.'": "period"}
-rows = [(names[v["name"]], v) for v in ts.values() if v["name"] in names]
-fig, ax = plt.subplots(figsize=(eaclplot.COL, 1.9))
-for i, (lab, v) in enumerate(rows):
-    ax.plot([v["auroc_base"], v["auroc_trained"]], [i, i], color=eaclplot.GRID, linewidth=2.2, zorder=1)
-    ax.scatter([v["auroc_base"]], [i], s=14, color=eaclplot.GREY, zorder=2, label="base" if i == 0 else None)
-    ax.scatter([v["auroc_trained"]], [i], s=14, color=eaclplot.BLUE, zorder=2, label="trained" if i == 0 else None)
-    ax.text(1.02, i, f"+{v['median_shift_trained_minus_base']:.1f}", va="center", fontsize=7, color=eaclplot.INK,
-            transform=ax.get_yaxis_transform())
-ax.text(1.02, -1.0, "nat", va="center", fontsize=7, color=eaclplot.INK, transform=ax.get_yaxis_transform())
-ax.axvline(0.5, color=eaclplot.GREY, linestyle="--", linewidth=0.6)
-ax.set_yticks(range(len(rows)), [r[0] for r in rows])
-ax.set_ylim(len(rows) - 0.5, -1.4)
-ax.set_xlim(0, 1)
-ax.set_xlabel("AUROC on MATH500")
-eaclplot.finish(ax, "x")
-fig.legend(loc="outside upper center", ncol=2, handletextpad=0.3, columnspacing=1.0)
-eaclplot.save(fig, OUT / "q3_tokens.pdf")
 
 # ---- per seed ----
 READ = [("R0_reference", "$R_0$"), ("R1_marker_swap_mean", "$R_1$"), ("R2_position_eos", "$R_2$"),

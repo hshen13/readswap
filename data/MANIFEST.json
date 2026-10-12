@@ -118,5 +118,25 @@
     "sha256": "1e764cc4fe13a60c7386b3262a2d611bf5c4c277fb5981c8711643a7f45d6608",
     "source": "zwhe99/DeepMath-103K train split, after exact-string exclusion against confirmatory questions"
   },
-  "schema_version": 1
+  "schema_version": 1,
+  "new_problems": [
+    {
+      "path": "data/new_problems/aime_2026/test.jsonl",
+      "source": "MathArena/aime_2026 (Hugging Face dataset)",
+      "revision": "d2de22f3c656b4f56cf8981212186377d1e23bc3",
+      "rows": 30,
+      "sha256": "f2890dcaac79ce287afd0138e7c2fca9d9a2e536418052f31ae8ef1d991296e0",
+      "license": "CC BY-NC-SA 4.0",
+      "note": "problem and answer copied unchanged from data/train-00000-of-00001.parquet; exploratory evaluation only"
+    },
+    {
+      "path": "data/new_problems/hmmt_feb_2026/test.jsonl",
+      "source": "MathArena/hmmt_feb_2026 (Hugging Face dataset)",
+      "revision": "02fba4f74d8e68e73e66a02d540fd979c05c274c",
+      "rows": 33,
+      "sha256": "19107260ece97911fa7c402f81eec03a83662d656819b3de42c99260b51bf042",
+      "license": "CC BY-NC-SA 4.0",
+      "note": "problem and answer copied unchanged from data/train-00000-of-00001.parquet; exploratory evaluation only"
+    }
+  ]
 }
