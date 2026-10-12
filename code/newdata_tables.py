@@ -62,9 +62,9 @@ lines += [r"\midrule", r"\multicolumn{7}{@{}l}{\emph{Score term trained alone, f
 for key, label in TRAINED:
     lines.append(label + " & " + " & ".join(num(v) for v in values(new["trained_models"][key]["benchmarks"])) + r" \\")
 lines += [r"\bottomrule", r"\end{tabular}",
-          r"\caption{Readouts on 2026 problems and in models trained only on the score term (exploratory). "
-          r"Length: negative token count. Within problem: mean AUROC over problems with correct and wrong "
-          r"solutions. Intervals in Table~\ref{tab:app-newdata}.}",
+          r"\caption{Supplementary experiments (exploratory): the LaSeR models on 2026 problems, and models "
+          r"trained only on the score term. Length: negative token count. Within problem: mean AUROC over "
+          r"problems with correct and wrong solutions. Intervals in Table~\ref{tab:app-newdata}.}",
           r"\label{tab:new}", r"\end{table}"]
 write("newdata.tex", lines)
 

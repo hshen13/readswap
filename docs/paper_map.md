@@ -11,7 +11,7 @@ everything else is exploratory.
 | Table 2 (contrasts L1 to L5 with intervals and verdicts; pre-specified) | `code/laser_paper_tables.py` -> `contrasts.tex` | `*_confirm.json` |
 | Figure 3 (token sweep by cosine with the marker's output row; marker read after tokens in the EOS position) | `code/make_token_figure.py` -> `token_control.pdf` | `token_sweep_*.json`, `mech_summary.json` |
 | Table 3 (length checks of R0) | `code/laser_new_tables.py` -> `length_checks.tex` | `laser_extra.json`, `length_control.json` |
-| Table 4 and Section 5.5 (2026 problems; score-only training in Qwen3-4B, Qwen3.5-4B and Gemma-4-12B) | `code/newdata_tables.py` -> `newdata.tex` | `newdata.json` (`code/newdata_analysis.py`) |
+| Table 4 and Section 4.6 (supplementary experiments: 2026 problems; score-only training in Qwen3-4B, Qwen3.5-4B and Gemma-4-12B) | `code/newdata_tables.py` -> `newdata.tex` | `newdata.json` (`code/newdata_analysis.py`) |
 | Tables 5 to 7 (readout configuration, models, datasets; Appendices A to D) | written by hand | `data/LASER_CONFIGS.json`, `data/MANIFEST.json`, `data/MODELS.json` |
 | Appendix D compute hours | `code/laser_gpu_hours.py` | GPU wrapper logs -> `gpu_hours.json` |
 | Figure 4 (AUROC of four readouts per benchmark and on the 2026 sets) | `code/make_laser_more_figs.py` -> `benchmarks.pdf` | `*_confirm.json`, `newdata.json` |
