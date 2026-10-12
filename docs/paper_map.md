@@ -22,7 +22,7 @@ everything else is exploratory.
 | Table 9 (output-embedding rows of marker and R1 tokens) | `code/laser_paper_tables.py` -> `app_unembed.tex` | `unembedding_rows.json` (`code/unembed_check.py`) |
 | Appendix F.1, shared output direction | `code/unembed_scope.py` | `unembedding_scope.json` |
 | Figure 8 (marker logit after EOS, base model and LaSeR checkpoint) | `code/make_mechanism_figs.py` -> `terms.pdf` | `mech/*.jsonl` (`code/mech_control.py`) |
-| Table 10 and Figure 9 (unused-token rows in eight models from 2026) | `code/newdata_tables.py` -> `app_unembed2026.tex`; `code/newdata_figs.py` -> `unembed_2026.pdf` | `unembed_2026.json` (`code/unembed_2026.py`) |
+| Table 10 and Figure 9 (unused-token rows in eight open models) | `code/newdata_tables.py` -> `app_unembed2026.tex`; `code/newdata_figs.py` -> `unembed_2026.pdf` | `unembed_2026.json` (`code/unembed_2026.py`) |
 | Appendix F.2 and F.3, EOS control and the two terms | `code/mech_control.py`, `code/mech_analyze.py`, `code/eos_swap_control.py` | `mech_summary.json`, `eos_swap_*.json` |
 | Appendix F.3, base-model control | `code/base_signal.py` | `base_signal.json` |
 | Figure 10 (mean R0 and R3 score by length decile) | `code/make_figures.py` -> `length_score.pdf` | `*_confirm.json` |
